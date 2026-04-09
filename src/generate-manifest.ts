@@ -40,7 +40,7 @@ function main() {
 
   // Write RSS feed — latest 15 reports across all types
   const labelMap: Record<string, string> = {
-    "safety-daily": "Daily Summary",
+    "safety-daily": "Daily Brief",
     "safety-weekly": "Weekly Summary",
     "safety-arxiv": "ArXiv Papers",
     "safety-github": "GitHub Activity",

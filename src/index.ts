@@ -124,7 +124,7 @@ async function main() {
       saveReport(
         date,
         `safety-daily${suffix}.md`,
-        `# AI Safety Daily Digest - ${date}\n\n${rollup}`
+        `# AI Safety Daily Brief - ${date}\n\n${rollup}`
       );
     } else {
       console.log("No data fetched - skipping report generation.");

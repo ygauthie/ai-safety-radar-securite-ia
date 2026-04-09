@@ -2,7 +2,7 @@ export type Lang = "en" | "fr";
 
 const strings: Record<Lang, Record<string, string>> = {
   en: {
-    daily_digest: "AI Safety Daily Digest",
+    daily_digest: "AI Safety Daily Brief",
     weekly_digest: "AI Safety Weekly Digest",
     arxiv_section: "ArXiv Papers",
     github_section: "GitHub Activity",
