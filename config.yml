@@ -47,12 +47,34 @@ arxiv:
 
 # RSS feeds to monitor
 rss_feeds:
+  # Community forums
   - name: Alignment Forum
     url: https://www.alignmentforum.org/feed.xml
   - name: LessWrong (AI tag)
     url: https://www.lesswrong.com/feed.xml?view=community-rss&karmaThreshold=30
   - name: AI Alignment Newsletter
     url: https://rohinshah.com/alignment-newsletter-feed/
+  # Substacks
+  - name: Import AI (Jack Clark)
+    url: https://importai.substack.com/feed
+  - name: Hyperdimensional (Dean Ball)
+    url: https://www.hyperdimensional.co/feed
+  - name: Don't Worry About the Vase (Zvi Mowshowitz)
+    url: https://thezvi.substack.com/feed
+  - name: Marcus on AI (Gary Marcus)
+    url: https://garymarcus.substack.com/feed
+  - name: The Cognitive Revolution (Nathan Labenz)
+    url: https://cognitiverevolution.substack.com/feed
+  - name: Planned Obsolescence (Ajeya Cotra & Kelsey Piper)
+    url: https://www.planned-obsolescence.org/feed
+  - name: Miles Brundage
+    url: https://milesbrundage.substack.com/feed
+  - name: AI Safety Newsletter (CAIS)
+    url: https://newsletter.safe.ai/feed
+  - name: AI Summer (Timothy B. Lee & Dean Ball)
+    url: https://www.aisummer.org/feed
+  - name: AI Safety & Governance (Victor Akinwande)
+    url: https://www.safeai.news/feed
 
 # Websites to crawl via sitemap for new content
 websites:
