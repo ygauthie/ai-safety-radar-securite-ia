@@ -5,29 +5,25 @@
     <link>https://ygauthie.github.io/ai-safety-radar/</link>
     <description>Daily AI safety research, policy, and development digest</description>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Apr 2026 17:50:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 18:27:00 GMT</lastBuildDate>
     <item>
       <title>AI Safety Digest - 2026-04-09</title>
-      <link>https://ygauthie.github.io/ai-safety-radar/#2026-04-09-safety-daily.md</link>
+      <link>https://ygauthie.github.io/ai-safety-radar/#2026-04-09/safety-daily.md</link>
       <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
       <description>
 ## Top 3 Developments
 
-1. **Anthropic's Mythos Model Deemed "Too Dangerous for Public Release"**: Anthropic has severely restricted access to their new Claude Mythos model due to significant cybersecurity risks, including the ability to discover numerous zero-day exploits. This marks a major precedent for AI companies withholding capabilities due to safety concerns and is influencing other companies like OpenAI to consider similar "staggered rollouts."
+1. **Anthropic's Restricted Mythos Model Release**: For the first time, Anthropic has [declined to fully release a model](https://blog.alcazarsec.com/tech/posts/claude-mythos-the-first-model-anthropic-didnt-really-release) due to cybersecurity risks, with [Claude Mythos Preview](https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf) only available to select partners. The model's demonstrated ability to discover numerous zero-day vulnerabilities has prompted [security warnings](https://www.lesswrong.com/posts/2wi5mCLSkZo2ky32p/do-not-be-surprised-if-lesswrong-gets-hacked) and may signal a new era of staggered AI releases based on capability risks.
 
-2. **Pentagon Blacklists Anthropic as Supply Chain Risk**: A federal court declined to block the Pentagon's designation of Anthropic as a security risk, creating the first major government restriction on a leading AI company. This development signals escalating tensions between national security concerns and AI company operations.
+2. **Multi-Step Safety Evaluation Breakthrough**: [TraceSafe](https://arxiv.org/abs/2604.07223v1) introduces the first comprehensive benchmark for evaluating safety guardrails during multi-step tool use in autonomous LLM agents, addressing critical vulnerabilities as models evolve from chatbots to autonomous agents where intermediate execution traces become the primary attack surface.
 
-3. **Multi-Step AI Agent Safety Evaluation Breakthrough**: New research introduces [TraceSafe](https://arxiv.org/abs/2604.07223v1), the first comprehensive benchmark for evaluating safety guardrails during autonomous agent execution, addressing critical vulnerabilities as AI systems evolve from chatbots to autonomous agents.
+3. **Constitutional Governance for Agent Economies**: Researchers propose [constitutional governance structures](https://arxiv.org/abs/2604.07007v1) to address the "Logic Monopoly" problem where multi-agent systems become opaque to human oversight, offering frameworks to maintain human control over autonomous agent economies operating across organizational boundaries.
 
 ## Section Summaries
 
-**ArXiv Papers**: Multiple papers address autonomous AI systems governance, with new frameworks for multi-step safety evaluation, constitutional governance for agent economies, and privacy-preserving research methods for sensitive AI safety topics.
+**ArXiv Papers**: Researchers published breakthrough work on multi-step safety evaluation, autonomous agent governance, and data deletion schemes, with emerging themes focusing on governance frameworks for multi-agent systems and personalization versus safety trade-offs. The collection addresses critical gaps as AI systems become more capable and autonomous beyond traditional alignment problems.
 
-**Blog Posts &amp; Articles**: The AI safety community is grappling with fundamental questions about whether current alignment approaches are sufficient, while analyzing the implications of Anthropic's Mythos model and its cybersecurity capabilities.
-
-**GitHub Activity**: Development activity focuses on agent verification patterns, evaluation robustness fixes, and new tools for mathematical hallucination mitigation, reflecting practical implementation of safety measures.
-
-**Hacker News**: Community discussion centers on Anthropic's Mythos restrictions and the Pentagon blacklisting, with mixed sentiment a</description>
+**Blog Posts &amp; Articles**: Claude Mythos dominated discussions with security concerns about its cybersecurity capabi</description>
     </item>
   </channel>
 </rss>
