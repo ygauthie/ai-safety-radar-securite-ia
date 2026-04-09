@@ -148,15 +148,41 @@
       padding: 0.75rem 0.75rem 1.5rem;
     }
 
-    .date-group { margin-bottom: 1.25rem; }
+    .date-group { margin-bottom: 0.25rem; }
 
     .date-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       font-size: 0.7rem;
       color: var(--text-muted);
       font-weight: 600;
-      padding: 0.25rem 0.5rem;
+      padding: 0.35rem 0.5rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
+      cursor: pointer;
+      border-radius: 3px;
+      user-select: none;
+      transition: background 0.1s, color 0.1s;
+    }
+
+    .date-label:hover { background: var(--surface); color: var(--text); }
+
+    .date-label .chevron {
+      transition: transform 0.2s;
+      opacity: 0.5;
+      flex-shrink: 0;
+    }
+
+    .date-group.collapsed .chevron { transform: rotate(-90deg); }
+
+    .date-files {
+      overflow: hidden;
+      transition: max-height 0.2s ease;
+    }
+
+    .date-group.collapsed .date-files {
+      max-height: 0 !important;
     }
 
     .file-link {
@@ -407,17 +433,33 @@
 
       let html = '<div class="search-box"><input type="text" id="searchInput" placeholder="Search digests..."></div>';
       html += '<div class="sidebar-entries" id="sidebarEntries">';
-      for (const entry of manifest.entries) {
+      manifest.entries.forEach((entry, i) => {
         const sorted = sortFiles(entry.files);
-        html += `<div class="date-group" data-date="${entry.date}">`;
-        html += `<div class="date-label">${entry.date}</div>`;
-        for (const file of sorted) {
-          html += `<a href="#${file}" class="file-link" data-hash="${file}" data-label="${fileLabel(file).toLowerCase()}">${fileLabel(file)}${fileBadge(file)}</a>`;
-        }
+        const collapsed = i > 0 ? ' collapsed' : '';
+        const filesHtml = sorted.map(file =>
+          `<a href="#${file}" class="file-link" data-hash="${file}" data-label="${fileLabel(file).toLowerCase()}">${fileLabel(file)}${fileBadge(file)}</a>`
+        ).join('');
+        const filesHeight = sorted.length * 32;
+        html += `<div class="date-group${collapsed}" data-date="${entry.date}">`;
+        html += `<div class="date-label">
+          <span>${entry.date}</span>
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>`;
+        html += `<div class="date-files" style="max-height:${filesHeight}px">${filesHtml}</div>`;
         html += '</div>';
-      }
+      });
       html += '</div>';
       sidebar.innerHTML = html;
+
+      // Wire up collapsing
+      document.querySelectorAll('.date-label').forEach(label => {
+        label.addEventListener('click', () => {
+          const group = label.closest('.date-group');
+          const files = group.querySelector('.date-files');
+          const isCollapsed = group.classList.toggle('collapsed');
+          if (!isCollapsed) files.style.maxHeight = files.scrollHeight + 'px';
+        });
+      });
 
       // Wire up search
       const searchInput = document.getElementById('searchInput');
@@ -429,7 +471,14 @@
       const groups = document.querySelectorAll('.date-group');
 
       if (!query) {
-        groups.forEach(g => g.classList.remove('hidden'));
+        groups.forEach(g => {
+          g.classList.remove('hidden');
+          // Restore original collapsed state (only first group expanded)
+          const isFirst = !g.previousElementSibling || g.previousElementSibling.classList.contains('search-results-info');
+          g.classList.toggle('collapsed', !isFirst);
+          const files = g.querySelector('.date-files');
+          if (files) files.style.maxHeight = isFirst ? files.scrollHeight + 'px' : '0px';
+        });
         document.querySelectorAll('.file-link').forEach(l => l.style.display = '');
         const info = document.querySelector('.search-results-info');
         if (info) info.remove();
@@ -452,6 +501,12 @@
         });
 
         group.classList.toggle('hidden', !groupHasMatch);
+        // Auto-expand groups with matches
+        if (groupHasMatch) {
+          group.classList.remove('collapsed');
+          const files = group.querySelector('.date-files');
+          if (files) files.style.maxHeight = files.scrollHeight + 'px';
+        }
       });
 
       // Show count
