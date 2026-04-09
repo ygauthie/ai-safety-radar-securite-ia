@@ -55,9 +55,11 @@ export async function generateReport(
 }
 
 export function saveReport(date: string, filename: string, content: string): string {
-  const dir = join(process.cwd(), "digests", date);
+  const dir = join(process.cwd(), "digests");
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
-  const path = join(dir, filename);
+  // Flat structure: digests/YYYY-MM-DD-safety-source.md
+  const name = filename.replace(/^safety-/, `${date}-safety-`);
+  const path = join(dir, name);
   writeFileSync(path, content, "utf-8");
   console.log(`Saved: ${path}`);
   return path;

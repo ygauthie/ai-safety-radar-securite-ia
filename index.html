@@ -8,6 +8,20 @@
   <link rel="alternate" type="application/rss+xml" title="AI Safety Radar RSS" href="feed.xml">
   <style>
     :root {
+      --bg: #ffffff;
+      --surface: #f6f8fa;
+      --border: #d1d9e0;
+      --text: #1f2328;
+      --text-muted: #656d76;
+      --accent: #0969da;
+      --accent-subtle: #0969da11;
+      --green: #1a7f37;
+      --orange: #9a6700;
+      --red: #d1242f;
+      --strong: #000;
+    }
+
+    [data-theme="dark"] {
       --bg: #0d1117;
       --surface: #161b22;
       --border: #30363d;
@@ -18,6 +32,7 @@
       --green: #3fb950;
       --orange: #d29922;
       --red: #f85149;
+      --strong: #fff;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -52,19 +67,29 @@
 
     nav { display: flex; gap: 1rem; align-items: center; }
 
-    nav a {
+    nav a, nav button {
       color: var(--text-muted);
       text-decoration: none;
       font-size: 0.9rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
     }
 
-    nav a:hover { color: var(--accent); }
+    nav a:hover, nav button:hover { color: var(--accent); }
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
+    .theme-toggle {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      padding: 0;
     }
+
+    .theme-toggle:hover { background: var(--accent-subtle); }
 
     .sidebar {
       position: fixed;
@@ -84,9 +109,7 @@
       min-height: calc(100vh - 52px);
     }
 
-    .date-group {
-      margin-bottom: 1rem;
-    }
+    .date-group { margin-bottom: 1rem; }
 
     .date-label {
       font-size: 0.8rem;
@@ -119,14 +142,11 @@
       vertical-align: middle;
     }
 
-    .badge-daily { background: var(--green); color: #000; }
-    .badge-weekly { background: var(--orange); color: #000; }
+    .badge-daily { background: var(--green); color: #fff; }
+    .badge-weekly { background: var(--orange); color: #fff; }
     .badge-arxiv { background: #8957e5; color: #fff; }
 
-    #content {
-      max-width: 800px;
-    }
-
+    #content { max-width: 800px; }
     #content h1 { font-size: 1.8rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
     #content h2 { font-size: 1.4rem; margin: 1.5rem 0 0.75rem; color: var(--accent); }
     #content h3 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
@@ -140,7 +160,7 @@
     #content pre code { background: none; padding: 0; }
     #content blockquote { border-left: 3px solid var(--accent); padding-left: 1rem; color: var(--text-muted); margin-bottom: 0.75rem; }
     #content hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
-    #content strong { color: #fff; }
+    #content strong { color: var(--strong); }
 
     .welcome {
       text-align: center;
@@ -176,7 +196,11 @@
     <a href="#" class="logo">AI Safety <span>Radar</span></a>
     <nav>
       <a href="feed.xml">RSS</a>
-      <a href="https://github.com/yvan/ai-safety-radar">GitHub</a>
+      <a href="https://github.com/ygauthie/ai-safety-radar">GitHub</a>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </nav>
   </header>
 
@@ -196,8 +220,26 @@
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
-    const BASE = '';
+    // Theme management
+    function getTheme() {
+      return localStorage.getItem('theme') || 'light';
+    }
 
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      document.getElementById('iconSun').style.display = theme === 'dark' ? 'block' : 'none';
+      document.getElementById('iconMoon').style.display = theme === 'dark' ? 'none' : 'block';
+    }
+
+    applyTheme(getTheme());
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const next = getTheme() === 'light' ? 'dark' : 'light';
+      localStorage.setItem('theme', next);
+      applyTheme(next);
+    });
+
+    // File labels and badges
     function fileLabel(filename) {
       const map = {
         'safety-daily': 'Daily Summary',
@@ -211,7 +253,7 @@
       for (const [key, label] of Object.entries(map)) {
         if (filename.includes(key)) return label;
       }
-      return filename.replace('.md', '');
+      return filename.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace('.md', '');
     }
 
     function fileBadge(filename) {
@@ -223,7 +265,7 @@
 
     async function loadManifest() {
       try {
-        const res = await fetch(`${BASE}manifest.json`);
+        const res = await fetch('manifest.json');
         if (!res.ok) throw new Error('No manifest');
         return await res.json();
       } catch {
@@ -240,23 +282,22 @@
 
       let html = '';
       for (const entry of manifest.entries) {
-        html += `<div class="date-group">`;
+        html += '<div class="date-group">';
         html += `<div class="date-label">${entry.date}</div>`;
         for (const file of entry.files) {
-          const hash = `${entry.date}/${file}`;
-          html += `<a href="#${hash}" class="file-link" data-hash="${hash}">${fileLabel(file)}${fileBadge(file)}</a>`;
+          html += `<a href="#${file}" class="file-link" data-hash="${file}">${fileLabel(file)}${fileBadge(file)}</a>`;
         }
-        html += `</div>`;
+        html += '</div>';
       }
       sidebar.innerHTML = html;
     }
 
-    async function loadContent(path) {
+    async function loadContent(file) {
       const content = document.getElementById('content');
       content.innerHTML = '<div class="loading">Loading...</div>';
 
       try {
-        const res = await fetch(`${BASE}digests/${path}`);
+        const res = await fetch(`digests/${file}`);
         if (!res.ok) throw new Error('Not found');
         const md = await res.text();
         content.innerHTML = marked.parse(md);
@@ -264,9 +305,8 @@
         content.innerHTML = '<div class="loading">Failed to load digest.</div>';
       }
 
-      // Update active state
       document.querySelectorAll('.file-link').forEach(el => {
-        el.classList.toggle('active', el.dataset.hash === path);
+        el.classList.toggle('active', el.dataset.hash === file);
       });
     }
 
@@ -280,11 +320,10 @@
       renderSidebar(manifest);
       handleHash();
 
-      // Auto-load latest daily if no hash
       if (!location.hash && manifest.entries.length > 0) {
         const latest = manifest.entries[0];
         const daily = latest.files.find(f => f.includes('daily')) || latest.files[0];
-        location.hash = `${latest.date}/${daily}`;
+        location.hash = daily;
       }
     }
 

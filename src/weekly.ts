@@ -22,7 +22,7 @@ async function main() {
     // Collect daily digests from the past week
     for (let i = 7; i >= 0; i--) {
       const d = formatDate(daysAgo(i));
-      const path = join(process.cwd(), "digests", d, `safety-daily${suffix}.md`);
+      const path = join(process.cwd(), "digests", `${d}-safety-daily${suffix}.md`);
       if (existsSync(path)) {
         dailies.push(readFileSync(path, "utf-8"));
       }
