@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(pnpm install:*)",
+      "Bash(which npm:*)",
+      "Bash(git -C /Users/yvan/Documents/Projects/ai-safety-radar status)",
+      "Bash(git -C /Users/yvan/Documents/Projects/ai-safety-radar log --oneline -5)",
+      "Bash(git -C /Users/yvan/Documents/Projects/ai-safety-radar push origin main)",
+      "Bash(git add:*)",
+      "WebSearch",
+      "WebFetch(domain:importai.substack.com)",
+      "WebFetch(domain:hyperdimensional.substack.com)",
+      "WebFetch(domain:thezvi.substack.com)",
+      "WebFetch(domain:newsletter.safe.ai)",
+      "WebFetch(domain:www.hyperdimensional.co)",
+      "WebFetch(domain:garymarcus.substack.com)",
+      "WebFetch(domain:milesbrundage.substack.com)",
+      "WebFetch(domain:cognitiverevolution.substack.com)",
+      "WebFetch(domain:www.planned-obsolescence.org)",
+      "WebFetch(domain:www.aisummer.org)"
+    ]
+  }
+}
