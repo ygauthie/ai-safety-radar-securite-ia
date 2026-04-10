@@ -1,11 +1,29 @@
 {
   "US AI Safety Institute (NIST)": [
-    "https://www.nist.gov/research-test-beds"
+    "https://www.nist.gov/research-test-beds",
+    "https://www.commerce.gov/news/press-releases/2025/06/statement-us-secretary-commerce-howard-lutnick-transforming-us-ai",
+    "https://www.nist.gov/blogs/caisi-research-blog/insights-ai-agent-security-large-scale-red-teaming-competition",
+    "https://www.nist.gov/blogs/caisi-research-blog/analyzing-transcripts-ai-agent-evaluations",
+    "https://www.nist.gov/blogs/caisi-research-blog/accelerating-ai-innovation-through-measurement-science",
+    "https://www.nist.gov/blogs/caisi-research-blog/cheating-ai-agent-evaluations",
+    "https://www.nist.gov/news-events/news/2026/03/announcement-caisi-signs-crada-openmined-enable-secure-ai-evaluations",
+    "https://www.nist.gov/news-events/news/2026/03/caisi-signs-mou-gsa-boost-ai-evaluation-science-federal-procurement-through",
+    "https://www.nist.gov/news-events/news/2026/03/new-report-challenges-monitoring-deployed-ai-systems",
+    "https://www.nist.gov/news-events/news/2026/02/new-report-expanding-ai-evaluation-toolbox-statistical-models"
   ],
   "UK AI Safety Institute": [
     "https://www.aisi.gov.uk/blog/how-do-ai-models-persuade-exploring-the-levers-of-ai-enabled-persuasion-through-large-scale-experiments",
     "https://www.aisi.gov.uk/blog/deepening-our-partnership-with-google-deepmind",
-    "https://www.aisi.gov.uk/research-agenda"
+    "https://www.aisi.gov.uk/research-agenda",
+    "https://www.aisi.gov.uk/research/infusion-shaping-model-behaviour-by-editing-training-data-via-influence-functions",
+    "https://www.aisi.gov.uk/research/how-are-ai-agents-used-evidence-from-177-000-mcp-tools",
+    "https://www.aisi.gov.uk/research/quantifying-frontier-llm-capabilities-for-container-sandbox-escape",
+    "https://www.aisi.gov.uk/research/measuring-ai-agents-progress-on-multi-step-cyber-attack-scenarios",
+    "https://www.aisi.gov.uk/research/a-multi-turn-framework-for-evaluating-ai-misuse-in-fraud-and-cybercrime-scenarios",
+    "https://www.aisi.gov.uk/research/seven-simple-steps-for-log-analysis-in-ai-systems",
+    "https://www.aisi.gov.uk/research/boundary-point-jailbreaking-of-black-box-llms",
+    "https://www.aisi.gov.uk/research/aisi-frontier-ai-trends-report-2025",
+    "https://www.aisi.gov.uk/research/practical-challenges-of-control-monitoring-in-frontier-ai-deployments"
   ],
   "Canada AI Safety Institute (CAISI)": [],
   "Japan AI Safety Institute (J-AISI)": [],
@@ -13,7 +31,15 @@
   "European AI Office": [
     "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_383",
     "https://digital-strategy.ec.europa.eu/en/news/ai-continent-action-plan-delivers-major-milestones",
-    "https://digital-strategy.ec.europa.eu/en/news/joint-press-release-commission-and-kingdom-morocco-launch-digital-dialogue-strengthen-strategic"
+    "https://digital-strategy.ec.europa.eu/en/news/joint-press-release-commission-and-kingdom-morocco-launch-digital-dialogue-strengthen-strategic",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-pornhub-stripchat-xnxx-and-xvideos-breach-digital-services-act",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-investigates-snapchats-compliance-child-protection-rules-under-digital-services-act",
+    "https://digital-strategy.ec.europa.eu/en/news/first-results-published-under-revised-code-conduct-countering-illegal-hate-speech-online",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-approves-eu211-million-italian-state-aid-measure-support-photonic-chips-development",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-marks-one-year-ai-continent-action-plan-two-new-reports-ai-adoption-and-policymaking",
+    "https://digital-strategy.ec.europa.eu/en/news/pact-mediterranean-delivers-eu-unveils-first-digital-initiative-region",
+    "https://digital-strategy.ec.europa.eu/en/news/second-gpai-signatory-taskforce-meeting-copyright-chapter",
+    "https://digital-strategy.ec.europa.eu/en/news/two-decades-eu-domain-reflecting-european-integration-and-identity-online"
   ],
   "Korea AI Safety Institute": [
     "https://www.msit.go.kr/eng/newsLetter/list.do?sCode=eng&mPid=2&mId=8"
