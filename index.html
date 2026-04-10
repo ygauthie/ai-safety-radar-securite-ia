@@ -407,7 +407,7 @@
 
     function fileLabel(filename) {
       const map = {
-        'safety-daily': 'AI Safety Brief',
+        'safety-daily': 'Executive Summary',
         'safety-weekly': 'Weekly Summary',
         'safety-arxiv': 'ArXiv Papers',
         'safety-github': 'GitHub',
@@ -425,7 +425,7 @@
     function fileBadge(filename) {
       if (filename.includes('daily')) return '<span class="badge badge-daily">daily</span>';
       if (filename.includes('weekly')) return '<span class="badge badge-weekly">weekly</span>';
-      if (filename.includes('arxiv')) return '<span class="badge badge-arxiv">arxiv</span>';
+      if (filename.includes('arxiv')) return '';
       return '';
     }
 
