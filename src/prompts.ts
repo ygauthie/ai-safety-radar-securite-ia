@@ -137,7 +137,7 @@ Structure:
 5. **Community Highlights**: Important discussions or community developments.
 6. **Looking Ahead**: What to watch for next week.
 
-Format as clean Markdown.
+Format as clean Markdown.  Do not omit links to save space — links are essential.
 
 DAILY DIGESTS:
 ${dailies}`;
