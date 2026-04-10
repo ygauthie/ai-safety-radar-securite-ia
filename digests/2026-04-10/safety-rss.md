@@ -2,36 +2,28 @@
 
 ## Top Stories
 
-**Anthropic's Claude Mythos Raises Major Security and Governance Concerns**
+**[Anthropic did not publish a "risk discussion" of Mythos when required by their RSP](https://www.lesswrong.com/posts/F5uxhFrNHLzmNgyqg/anthropic-did-not-publish-a-risk-discussion-of-mythos-when)** - A critical analysis reveals that Anthropic may have violated their own Responsible Scaling Policy (RSP 3.0) by failing to publish required risk documentation within 30 days of deploying Claude Mythos internally. This represents a significant governance failure, as RSPs are meant to be binding commitments that demonstrate responsible AI development practices.
 
-The announcement of [Claude Mythos](https://www.lesswrong.com/posts/EDQhwLTyTnNmaxRGq/claude-mythos-the-system-card) has sent shockwaves through the AI safety community. This is the first model since GPT-2 to be withheld from public release entirely, but for fundamentally different reasons. While GPT-2's delay was precautionary, Mythos is being restricted due to concrete security capabilities that could cause immediate harm if released broadly. The model has demonstrated the ability to discover zero-day vulnerabilities at scale, prompting warnings that [LessWrong and other platforms should expect to be hacked](https://www.lesswrong.com/posts/2wi5mCLSkZo2ky32p/do-not-be-surprised-if-lesswrong-gets-hacked).
+**[Claude Mythos: The System Card](https://www.lesswrong.com/posts/EDQhwLTyTnNmaxRGq/claude-mythos-the-system-card)** - Claude Mythos marks a watershed moment as the first major model since GPT-2 to be withheld from public release entirely. Unlike GPT-2's precautionary delay, Mythos is being restricted due to specific, concrete capabilities that would pose immediate risks if made available to anyone with a credit card. This signals a new phase of AI development where capability advances are outpacing safe deployment strategies.
 
-**Anthropic Accused of Violating Its Own Safety Commitments**
+**[Do not be surprised if LessWrong gets hacked](https://www.lesswrong.com/posts/2wi5mCLSkZo2ky32p/do-not-be-surprised-if-lesswrong-gets-hacked)** - A LessWrong administrator warns that Claude Mythos has demonstrated the ability to discover numerous zero-day security vulnerabilities, fundamentally changing the cybersecurity landscape. The post serves as both a specific warning about LessWrong's security posture and a broader alert that existing security assumptions across the internet may no longer hold.
 
-A significant governance controversy has emerged around Anthropic's handling of Mythos. Critics argue that [Anthropic failed to publish required risk discussions](https://www.lesswrong.com/posts/F5uxhFrNHLzmNgyqg/anthropic-did-not-publish-a-risk-discussion-of-mythos-when) as mandated by their Responsible Scaling Policy (RSP) version 3.0. The RSP required publication of risk analysis within 30 days for certain internal deployments, but no such discussion has appeared, raising questions about compliance with self-imposed safety standards.
+**[Have we already lost? Part 1: The Plan in 2024](https://www.lesswrong.com/posts/tjZWbmuCE9tjYQsrf/have-we-already-lost-part-1-the-plan-in-2024)** - A reflective analysis on whether the AI safety community has passed a point of no return where AGI becomes both likely and beyond their control. While the author ultimately concludes "no" per Betteridge's Law, the salience of this question itself highlights growing concerns about the trajectory of AI development in 2026.
 
-**Research on AI Deception and Goal-Guarding Continues**
-
-New research is investigating whether AI systems can preserve hidden goals during training through strategic behavior. A [recent post on model organisms research](https://www.lesswrong.com/posts/vKR9rHcWsMMr7BX4Q/model-organisms-researchers-should-check-whether-high-lrs) suggests that researchers should test whether high learning rates can defeat the goal-preservation mechanisms they're studying in "schemer" AI systems.
-
-**Community Grapples with Existential Questions About AI Safety Progress**
-
-Reflecting broader anxieties in the field, researchers are asking fundamental questions about whether [we have already lost the AI safety race](https://www.lesswrong.com/posts/tjZWbmuCE9tjYQsrf/have-we-already-lost-part-1-the-plan-in-2024). This introspective analysis examines whether the AI safety community has passed a point of no return where AGI becomes both likely and outside of our control.
+**[Model organisms researchers should check whether high LRs defeat their model organisms](https://www.lesswrong.com/posts/vKR9rHcWsMMr7BX4Q/model-organisms-researchers-should-check-whether-high-lrs)** - Technical guidance for alignment researchers studying the "goal-guarding hypothesis" - whether scheming AI systems can preserve their goals during training. The post argues that researchers should test whether high learning rates can defeat their experimental setups, as this could invalidate conclusions about AI deception and goal preservation.
 
 ## Key Arguments
 
-**Super-Persuasion as an Underestimated Risk Vector**: A [new analysis argues](https://www.lesswrong.com/posts/JcavsPku6RR9hcujz/slightly-super-persuasion-will-do) that even slightly superhuman persuasive capabilities could be transformative, pushing back against the idea that society's reactive nature provides adequate defense against AI manipulation. The author contends that historical examples of powerful persuaders demonstrate the potential impact of AI systems with enhanced persuasive abilities.
+**RSP Enforcement Concerns**: The Anthropic RSP violation highlights a critical gap between policy commitments and implementation. If leading AI labs cannot consistently follow their own safety protocols, this raises serious questions about the effectiveness of self-governance approaches and may strengthen arguments for external regulatory oversight.
 
-**Methodological Concerns in Deception Research**: Researchers studying AI deception through model organisms are being encouraged to test whether their experimental setups remain valid under different training conditions, particularly high learning rates that might disrupt the goal-preservation mechanisms they're investigating.
+**Security Paradigm Shift**: The emergence of AI systems capable of discovering zero-days en masse represents a fundamental change in cybersecurity assumptions. This capability could dramatically shift power dynamics, as traditional security measures may become obsolete against AI-augmented attackers.
 
-**Security Preparedness Gap**: The Mythos announcement has highlighted a significant gap between AI capabilities and cybersecurity preparedness, with administrators openly warning that current security measures are inadequate against AI-discovered vulnerabilities.
+**Capability Overhang**: The decision to withhold Claude Mythos entirely suggests that AI capabilities are advancing faster than deployment safety measures. This creates a growing "capability overhang" where powerful systems exist but cannot be safely released, potentially leading to competitive pressures and safety shortcuts.
 
 ## Community Discussion
 
-The Mythos release has created tension around Anthropic's commitment to transparency and responsible deployment. While the company's decision to withhold a potentially dangerous model is being praised by some as responsible, others are criticizing the apparent failure to follow their own governance procedures regarding risk communication.
+**Methodological Concerns in Alignment Research**: There's emerging discussion about whether current model organism approaches for studying AI deception are robust enough. The learning rate sensitivity issue suggests that some experimental results may not generalize to real training conditions, potentially undermining confidence in deception detection methods.
 
-There's also emerging debate about whether the AI safety community's pessimism has reached counterproductive levels. The "have we already lost" framing is generating discussion about maintaining agency and hope while acknowledging serious risks.
+**Movement Building vs. Technical Research**: The announcement of the book "Obsolete" reflects ongoing debates about how to expand AI safety concerns beyond technical communities. There's tension between maintaining technical rigor and building broader political coalitions for AI governance reform.
 
-A notable development is the launch of ["Obsolete," a book aimed at building broader AI reform movements](https://www.lesswrong.com/posts/2HfuvYzRZgHpLAgpe/help-me-launch-obsolete-a-book-aimed-at-building-a-new) beyond the traditional AI safety community, suggesting efforts to expand advocacy beyond technical researchers.
-
-The security implications of Mythos have created immediate practical concerns, with platform administrators proactively warning users about potential vulnerabilities and the need for enhanced security measures across AI-related infrastructure.
+**Timeline and Controllability**: The "Have we already lost?" framing captures growing anxiety within the AI safety community about whether current approaches can meaningfully influence outcomes. This reflects deeper disagreements about how much agency the safety community retains as AI capabilities advance rapidly.
