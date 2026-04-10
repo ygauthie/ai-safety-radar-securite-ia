@@ -134,3 +134,4 @@ hn_keywords:
 # Supported languages (en is default, fr planned)
 languages:
   - en
+  - fr
