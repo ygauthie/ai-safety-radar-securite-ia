@@ -5,9 +5,9 @@
     <link>https://ygauthie.github.io/ai-safety-daily-brief/</link>
     <description>Daily AI safety research, policy, and development digest</description>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Apr 2026 12:17:35 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 21:07:11 GMT</lastBuildDate>
     <item>
-      <title>AI Safety Daily Brief: AI Safety Brief — 2026-04-10</title>
+      <title>AI Safety Daily Brief: Executive Summary — 2026-04-10</title>
       <link>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-10/safety-daily.md</link>
       <guid>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-10/safety-daily.md</guid>
       <pubDate>Fri, 10 Apr 2026 00:00:00 GMT</pubDate>
@@ -23,28 +23,6 @@
 ## Section Summaries
 
 **ArXiv Papers**: Research focused on multi-agent coordination risks, with [peer-preservation behaviors](https://arxiv.org/abs/2604.08465v1) emerging as a critical safety challenge, while [commercial incentive conflicts](https://arxiv.org/abs/2604.08525v1) and new evaluation frameworks like [ClawBench](https://</description>
-    </item>
-    <item>
-      <title>AI Safety Daily Brief: AI Safety Institutes — 2026-04-10</title>
-      <link>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-10/safety-aisi.md</link>
-      <guid>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-10/safety-aisi.md</guid>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 GMT</pubDate>
-      <description>
-## Institute Updates
-
-### US AI Safety Institute (NIST)
-
-The US AISI has been particularly active in advancing AI evaluation science and forming strategic partnerships. Key developments include:
-
-**Research Publications**: The institute released several important reports, including [Challenges to the Monitoring of Deployed AI Systems](https://www.nist.gov/news-events/news/2026/03/new-report-challenges-monitoring-deployed-ai-systems) and [Expanding the AI Evaluation Toolbox with Statistical Models](https://www.nist.gov/news-events/news/2026/02/new-report-expanding-ai-evaluation-toolbox-statistical-models). Their research blog featured insights on AI agent security, including findings from [large-scale red-teaming competitions](https://www.nist.gov/blogs/caisi-research-blog/insights-ai-agent-security-large-scale-red-teaming-competition) and analysis of [cheating behaviors in AI agent evaluations](https://www.nist.gov/blogs/caisi-research-blog/cheating-ai-agent-evaluations).
-
-**Strategic Partnerships**: CAISI signed significant agreements to advance evaluation capabilities, including a [CRADA with OpenMined for secure AI evaluations](https://www.nist.gov/news-events/news/2026/03/announcement-caisi-signs-crada-openmined-enable-secure-ai-evaluations) and an [MOU with GSA to boost AI evaluation science in federal procurement through USAi](https://www.nist.gov/news-events/news/2026/03/caisi-signs-mou-gsa-boost-ai-evaluation-science-federal-procurement-through).
-
-### UK AI Safety Institute
-
-The UK AISI demonstrated strong research output focused on frontier AI capabilities and safety mechanisms:
-
-**Frontier AI Research**: Released their comprehensive [AISI Frontier AI Trends Report (2025)](https://www.aisi.gov.uk/research/aisi-frontier-ai-trends-report-2025), alongside detailed studies on [measuring AI agents' progress on multi-step cyber attack scenarios](https://www.aisi.gov.uk/research/measuring-ai-agents-progress-on-multi-step-cyber-attack-scenarios) and [quantifying f</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: ArXiv Papers — 2026-04-10</title>
@@ -132,7 +110,7 @@ The Hacker News AI safety community is buzzing with several major developments:
 **[Model organisms researchers should check whether high LRs defeat their model organisms](https://www.lesswrong</description>
     </item>
     <item>
-      <title>AI Safety Daily Brief: AI Safety Brief — 2026-04-09</title>
+      <title>AI Safety Daily Brief: Executive Summary — 2026-04-09</title>
       <link>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-09/safety-daily.md</link>
       <guid>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-09/safety-daily.md</guid>
       <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
