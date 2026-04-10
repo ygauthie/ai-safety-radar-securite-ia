@@ -401,7 +401,7 @@
 
     function fileLabel(filename) {
       const map = {
-        'safety-daily': 'Daily Brief',
+        'safety-daily': 'AI Safety Brief',
         'safety-weekly': 'Weekly Summary',
         'safety-arxiv': 'ArXiv Papers',
         'safety-github': 'GitHub',
@@ -443,7 +443,7 @@
         return;
       }
 
-      let html = '<div class="search-box"><input type="text" id="searchInput" placeholder="Search digests..."></div>';
+      let html = '<div class="search-box"><input type="text" id="searchInput" placeholder="Search briefs..."></div>';
       html += '<div class="sidebar-entries" id="sidebarEntries">';
       manifest.entries.forEach((entry, i) => {
         const sorted = sortFiles(entry.files);
