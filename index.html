@@ -353,12 +353,11 @@
     .month-group.collapsed .month-label .chevron { transform: rotate(-90deg); }
 
     .month-entries {
-      overflow: hidden;
-      transition: max-height 0.25s ease;
+      display: block;
     }
 
     .month-group.collapsed .month-entries {
-      max-height: 0 !important;
+      display: none;
     }
 
     .month-group.hidden { display: none; }
@@ -517,8 +516,6 @@
         html += `<div class="month-group${monthCollapsed}" data-month="${mk}">`;
         html += `<div class="month-label"><span>${monthLabel(mk)}</span>${chevronSvg}</div>`;
 
-        // Calculate total height of all day entries in this month
-        let monthContentHeight = 0;
         const entriesHtml = monthMap[mk].map((entry, i) => {
           const sorted = sortFiles(entry.files);
           const dayCollapsed = (mi === 0 && i === 0) ? '' : ' collapsed';
@@ -527,14 +524,13 @@
           ).join('');
           const filesHeight = sorted.length * 42;
           const dateDisplay = entry.date.slice(5); // "MM-DD"
-          monthContentHeight += 32 + (dayCollapsed ? 0 : filesHeight);
           return `<div class="date-group${dayCollapsed}" data-date="${entry.date}">
             <div class="date-label"><span>${dateDisplay}</span>${chevronSvg}</div>
             <div class="date-files" style="max-height:${dayCollapsed ? 0 : filesHeight}px">${filesHtml}</div>
           </div>`;
         }).join('');
 
-        html += `<div class="month-entries" style="max-height:${mi === 0 ? monthContentHeight + 200 : 0}px">${entriesHtml}</div>`;
+        html += `<div class="month-entries">${entriesHtml}</div>`;
         html += '</div>';
       });
 
@@ -545,9 +541,7 @@
       document.querySelectorAll('.month-label').forEach(label => {
         label.addEventListener('click', () => {
           const group = label.closest('.month-group');
-          const entries = group.querySelector('.month-entries');
-          const isCollapsed = group.classList.toggle('collapsed');
-          entries.style.maxHeight = isCollapsed ? '0px' : entries.scrollHeight + 'px';
+          group.classList.toggle('collapsed');
         });
       });
 
@@ -558,9 +552,6 @@
           const files = group.querySelector('.date-files');
           const isCollapsed = group.classList.toggle('collapsed');
           files.style.maxHeight = isCollapsed ? '0px' : files.scrollHeight + 'px';
-          // Adjust parent month-entries height
-          const monthEntries = group.closest('.month-entries');
-          if (monthEntries) monthEntries.style.maxHeight = monthEntries.scrollHeight + 'px';
         });
       });
 
@@ -578,8 +569,6 @@
         monthGroups.forEach((mg, mi) => {
           mg.classList.remove('hidden');
           mg.classList.toggle('collapsed', mi > 0);
-          const entries = mg.querySelector('.month-entries');
-          if (entries) entries.style.maxHeight = mi > 0 ? '0px' : entries.scrollHeight + 'px';
         });
         dateGroups.forEach((dg, di) => {
           dg.classList.remove('hidden');
@@ -622,8 +611,6 @@
         mg.classList.toggle('hidden', !hasVisible);
         if (hasVisible) {
           mg.classList.remove('collapsed');
-          const entries = mg.querySelector('.month-entries');
-          if (entries) entries.style.maxHeight = entries.scrollHeight + 'px';
         }
       });
 
