@@ -2,36 +2,28 @@
 
 ## Top Stories
 
-**Anthropic Releases Claude Mythos with Unprecedented Security Capabilities**
+**[Claude Mythos: A Cybersecurity Game-Changer](https://www.lesswrong.com/posts/5Dsuw9gGzkbjS4ubx/ai-163-mythos-quest)** - Anthropic has released Claude Mythos, an AI model capable of discovering critical security vulnerabilities across major operating systems and browsers. Rather than deploying it commercially, Anthropic is making it available to cybersecurity companies through "Project Glasswing" to help patch global infrastructure vulnerabilities. This represents a significant moment where an AI lab discovered a potentially dangerous capability and chose coordinated disclosure over competitive advantage.
 
-The biggest AI safety story this week is Anthropic's announcement of [Claude Mythos](https://www.lesswrong.com/posts/5Dsuw9gGzkbjS4ubx/ai-163-mythos-quest), an AI model that has discovered critical security vulnerabilities across all major operating systems and browsers. Rather than keeping these capabilities private, Anthropic is launching Project Glasswing to make Mythos available to cybersecurity companies for coordinated patching efforts. The release has prompted urgent discussions about AI-enabled cybersecurity risks, with one LessWrong admin [warning users not to be surprised if platforms get hacked](https://www.lesswrong.com/posts/2wi5mCLSkZo2ky32p/do-not-be-surprised-if-lesswrong-gets-hacked) given the scale of vulnerabilities discovered.
+**[AI Safety Community Self-Assessment](https://www.lesswrong.com/posts/tjZWbmuCE9tjYQsrf/have-we-already-lost-part-1-the-plan-in-2024)** - A reflection on whether the AI safety community has already passed a "point of no return" where AGI becomes both likely and effectively outside community control. While the author ultimately concludes "no" (following Betteridge's Law), the salience of this question itself highlights growing concerns about the community's influence and trajectory as of early 2026.
 
-**AI Safety Community Grapples with "Have We Already Lost?" Question**
+**[Security Vulnerability Warning](https://www.lesswrong.com/posts/2wi5mCLSkZo2ky32p/do-not-be-surprised-if-lesswrong-gets-hacked)** - A LessWrong administrator warns that the platform and other services may face increased hacking attempts following Mythos's demonstration of widespread zero-day discovery capabilities. This post serves as both a specific security advisory and a broader warning about the cybersecurity implications of AI-powered vulnerability discovery.
 
-A sobering reflection on the state of AI safety emerges in the post ["Have we already lost? Part 1: The Plan in 2024"](https://www.lesswrong.com/posts/tjZWbmuCE9tjYQsrf/have-we-already-lost-part-1-the-plan-in-2024), which examines whether the AI safety community has passed a point of no return. While the author concludes "no" per Betteridge's Law, the salience of this question reflects growing uncertainty about whether current safety approaches remain viable as AI capabilities advance rapidly.
+**[Public Attitudes on AI Risk](https://www.lesswrong.com/posts/BCiDwMbvq5JRNAwwt/101-humans-of-new-york-on-the-risks-of-AI)** - The first documented in-person, door-to-door survey about AI risks, conducted with 101 New Yorkers. This grassroots research provides rare qualitative data on how ordinary people perceive AI threats, offering insights beyond typical online polling about public AI risk awareness.
 
-**New Book Aims to Build Broader AI Reform Movement**
-
-An attempt to expand AI safety discourse beyond technical communities comes with the announcement of ["Obsolete: The AI Industry's Trillion-Dollar Race to Replace You—and How to Stop It"](https://www.lesswrong.com/posts/2HfuvYzRZgHpLAgpe/help-me-launch-obsolete-a-book-aimed-at-building-a-new), aimed at reaching skeptics and building a broader reform movement. This represents ongoing efforts to translate AI safety concerns into accessible public discourse and policy action.
+**[AI Capabilities in Language Learning](https://www.alignmentforum.org/posts/ASoFTyk3bzBE62dyn/my-unsupervised-elicitation-challenge)** - An "unsupervised elicitation challenge" examining Claude Opus 4.6's performance in Ancient Greek tutoring, particularly focusing on identifying systematic errors the model makes. This represents ongoing work in understanding AI limitations in specialized domains and the challenges of capability evaluation.
 
 ## Key Arguments
 
-**Slightly-Super Persuasion as Existential Risk**
+**Cybersecurity as AI Safety Frontier**: The Mythos release demonstrates how AI capabilities in cybersecurity could rapidly shift global threat landscapes. [Anthropic's approach](https://www.lesswrong.com/posts/ZfbChZBXgje8T6Geu/excerpts-and-notes-on-mythos-model-card) of coordinated disclosure rather than commercial deployment suggests emerging norms around responsible AI capability releases.
 
-A notable argument emerges around AI persuasion capabilities in ["Slightly-Super Persuasion Will Do"](https://www.lesswrong.com/posts/JcavsPku6RR9hcujz/slightly-super-persuasion-will-do). The piece pushes back against the view that human society would effectively adapt to AI manipulation attempts, arguing that historical examples of powerful persuasive figures suggest even modest superintelligence in persuasion could be transformative. This challenges assumptions about societal resilience to AI influence operations.
+**Persuasion and Power Dynamics**: [A discussion on "super-persuasion"](https://www.lesswrong.com/posts/JcavsPku6RR9hcujz/slightly-super-persuasion-will-do) argues that even modest improvements in AI persuasive capabilities could have outsized effects, challenging assumptions about "efficient markets for power" and societal adaptation to new forms of influence.
 
-**Unsupervised Elicitation Challenges**
-
-An interesting methodological challenge appears in ["My unsupervised elicitation challenge"](https://www.alignmentforum.org/posts/ASoFTyk3bzBE62dyn/my-unsupervised-elicitation-challenge), where a researcher studying Ancient Greek with Claude Opus 4.6 proposes a challenge around identifying model mistakes without domain expertise. This touches on fundamental questions about how to evaluate AI systems in domains where human oversight may be limited.
+**AI Safety Movement Strategy**: [New book "Obsolete"](https://www.lesswrong.com/posts/2HfuvYzRZgHpLAgpe/help-me-launch-obsolete-a-book-aimed-at-building-a-new) aims to broaden AI safety discourse beyond technical communities, targeting skeptics and progressive audiences with arguments about AI industry reform and worker displacement.
 
 ## Community Discussion
 
-**Public Opinion Research**
+**Capability Evaluation Methods**: The [unsupervised elicitation challenge](https://www.alignmentforum.org/posts/ASoFTyk3bzBE62dyn/my-unsupervised-elicitation-challenge) represents growing interest in novel methods for identifying AI model limitations and systematic errors, particularly in domains where evaluators may lack ground-truth knowledge.
 
-Ground-level perspective on AI risk perception emerges from ["101 Humans of New York on the Risks of AI"](https://www.lesswrong.com/posts/BCiDwMbvq5JRNAwwt/101-humans-of-new-york-on-the-risks-of-AI), representing the first door-to-door survey on AI risks. This grassroots research approach highlights the gap between technical AI safety discussions and broader public understanding.
+**Security Posture Concerns**: The community is grappling with immediate practical implications of AI-discovered vulnerabilities, with [platform administrators](https://www.lesswrong.com/posts/2wi5mCLSkZo2ky32p/do-not-be-surprised-if-lesswrong-gets-hacked) openly discussing their security limitations and preparing users for potential attacks.
 
-**Model Card Analysis**
-
-Detailed technical analysis of Mythos capabilities appears in ["Excerpts and Notes on Mythos Model Card"](https://www.lesswrong.com/posts/ZfbChZBXgje8T6Geu/excerpts-and-notes-on-mythos-model-card), providing community interpretation of Anthropic's technical documentation. This represents ongoing efforts to critically analyze and interpret AI lab disclosures about capability developments.
-
-The week's discussions reflect a community simultaneously grappling with rapid capability advances (particularly in cybersecurity), questions about the viability of current safety approaches, and efforts to broaden engagement beyond technical circles. The Mythos release serves as a concrete example of the dual-use nature of advanced AI capabilities and the challenges of responsible disclosure.
+**Public Engagement Strategies**: The [door-to-door AI risk survey](https://www.lesswrong.com/posts/BCiDwMbvq5JRNAwwt/101-humans-of-new-york-on-the-risks-of-AI) represents experimental approaches to understanding and potentially shifting public opinion on AI risks, moving beyond online communities to direct public engagement.

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-10T00:13:54.927Z",
+  "generated": "2026-04-10T00:18:23.011Z",
   "entries": [
     {
       "date": "2026-04-10",
@@ -14,16 +14,6 @@
         "2026-04-10/safety-hn.md",
         "2026-04-10/safety-rss-fr.md",
         "2026-04-10/safety-rss.md"
-      ]
-    },
-    {
-      "date": "2026-04-09",
-      "files": [
-        "2026-04-09/safety-arxiv.md",
-        "2026-04-09/safety-daily.md",
-        "2026-04-09/safety-github.md",
-        "2026-04-09/safety-hn.md",
-        "2026-04-09/safety-rss.md"
       ]
     }
   ]
