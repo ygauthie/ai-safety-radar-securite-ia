@@ -192,13 +192,16 @@
 
     .file-link {
       display: block;
-      padding: 0.3rem 0.5rem 0.3rem 0.875rem;
+      padding: 0.3rem 0.4rem 0.3rem 0.75rem;
       color: var(--text-muted);
       text-decoration: none;
       font-size: 0.95rem;
       border-radius: 3px;
       transition: background 0.1s, color 0.1s;
       border-left: 2px solid transparent;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .file-link:hover {
@@ -453,7 +456,7 @@
         const filesHtml = sorted.map(file =>
           `<a href="#${file}" class="file-link" data-hash="${file}" data-label="${fileLabel(file).toLowerCase()}">${fileLabel(file)}${fileBadge(file)}</a>`
         ).join('');
-        const filesHeight = sorted.length * 32;
+        const filesHeight = sorted.length * 42;
         html += `<div class="date-group${collapsed}" data-date="${entry.date}">`;
         html += `<div class="date-label">
           <span>${entry.date}</span>
