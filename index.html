@@ -323,6 +323,46 @@
 
     .date-group.hidden { display: none; }
 
+    .month-group { margin-bottom: 0.5rem; }
+
+    .month-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--accent);
+      font-weight: 700;
+      padding: 0.4rem 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      border-radius: 3px;
+      user-select: none;
+      transition: background 0.1s;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .month-label:hover { background: var(--surface); }
+
+    .month-label .chevron {
+      transition: transform 0.2s;
+      opacity: 0.6;
+      flex-shrink: 0;
+    }
+
+    .month-group.collapsed .month-label .chevron { transform: rotate(-90deg); }
+
+    .month-entries {
+      overflow: hidden;
+      transition: max-height 0.25s ease;
+    }
+
+    .month-group.collapsed .month-entries {
+      max-height: 0 !important;
+    }
+
+    .month-group.hidden { display: none; }
+
     @media (max-width: 768px) {
       .sidebar {
         position: static;
@@ -441,6 +481,15 @@
 
     let currentManifest = null;
 
+    function monthKey(date) {
+      return date.slice(0, 7); // "YYYY-MM"
+    }
+
+    function monthLabel(ym) {
+      const [y, m] = ym.split('-');
+      return new Date(+y, +m - 1, 1).toLocaleDateString('en-CA', { month: 'long', year: 'numeric' });
+    }
+
     function renderSidebar(manifest) {
       currentManifest = manifest;
       const sidebar = document.getElementById('sidebar');
@@ -449,53 +498,94 @@
         return;
       }
 
+      // Group entries by month
+      const months = [];
+      const monthMap = {};
+      for (const entry of manifest.entries) {
+        const mk = monthKey(entry.date);
+        if (!monthMap[mk]) { monthMap[mk] = []; months.push(mk); }
+        monthMap[mk].push(entry);
+      }
+
+      const chevronSvg = `<svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>`;
+
       let html = '<div class="search-box"><input type="text" id="searchInput" placeholder="Search briefs..."></div>';
       html += '<div class="sidebar-entries" id="sidebarEntries">';
-      manifest.entries.forEach((entry, i) => {
-        const sorted = sortFiles(entry.files);
-        const collapsed = i > 0 ? ' collapsed' : '';
-        const filesHtml = sorted.map(file =>
-          `<a href="#${file}" class="file-link" data-hash="${file}" data-label="${fileLabel(file).toLowerCase()}">${fileLabel(file)}${fileBadge(file)}</a>`
-        ).join('');
-        const filesHeight = sorted.length * 42;
-        html += `<div class="date-group${collapsed}" data-date="${entry.date}">`;
-        html += `<div class="date-label">
-          <span>${entry.date}</span>
-          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-        </div>`;
-        html += `<div class="date-files" style="max-height:${filesHeight}px">${filesHtml}</div>`;
+
+      months.forEach((mk, mi) => {
+        const monthCollapsed = mi > 0 ? ' collapsed' : '';
+        html += `<div class="month-group${monthCollapsed}" data-month="${mk}">`;
+        html += `<div class="month-label"><span>${monthLabel(mk)}</span>${chevronSvg}</div>`;
+
+        // Calculate total height of all day entries in this month
+        let monthContentHeight = 0;
+        const entriesHtml = monthMap[mk].map((entry, i) => {
+          const sorted = sortFiles(entry.files);
+          const dayCollapsed = (mi === 0 && i === 0) ? '' : ' collapsed';
+          const filesHtml = sorted.map(file =>
+            `<a href="#${file}" class="file-link" data-hash="${file}" data-label="${fileLabel(file).toLowerCase()}" data-date="${entry.date}">${fileLabel(file)}${fileBadge(file)}</a>`
+          ).join('');
+          const filesHeight = sorted.length * 42;
+          const dateDisplay = entry.date.slice(5); // "MM-DD"
+          monthContentHeight += 32 + (dayCollapsed ? 0 : filesHeight);
+          return `<div class="date-group${dayCollapsed}" data-date="${entry.date}">
+            <div class="date-label"><span>${dateDisplay}</span>${chevronSvg}</div>
+            <div class="date-files" style="max-height:${dayCollapsed ? 0 : filesHeight}px">${filesHtml}</div>
+          </div>`;
+        }).join('');
+
+        html += `<div class="month-entries" style="max-height:${mi === 0 ? monthContentHeight + 200 : 0}px">${entriesHtml}</div>`;
         html += '</div>';
       });
+
       html += '</div>';
       sidebar.innerHTML = html;
 
-      // Wire up collapsing
+      // Wire up month collapsing
+      document.querySelectorAll('.month-label').forEach(label => {
+        label.addEventListener('click', () => {
+          const group = label.closest('.month-group');
+          const entries = group.querySelector('.month-entries');
+          const isCollapsed = group.classList.toggle('collapsed');
+          entries.style.maxHeight = isCollapsed ? '0px' : entries.scrollHeight + 'px';
+        });
+      });
+
+      // Wire up day collapsing
       document.querySelectorAll('.date-label').forEach(label => {
         label.addEventListener('click', () => {
           const group = label.closest('.date-group');
           const files = group.querySelector('.date-files');
           const isCollapsed = group.classList.toggle('collapsed');
-          if (!isCollapsed) files.style.maxHeight = files.scrollHeight + 'px';
+          files.style.maxHeight = isCollapsed ? '0px' : files.scrollHeight + 'px';
+          // Adjust parent month-entries height
+          const monthEntries = group.closest('.month-entries');
+          if (monthEntries) monthEntries.style.maxHeight = monthEntries.scrollHeight + 'px';
         });
       });
 
       // Wire up search
-      const searchInput = document.getElementById('searchInput');
-      searchInput.addEventListener('input', handleSearch);
+      document.getElementById('searchInput').addEventListener('input', handleSearch);
     }
 
     function handleSearch() {
       const query = document.getElementById('searchInput').value.toLowerCase().trim();
-      const groups = document.querySelectorAll('.date-group');
+      const monthGroups = document.querySelectorAll('.month-group');
+      const dateGroups = document.querySelectorAll('.date-group');
 
       if (!query) {
-        groups.forEach(g => {
-          g.classList.remove('hidden');
-          // Restore original collapsed state (only first group expanded)
-          const isFirst = !g.previousElementSibling || g.previousElementSibling.classList.contains('search-results-info');
-          g.classList.toggle('collapsed', !isFirst);
-          const files = g.querySelector('.date-files');
-          if (files) files.style.maxHeight = isFirst ? files.scrollHeight + 'px' : '0px';
+        // Restore original state: first month expanded, first day expanded, rest collapsed
+        monthGroups.forEach((mg, mi) => {
+          mg.classList.remove('hidden');
+          mg.classList.toggle('collapsed', mi > 0);
+          const entries = mg.querySelector('.month-entries');
+          if (entries) entries.style.maxHeight = mi > 0 ? '0px' : entries.scrollHeight + 'px';
+        });
+        dateGroups.forEach((dg, di) => {
+          dg.classList.remove('hidden');
+          dg.classList.toggle('collapsed', di > 0);
+          const files = dg.querySelector('.date-files');
+          if (files) files.style.maxHeight = di > 0 ? '0px' : files.scrollHeight + 'px';
         });
         document.querySelectorAll('.file-link').forEach(l => l.style.display = '');
         const info = document.querySelector('.search-results-info');
@@ -504,7 +594,7 @@
       }
 
       let totalMatches = 0;
-      groups.forEach(group => {
+      dateGroups.forEach(group => {
         const date = group.dataset.date;
         const links = group.querySelectorAll('.file-link');
         let groupHasMatch = false;
@@ -519,11 +609,21 @@
         });
 
         group.classList.toggle('hidden', !groupHasMatch);
-        // Auto-expand groups with matches
         if (groupHasMatch) {
           group.classList.remove('collapsed');
           const files = group.querySelector('.date-files');
           if (files) files.style.maxHeight = files.scrollHeight + 'px';
+        }
+      });
+
+      // Show/hide month groups based on whether any day inside matches
+      monthGroups.forEach(mg => {
+        const hasVisible = [...mg.querySelectorAll('.date-group')].some(dg => !dg.classList.contains('hidden'));
+        mg.classList.toggle('hidden', !hasVisible);
+        if (hasVisible) {
+          mg.classList.remove('collapsed');
+          const entries = mg.querySelector('.month-entries');
+          if (entries) entries.style.maxHeight = entries.scrollHeight + 'px';
         }
       });
 
