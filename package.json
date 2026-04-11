@@ -7,6 +7,7 @@
     "start": "tsx src/index.ts",
     "weekly": "tsx src/weekly.ts",
     "manifest": "tsx src/generate-manifest.ts",
+    "translate-existing": "tsx src/translate-existing.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
     "test": "vitest run"
