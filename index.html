@@ -376,7 +376,7 @@
 </head>
 <body>
   <header>
-    <a href="#" class="logo"><img src="assets/shield.png" alt="" width="32" height="32" style="vertical-align: -7px; margin-right: 8px;">AI Safety <span>Daily Brief</span></a>
+    <a href="#" class="logo"><img src="assets/shield.png" alt="" width="32" height="32" style="vertical-align: -7px; margin-right: 8px;"><span id="logoText">AI Safety <span style="color:var(--text)">Daily Brief</span></span></a>
     <nav>
       <a href="feed.xml" title="RSS Feed" style="display:flex;align-items:center;">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
@@ -433,6 +433,8 @@
         },
         badges: { daily: 'daily', weekly: 'weekly' },
         locale: 'en-US',
+        siteTitle: 'AI Safety',
+        siteTitleSub: 'Daily Brief',
       },
       fr: {
         disclaimer: 'Les bulletins quotidiens sur la sécurité de l\'IA sont générés par IA et peuvent contenir des erreurs. Consultez toujours les sources originales pour plus de précision.',
@@ -457,6 +459,8 @@
         },
         badges: { daily: 'quotidien', weekly: 'hebdo' },
         locale: 'fr-CA',
+        siteTitle: 'Sécurité de l\'IA',
+        siteTitleSub: 'Bulletin quotidien',
       },
     };
 
@@ -478,6 +482,7 @@
       if (welcomeTitle) welcomeTitle.textContent = strings.welcomeTitle;
       if (welcomeSub) welcomeSub.textContent = strings.welcomeSub;
       if (welcomeHint) welcomeHint.textContent = strings.welcomeHint;
+      document.getElementById('logoText').innerHTML = `${strings.siteTitle} <span style="color:var(--text)">${strings.siteTitleSub}</span>`;
     }
 
     function hashForLang(hash, lang) {
