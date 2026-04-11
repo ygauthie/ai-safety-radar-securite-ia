@@ -22,7 +22,7 @@ Live site: [ygauthie.github.io/ai-safety-daily-brief](https://ygauthie.github.io
 
 ### ArXiv keywords tracked
 
-`AI safety` · `alignment` · `interpretability` · `mechanistic interpretability` · `RLHF` · `constitutional AI` · `red teaming` · `jailbreak` · `adversarial robustness` · `AI governance` · `AI regulation` · `AI Safety Institute` · `AI Security Institute` · `CAISI` · `existential risk` · `AI ethics` · `responsible AI` · `AI oversight` · `scalable oversight` · `value alignment` · `collusion risk` · `AI evaluation` · `synthetic content detection` · `content provenance` · `activation steering` · `AI guardrails`
+`activation steering` · `adversarial robustness` · `AI ethics` · `AI evaluation` · `AI governance` · `AI guardrails` · `AI oversight` · `AI regulation` · `AI safety` · `AI Safety Institute` · `AI Security Institute` · `alignment` · `CAISI` · `collusion risk` · `constitutional AI` · `content provenance` · `deception` · `deepfake detection` · `existential risk` · `hallucination` · `honesty evaluation` · `interpretability` · `jailbreak` · `mechanistic interpretability` · `multilingual AI safety` · `red teaming` · `responsible AI` · `RLHF` · `scalable oversight` · `synthetic content detection` · `value alignment`
 
 ---
 
