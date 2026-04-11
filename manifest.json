@@ -1,23 +1,33 @@
 {
-  "generated": "2026-04-10T21:07:11.004031Z",
+  "generated": "2026-04-11T02:16:51.957Z",
   "entries": [
     {
       "date": "2026-04-10",
       "files": [
+        "2026-04-10/safety-arxiv.fr.md",
         "2026-04-10/safety-arxiv.md",
+        "2026-04-10/safety-daily.fr.md",
         "2026-04-10/safety-daily.md",
+        "2026-04-10/safety-github.fr.md",
         "2026-04-10/safety-github.md",
+        "2026-04-10/safety-hn.fr.md",
         "2026-04-10/safety-hn.md",
+        "2026-04-10/safety-rss.fr.md",
         "2026-04-10/safety-rss.md"
       ]
     },
     {
       "date": "2026-04-09",
       "files": [
+        "2026-04-09/safety-arxiv.fr.md",
         "2026-04-09/safety-arxiv.md",
+        "2026-04-09/safety-daily.fr.md",
         "2026-04-09/safety-daily.md",
+        "2026-04-09/safety-github.fr.md",
         "2026-04-09/safety-github.md",
+        "2026-04-09/safety-hn.fr.md",
         "2026-04-09/safety-hn.md",
+        "2026-04-09/safety-rss.fr.md",
         "2026-04-09/safety-rss.md"
       ]
     }
