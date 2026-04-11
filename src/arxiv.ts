@@ -13,7 +13,7 @@ export interface ArxivPaper {
 
 export async function fetchArxiv(): Promise<ArxivPaper[]> {
   const config = loadConfig();
-  const since = daysAgo(2);
+  const since = daysAgo(1);
 
   const allPapers: ArxivPaper[] = [];
 

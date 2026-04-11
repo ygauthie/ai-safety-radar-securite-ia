@@ -12,7 +12,7 @@ export interface HnStory {
 
 export async function fetchHackerNews(): Promise<HnStory[]> {
   const config = loadConfig();
-  const since = Math.floor(daysAgo(2).getTime() / 1000);
+  const since = Math.floor(daysAgo(1).getTime() / 1000);
   const allStories: HnStory[] = [];
 
   const fetches = config.hn_keywords.map(async (keyword) => {

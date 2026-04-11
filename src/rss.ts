@@ -11,7 +11,7 @@ export interface RssItem {
 
 export async function fetchRssFeeds(): Promise<RssItem[]> {
   const config = loadConfig();
-  const since = daysAgo(2);
+  const since = daysAgo(1);
   const allItems: RssItem[] = [];
 
   for (const feed of config.rss_feeds) {

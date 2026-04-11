@@ -21,7 +21,7 @@ export async function fetchGithub(): Promise<GithubActivity[]> {
     headers["Authorization"] = `Bearer ${process.env.GITHUB_TOKEN}`;
   }
 
-  const since = formatDate(daysAgo(2));
+  const since = formatDate(daysAgo(1));
   const allActivity: GithubActivity[] = [];
 
   for (const repo of config.github_repos) {

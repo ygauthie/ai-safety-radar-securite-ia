@@ -29,7 +29,7 @@ function saveState(state: AisiState): void {
 
 export async function fetchAisi(): Promise<AisiItem[]> {
   const config = loadConfig();
-  const cutoff = formatDate(daysAgo(2));
+  const cutoff = formatDate(daysAgo(1));
   const state = loadState();
   const items: AisiItem[] = [];
 
