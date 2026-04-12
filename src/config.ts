@@ -23,6 +23,7 @@ export interface AisiWebsite {
 export interface Config {
   github_topics: string[];
   github_repos: string[];
+  journal_feeds: RssFeed[];
   arxiv: {
     categories: string[];
     keywords: string[];

@@ -6,6 +6,7 @@ import { fetchGithub } from "./github.js";
 import { fetchHackerNews } from "./hn.js";
 import { fetchWebsites } from "./web.js";
 import { fetchAisi } from "./aisi.js";
+import { fetchJournals } from "./journals.js";
 import {
   arxivPrompt,
   githubPrompt,
@@ -13,6 +14,7 @@ import {
   webPrompt,
   hnPrompt,
   aisiPrompt,
+  journalPrompt,
   dailyRollupPrompt,
 } from "./prompts.js";
 import { generateReport, translateReport, saveReport } from "./report.js";
@@ -25,7 +27,7 @@ async function main() {
 
   // Phase 1: Fetch all data in parallel
   console.log("Fetching data from all sources...");
-  const [arxivData, rssData, githubData, hnData, webData, aisiData] = await Promise.all([
+  const [arxivData, rssData, githubData, hnData, webData, aisiData, journalData] = await Promise.all([
     fetchArxiv().catch((e) => {
       console.error("ArXiv fetch failed:", e);
       return [];
@@ -50,11 +52,16 @@ async function main() {
       console.error("AISI fetch failed:", e);
       return [];
     }),
+    fetchJournals().catch((e) => {
+      console.error("Journals fetch failed:", e);
+      return [];
+    }),
   ]);
 
   console.log(
     `Fetched: ${arxivData.length} papers, ${rssData.length} articles, ` +
-      `${githubData.length} GitHub items, ${hnData.length} HN stories, ${webData.length} web articles, ${aisiData.length} AISI items`
+      `${githubData.length} GitHub items, ${hnData.length} HN stories, ${webData.length} web articles, ` +
+      `${aisiData.length} AISI items, ${journalData.length} journal articles`
   );
 
   // Phase 2: Generate English reports
@@ -80,9 +87,12 @@ async function main() {
     aisiData.length > 0
       ? generateReport(aisiPrompt(JSON.stringify(aisiData, null, 2), date))
       : Promise.resolve(""),
+    journalData.length > 0
+      ? generateReport(journalPrompt(JSON.stringify(journalData, null, 2), date))
+      : Promise.resolve(""),
   ]);
 
-  const [arxivReport, rssReport, githubReport, hnReport, webReport, aisiReport] = reports;
+  const [arxivReport, rssReport, githubReport, hnReport, webReport, aisiReport, journalReport] = reports;
 
   // Collect English files for translation
   const enFiles: Array<{ filename: string; content: string }> = [];
@@ -122,6 +132,12 @@ async function main() {
     saveReport(date, "safety-aisi.md", content);
     enFiles.push({ filename: "safety-aisi.md", content });
     sections.push(`## AI Safety Institutes\n\n${aisiReport}`);
+  }
+  if (journalReport) {
+    const content = `# Journal Articles (${date})\n\n${journalReport}`;
+    saveReport(date, "safety-journals.md", content);
+    enFiles.push({ filename: "safety-journals.md", content });
+    sections.push(`## Journal Articles\n\n${journalReport}`);
   }
 
   // Phase 3: Generate daily rollup

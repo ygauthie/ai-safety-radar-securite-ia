@@ -108,6 +108,23 @@ DATA:
 ${data}`;
 }
 
+export function journalPrompt(data: string, date: string, lang: Lang = "en"): string {
+  return `${SYSTEM_ROLE}
+
+Today is ${date}. Below are recent articles from peer-reviewed scientific and AI journals that are relevant to AI safety.
+
+Produce a structured digest in ${lang === "fr" ? "French" : "English"}:
+
+1. **Key Articles**: Highlight the most significant articles with a 2-3 sentence summary of each, focusing on methodology, findings, and implications for AI safety.
+2. **Trends**: Identify emerging themes across journals.
+3. **Notable Sources**: Call out any landmark publications in high-impact journals (Nature, Science, PNAS, etc.).
+
+Format as clean Markdown with links to original articles.
+
+DATA:
+${data}`;
+}
+
 export function translationPrompt(content: string): string {
   return `You are a professional translator specializing in AI safety, technology policy, and research. Translate the following Markdown document from English to French.
 
