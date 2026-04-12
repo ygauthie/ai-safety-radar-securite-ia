@@ -121,6 +121,11 @@ rss_feeds:
     url: https://www.aisummer.org/feed
   - name: AI Safety & Governance (Victor Akinwande)
     url: https://www.safeai.news/feed
+  # AI Safety Research Labs
+  - name: METR
+    url: https://metr.org/feed.xml
+  - name: Alignment Research Center (ARC)
+    url: https://alignment.org/blog/feed
 
 # Websites to crawl via sitemap for new content
 websites:
@@ -139,6 +144,15 @@ websites:
     include_patterns:
       - /research/
       - /discover/
+  - name: Apollo Research
+    sitemap: https://www.apolloresearch.ai/sitemap.xml
+    include_patterns:
+      - /blog/
+      - /research/
+  - name: Epoch AI
+    sitemap: https://epoch.ai/sitemap-index.xml
+    include_patterns:
+      - /blog/
 
 # National AI Safety Institutes
 aisi_websites:
