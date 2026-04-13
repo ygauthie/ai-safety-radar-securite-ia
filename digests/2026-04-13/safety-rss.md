@@ -2,24 +2,24 @@
 
 ## Top Stories
 
-The current data contains only one AI safety-relevant article from recent publications:
+The data provided contains limited AI safety-specific content from April 13, 2026. The most relevant piece discusses significant developments around a new AI system:
 
-**[The policy surrounding Mythos marks an irreversible power shift](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power)** - This LessWrong post argues that Anthropic's decision to restrict access to their latest model "Mythos" represents a fundamental shift in AI deployment practices. The author contends that since ChatGPT's release, the most capable AI models have been publicly accessible, but Mythos breaks this pattern by being available only to select companies through "project glasswing" for specific applications like cybersecurity. The post suggests this marks an "irreversible power shift" where state-of-the-art AI capabilities will no longer be democratically accessible.
+**[The policy surrounding Mythos marks an irreversible power shift](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power)** - This LessWrong post analyzes what appears to be a major shift in AI deployment practices. The author argues that Anthropic's "Mythos" system represents the current state-of-the-art but marks the end of an era where anyone could access the most capable AI models publicly. Unlike the period since ChatGPT's release when SOTA models were broadly accessible, Mythos is being restricted to select companies through "project glasswing" for specific use cases like cybersecurity improvements.
 
-*Note: The other articles in today's data focus on daycare illnesses and programming philosophy, which are not directly relevant to AI safety.*
+**[Returns to intelligence](https://www.lesswrong.com/posts/CBTe8Etwb9wdjbpZC/returns-to-intelligence)** - While the full content isn't clear from the excerpt, this post appears to discuss the dynamics and implications of increasing intelligence, potentially relevant to AI capability development and its impacts.
 
 ## Key Arguments
 
-**Restricted AI Access as New Paradigm**: The Mythos post presents a significant argument about AI governance and deployment models. The author suggests that Anthropic's decision to limit access to their most capable model represents a permanent departure from the previous norm of broad public access to cutting-edge AI systems. This shift toward selective, use-case-specific deployment could have major implications for AI governance, competition, and democratic access to AI capabilities.
+**End of Open Access to SOTA AI**: The most significant argument presented is that we've crossed a threshold where the most capable AI systems are no longer publicly accessible. This represents a fundamental shift from the post-ChatGPT era where cutting-edge capabilities were available to anyone with modest resources.
 
-**Corporate-Controlled AI Distribution**: The post implies concerns about concentration of AI power, where advanced capabilities become available only through partnerships with major AI developers rather than through open markets or public access.
+**Selective Deployment Model**: The emergence of restricted access programs like "project glasswing" suggests AI developers are moving toward carefully controlled deployment of their most powerful systems, limiting access to vetted organizations for specific applications.
 
 ## Community Discussion
 
-Based on the available data, there appears to be emerging discussion around AI deployment policies and access restrictions. The Mythos case study raises important questions about:
+The available data shows limited community discussion, but the Mythos post raises important questions about:
 
-- Whether restricting access to powerful AI models is a responsible safety measure or concerning concentration of power
-- The implications of moving from open deployment to selective partnership models
-- How this might affect AI safety research and oversight if cutting-edge models become less accessible to the broader research community
+- **Access and democratization**: Whether restricting access to SOTA AI systems is beneficial for safety or problematic for equity and innovation
+- **Governance implications**: How selective access programs might shape the concentration of AI capabilities
+- **Precedent setting**: Whether this marks a permanent shift in how advanced AI systems will be deployed
 
-However, the limited data available doesn't show broader community responses or counter-arguments to these positions yet.
+*Note: The available data for April 13, 2026 is limited. This digest reflects only the AI safety-relevant content provided, which may not represent the full scope of developments on this date.*

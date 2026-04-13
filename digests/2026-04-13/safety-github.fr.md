@@ -2,30 +2,46 @@
 
 ## Discussions clés
 
-Plusieurs questions critiques concernant la sécurité de l'IA et l'évaluation ont émergé dans différents repositories :
+Plusieurs discussions importantes liées à la sécurité ont émergé dans les dépôts d'évaluation et d'alignment :
 
-Le harness d'évaluation d'EleutherAI a soulevé une question fondamentale sur [le fait de savoir si les mesures d'évaluation évaluent la capacité ou l'adaptation à des données ambiguës](https://github.com/EleutherAI/lm-evaluation-harness/issues/3698). Ce défi philosophique suggère que les benchmarks pourraient en partie mesurer comment les modèles s'adaptent à des données probabilistes ou incohérentes plutôt que la véritable capacité, soulevant des questions sur la validité de l'évaluation.
+**Qualité et fiabilité des évaluations**
+Le [harness d'évaluation d'EleutherAI](https://github.com/EleutherAI/lm-evaluation-harness/issues/3698) a soulevé une question fondamentale sur la question de savoir si les évaluations mesurent une capacité réelle ou une simple « adaptation à des données ambiguës ». Cela touche aux préoccupations centrales concernant le gaming de benchmarks versus la mesure réelle des progrès dans la recherche en sécurité de l'IA.
 
-Un pattern préoccupant a émergé concernant l'évaluation des modèles de raisonnement, où [les séquences d'arrêt de tâche se déclenchent à l'intérieur des blocs de réflexion](https://github.com/EleutherAI/lm-evaluation-harness/pull/3700), tronquant la génération avant que les réponses ne soient produites. Cela souligne le besoin de protocoles d'évaluation spécialisés pour les modèles capables de raisonnement.
+Deux bugs critiques ont été identifiés qui pourraient biaiser les évaluations de sécurité : un [bug d'agrégation médiane](https://github.com/EleutherAI/lm-evaluation-harness/pull/3696) qui retournait des éléments arbitraires au lieu de vraies médianes statistiques, et un [crash BigBench](https://github.com/EleutherAI/lm-evaluation-harness/pull/3702) sur des tâches à format mixte qui pourrait empêcher une couverture d'évaluation complète.
 
-Le cookbook d'Anthropic a ajouté un [notebook d'évaluation de dilution d'instructions](https://github.com/anthropics/claude-cookbooks/pull/528) démontrant comment les frameworks de raisonnement peuvent atteindre une précision quasi parfaite dans des prompts focalisés mais s'effondrer à 0-30% lorsqu'ils sont intégrés dans des contextes de production complexes—une découverte critique pour la sécurité du déploiement en conditions réelles.
+**Robustesse des modèles et cas d'échec**
+Un schéma préoccupant a émergé dans le modèle Gemma de Google DeepMind, où [Gemma 4 26B identifie constamment mal les causes racines de crash](https://github.com/google-deepmind/gemma/issues/621) dans les sorties WinDbg, se concentrant sur des avertissements bénins plutôt que sur les sources réelles de crash. Cela souligne des problèmes potentiels de fiabilité dans les scénarios de débogage critiques pour la sécurité.
 
-## Releases notables
+Le projet HELM de Stanford a corrigé un [bug de métrique de robustesse](https://github.com/stanford-crfm/helm/pull/4193) où des problèmes de précédence d'opérateur pouvaient complètement ignorer d'importantes vérifications de robustesse.
 
-[µHALO v0.1.0-dev](https://github.com/XwhyZ-WHYLD/hfr0-muhalo/releases/tag/v0.1.0-dev) a introduit une approche novatrice pour la détection d'hallucinations à l'exécution via l'analyse de dérive temporelle inter-tokens. L'implémentation HDI (Hallucination Drift Index) offre un scaffolding d'évaluation pour TruthfulQA et HotpotQA avec des études d'ablation reproductibles.
+**Suivi d'instructions et dilution**
+Le cookbook d'Anthropic inclut maintenant une [évaluation de dilution d'instructions](https://github.com/anthropics/claude-cookbooks/pull/528) démontrant comment les frameworks de raisonnement peuvent s'effondrer de ~100% de précision dans des prompts focalisés à 0-30% dans des environnements de production complexes—une préoccupation critique de sécurité pour les systèmes déployés.
 
-[ISC-Bench v0.0.4](https://github.com/wuyoscar/ISC-Bench/releases/tag/v0.0.4) a amélioré son framework d'évaluation de la sécurité avec des exemples de présentation TVD (Toxicity Value Detection), incluant l'intégration du transformer LlamaGuard et des validateurs Pydantic v2 pour les tests de sécurité basés sur les conversations.
+## Versions notables
 
-Plusieurs corrections de bugs critiques ont été publiées, notamment [l'agrégation médiane retournant des éléments arbitraires](https://github.com/EleutherAI/lm-evaluation-harness/pull/3696) au lieu des médianes statistiques dans le harness d'évaluation, et [les crashes de BigBench sur les tâches à format mixte](https://github.com/EleutherAI/lm-evaluation-harness/pull/3702).
+**µHALO v0.1.0-dev : Détection d'hallucinations**
+[XwhyZ-WHYLD a publié µHALO](https://github.com/XwhyZ-WHYLD/hfr0-muhalo/releases/tag/v0.1.0-dev), un outil de recherche pour la détection d'hallucinations à l'exécution utilisant l'analyse de dérive temporelle inter-tokens. Le système introduit un Indice de Dérive d'Hallucination (HDI) avec un échafaudage d'évaluation pour les benchmarks TruthfulQA et HotpotQA.
+
+**ISC-Bench v0.0.4 : Framework d'évaluation de sécurité**
+Le [benchmark ISC-Bench](https://github.com/wuyoscar/ISC-Bench/releases/tag/v0.0.4) s'est élargi avec un support multilingue et une documentation améliorée pour la Détection de Valeur au Moment du Test (TVD), incluant des exemples d'intégration LlamaGuard et des méthodes d'évaluation de sécurité basées sur la conversation.
 
 ## Outils émergents
 
-Le cookbook d'Anthropic s'est élargi avec plusieurs outils pertinents pour la sécurité :
+**Infrastructure de sécurité IA d'entreprise**
+[Cordum a publié des fonctionnalités d'entreprise complètes](https://github.com/cordum-io/cordum/pull/185) incluant SSO SAML/OIDC, provisioning SCIM, RBAC, export SIEM, et capacités de conservation légale—critiques pour les déploiements de sécurité IA d'entreprise nécessitant des pistes d'audit et des contrôles d'accès.
 
-Un [investigateur de bugs autonome](https://github.com/anthropics/claude-cookbooks/pull/527) utilisant des agents gérés pour des workflows de triage de bout en bout dans des sandboxes cloud, et un [agent d'enrichissement de threat intelligence](https://github.com/anthropics/claude-cookbooks/pull/496) qui enquête sur les IOC à travers plusieurs sources de threat intel avec des capacités de références croisées.
+Un ajout significatif sont les [modes d'échec configurables par tenant](https://github.com/cordum-io/cordum/pull/187), permettant aux tenants de production de maintenir des postures de sécurité fail-closed tandis que les environnements de développement peuvent opérer en fail-open.
 
-NVIDIA Guardrails a fait progresser son [initiative de découplage LangChain](https://github.com/NVIDIA-NeMo/Guardrails/pull/1759) avec des systèmes de types LLM agnostiques au framework et des registres d'adaptateurs, tout en migrant des [validateurs Pydantic v1 vers v2](https://github.com/NVIDIA-NeMo/Guardrails/pull/1783) pour éliminer les avertissements de dépréciation.
+**Découplage de framework et fiabilité**
+NeMo Guardrails de NVIDIA subit un changement architectural majeur pour [se découpler des dépendances LangChain](https://github.com/NVIDIA-NeMo/Guardrails/pull/1759), introduisant des types agnostiques au framework et des patterns d'adaptateur. Cela améliore la fiabilité et réduit le vendor lock-in pour les déploiements de guardrails critiques pour la sécurité.
 
-Le harness d'EleutherAI a ajouté le [support natif du Tensor Parallelism](https://github.com/EleutherAI/lm-evaluation-harness/pull/3692) pour les backends HuggingFace et l'[intégration CRUXEval](https://github.com/EleutherAI/lm-evaluation-harness/pull/3699) pour l'évaluation du raisonnement de code Python dans les deux directions—prédire les sorties à partir des entrées et les entrées valides à partir de sorties connues.
+Le projet a aussi [migré de Pydantic v1 vers v2](https://github.com/NVIDIA-NeMo/Guardrails/pull/1783), éliminant les avertissements de dépréciation et améliorant la validation de sécurité des types.
 
-Une infrastructure de sécurité de niveau entreprise a émergé dans [la dernière release de Cordum](https://github.com/cordum-io/cordum/pull/185), avec SAML 2.0 SSO, le provisioning SCIM, RBAC, les capacités d'export SIEM, et la fonctionnalité de conservation légale—le tout protégé par des droits de licence pour la gouvernance de sécurité en production.
+**Outils avancés de sécurité d'agents**
+Le cookbook d'Anthropic s'est élargi avec plusieurs frameworks d'agents pertinents pour la sécurité :
+- [Enquêteur autonome de bugs](https://github.com/anthropics/claude-cookbooks/pull/527) pour des workflows de débogage de bout en bout
+- [Agent d'enrichissement de renseignement sur les menaces](https://github.com/anthropics/claude-cookbooks/pull/496) pour le recoupement de données IoC à travers plusieurs sources
+- [Intégration de renseignement sur les médias sociaux](https://github.com/anthropics/claude-cookbooks/pull/529) avec des capacités d'analyse de sentiment structurée
+
+**Améliorations de l'infrastructure d'évaluation**
+Le LM Evaluation Harness a ajouté le [support natif du parallélisme tensoriel](https://github.com/EleutherAI/lm-evaluation-harness/pull/3692) pour les modèles Hugging Face et [l'intégration CRUXEval](https://github.com/EleutherAI/lm-evaluation-harness/pull/3699) pour l'évaluation du raisonnement de code Python, améliorant à la fois les performances et la couverture pour les tâches d'analyse de code pertinentes pour la sécurité.
