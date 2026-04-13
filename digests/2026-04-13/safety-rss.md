@@ -2,26 +2,30 @@
 
 ## Top Stories
 
-The most significant AI safety development today concerns **[The policy surrounding Mythos marks an irreversible power shift](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power)**. The author argues that Anthropic's "Mythos" model represents a watershed moment in AI deployment policy. Unlike previous state-of-the-art models since ChatGPT's release, Mythos will not be made publicly available in its full, "un-nerfed" form. Instead, Anthropic plans to restrict access to select companies through "Project Glasswing," ostensibly for cybersecurity applications. This marks the end of an era where anyone could access the most capable AI systems for a nominal fee.
+### Mythos Release Signals Major Power Shift in AI Access
 
-**[The Blast Radius Principle](https://www.lesswrong.com/posts/rDzMraAEkBBewn7vy/the-blast-radius-principle)** presents a framework for understanding infrastructure vulnerabilities, drawing lessons from Ukraine's energy grid attacks. The post advocates for decentralization as a core defense strategy, with potential implications for AI system deployment and governance. The principle suggests that centralized AI systems may create dangerous single points of failure.
+[The policy surrounding Mythos marks an irreversible power shift](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) argues that Anthropic's latest model "Mythos" represents a watershed moment for AI governance. Unlike every model since ChatGPT, Mythos will not be publicly available in its full capacity. Instead, Anthropic plans to provide access only to select companies through "Project Glasswing" for cybersecurity applications. The author contends this marks the end of the era where anyone could access state-of-the-art AI capabilities for a few dollars, representing an "irreversible power shift" toward restricted access models.
+
+### Infrastructure Vulnerability and AI Safety Parallels
+
+[The Blast Radius Principle](https://www.lesswrong.com/posts/rDzMraAEkBBewn7vy/the-blast-radius-principle) draws lessons from Ukrainian infrastructure attacks to argue for decentralization strategies. The piece uses examples like the destruction of the Trypilska power plant and Kakhovka dam to illustrate how centralized systems create single points of failure with massive "blast radius" effects. While not explicitly focused on AI, the principles have clear implications for AI safety architecture and the risks of concentrated AI capabilities.
+
+### Interpretability Research Extends to Biological Models
+
+[Sparse Autoencoders for Single-Cell Models](https://www.lesswrong.com/posts/b3cvG387LKmbiBPaH/sparse-autoencoders-for-single-cell-models-1) applies mechanistic interpretability techniques from AI safety to biological foundation models trained on RNA sequencing data. The author argues that the field is prematurely scaling these models without extracting sufficient knowledge from existing ones, and proposes using sparse autoencoders to better understand their internal representations—a technique borrowed directly from AI alignment research.
 
 ## Key Arguments
 
-The **Mythos power shift analysis** presents several critical claims about the trajectory of AI governance:
-- The era of public access to state-of-the-art AI models has permanently ended
-- Future AI capabilities will be gatekept by corporations and governments
-- This represents an "irreversible" change in how advanced AI systems are deployed
-- The shift occurs through private corporate decisions rather than formal regulatory frameworks
+**Restricted Access as New Normal**: The Mythos analysis suggests we may be witnessing a permanent shift from open access to capability-restricted AI models. This has significant implications for AI safety research, which has historically relied on access to frontier models for evaluation and red-teaming.
 
-The **Blast Radius Principle** argues that infrastructure resilience requires distributed architectures rather than centralized systems. Applied to AI safety, this suggests that concentrated AI capabilities in few hands may create systemic risks, supporting arguments for more distributed AI development and deployment models.
+**Decentralization as Safety Strategy**: The blast radius principle advocates for distributed rather than centralized AI systems to reduce catastrophic failure modes. This challenges current trends toward massive, centralized AI training and deployment.
+
+**Cross-Domain Interpretability**: The application of AI safety interpretability tools to biological models demonstrates the broader utility of mechanistic interpretability research, while also highlighting gaps in how we evaluate foundation models across domains.
 
 ## Community Discussion
 
-The Mythos discussion raises fundamental questions about AI governance trajectories that merit broader community attention:
+The LessWrong posts reveal ongoing tensions within the AI safety community about access versus safety trade-offs. The Mythos discussion represents a key inflection point—while restricted access may reduce certain misuse risks, it also limits the research community's ability to conduct safety evaluations and develop alignment techniques. 
 
-**Access vs. Safety Trade-offs**: The restricted deployment of Mythos highlights tensions between democratic access to AI capabilities and safety considerations. If Mythos is indeed more potent than previous models, restricted access may be justified on safety grounds, but this creates precedent for corporate gatekeeping of transformative technologies.
+There appears to be growing interest in applying AI safety methodologies to other domains, as evidenced by the biological foundation models work, suggesting the field's tools and frameworks are maturing beyond their original AI-specific applications.
 
-**Regulatory vs. Corporate Control**: The shift appears to be driven by corporate policy rather than government regulation, raising questions about whether private companies should determine public access to advanced AI systems. This could signal either responsible corporate stewardship or concerning concentration of technological power.
-
-The relative quiet around other AI safety topics today may itself be noteworthy, as the community appears to be processing the implications of this potential inflection point in AI deployment policy. The lack of immediate technical safety discussions suggests the field may be grappling more with governance and access questions than with alignment research advances.
+The emphasis on infrastructure resilience and decentralization principles suggests the community is increasingly thinking about AI safety through the lens of broader systemic risks and failure modes.

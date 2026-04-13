@@ -5,7 +5,7 @@
     <link>https://ygauthie.github.io/ai-safety-daily-brief/</link>
     <description>Daily AI safety research, policy, and development digest</description>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Apr 2026 10:39:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 10:47:08 GMT</lastBuildDate>
     <item>
       <title>AI Safety Daily Brief: Weekly Summary — 2026-04-13</title>
       <link>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-13/safety-weekly.fr.md</link>
@@ -42,15 +42,15 @@ The governance implications proved equally significant. A [federal court upheld 
       <description>
 ## Top 3 des développements
 
-1. **Le modèle Mythos d'Anthropic marque un point d'inflexion politique** : [La politique entourant Mythos marque un changement de pouvoir irréversible](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) soutient que la décision d'Anthropic de restreindre l'accès à leur nouveau modèle "Mythos" via le "Project Glasswing" plutôt qu'une publication ouverte représente la fin permanente de l'accès ouvert aux systèmes d'IA de pointe, transférant le contrôle aux gardiens corporatifs.
+1. **Anthropic restreint l'accès au modèle de frontière "Mythos"** - [La politique entourant Mythos marque un changement de pouvoir irréversible](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) signale la fin de l'accès libre aux capacités d'IA de pointe. Contrairement à tous les modèles depuis ChatGPT, Mythos ne sera disponible qu'à certaines entreprises sélectionnées via "Project Glasswing" pour des applications de cybersécurité, marquant ce que l'auteur appelle un "changement de pouvoir irréversible" vers des modèles à accès restreint.
 
-2. **La régression de fiabilité de Claude soulève des préoccupations de sécurité** : Plusieurs sources rapportent que [la précision de Claude Opus 4.6 sur le test d'hallucination BridgeBench chute de 83% à 68%](https://twitter.com/bridgemindai/status/2043321284113670594), avec [Opus 4.6 qui hallucine deux fois plus aujourd'hui qu'à sa sortie](https://www.bridgebench.ai/hallucination), soulignant des problèmes critiques de dégradation de modèle dans les systèmes déployés.
+2. **La dégradation des performances de Claude Opus soulève des préoccupations de fiabilité** - [La précision de Claude Opus 4.6 a chuté de 83% à 68% sur les tests d'hallucination BridgeBench](https://twitter.com/bridgemindai/status/2043321284113670594), avec [une analyse de suivi](https://www.bridgebench.ai/hallucination) montrant que le modèle hallucine maintenant deux fois plus fréquemment qu'à sa sortie initiale. Cette dégradation soulève des questions critiques sur la fiabilité des modèles dans le temps et les pratiques de déploiement.
 
-3. **La correction du marché de l'IA signale la maturation du cycle de battage médiatique** : [Les valorisations technologiques sont revenues aux niveaux d'avant le boom de l'IA](https://www.apollo.com/wealth/the-daily-spark/tech-valuations-back-to-pre-ai-boom-levels) indique que la frénésie d'investissement initial dans l'IA se refroidit, affectant potentiellement le financement de la recherche en sécurité de l'IA et les priorités de développement.
+3. **Les méthodes d'interprétabilité de l'IA étendues aux modèles biomédicaux** - La recherche sur les [Autoencodeurs parses pour les modèles de cellules uniques](https://www.lesswrong.com/posts/b3cvG387LKmbiBPaH/sparse-autoencoders-for-single-cell-models-1) applique les techniques d'interprétabilité mécaniste de la sécurité de l'IA aux modèles fondamentaux biologiques, tandis que [Nature Machine Intelligence a publié des travaux sur l'interprétabilité en biomédecine](https://www.nature.com/articles/s42256-026-01177-0), démontrant l'utilité plus large et les applications transversales des méthodologies de sécurité de l'IA.
 
 ## Résumés des sections
 
-**Articles de blog** : [La politique entourant Mythos marque un changement de pouvoir irréversible](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) domine la discussion avec des affirmations sur les changements permanents des politiques d'accès à l'IA, tandis que [Le principe du rayon d'explosion](https://www.lesswrong.com/posts/rDzMraAEkBBewn7vy/the-blast-radius-principle) présente des cadres de résilience </description>
+**Articles de blog &amp; Articles** : La communauté de la sécurité de l'IA fait face à des changements majeurs dans les politiques d'accès aux modèles, car [Mytho</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Executive Summary — 2026-04-13</title>
@@ -60,17 +60,15 @@ The governance implications proved equally significant. A [federal court upheld 
       <description>
 ## Top 3 Developments
 
-1. **Anthropic's Mythos Model Marks Policy Inflection Point**: [The policy surrounding Mythos marks an irreversible power shift](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) argues that Anthropic's decision to restrict access to their new "Mythos" model through "Project Glasswing" rather than public release represents the permanent end of open access to state-of-the-art AI systems, shifting control to corporate gatekeepers.
+1. **Anthropic Restricts Access to Frontier Model "Mythos"** - [The policy surrounding Mythos marks an irreversible power shift](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) signals the end of open access to state-of-the-art AI capabilities. Unlike every model since ChatGPT, Mythos will only be available to select companies through "Project Glasswing" for cybersecurity applications, marking what the author calls an "irreversible power shift" toward restricted access models.
 
-2. **Claude Reliability Regression Raises Safety Concerns**: Multiple sources report that [Claude Opus 4.6 accuracy on BridgeBench hallucination test drops from 83% to 68%](https://twitter.com/bridgemindai/status/2043321284113670594), with [Opus 4.6 hallucinates twice as more today than when it released](https://www.bridgebench.ai/hallucination), highlighting critical model degradation issues in deployed systems.
+2. **Claude Opus Performance Degradation Raises Reliability Concerns** - [Claude Opus 4.6's accuracy dropped from 83% to 68% on BridgeBench hallucination tests](https://twitter.com/bridgemindai/status/2043321284113670594), with [follow-up analysis](https://www.bridgebench.ai/hallucination) showing the model now hallucinates twice as frequently as when initially released. This degradation highlights critical questions about model reliability over time and deployment practices.
 
-3. **AI Market Correction Signals Hype Cycle Maturation**: [Tech valuations are back to pre-AI boom levels](https://www.apollo.com/wealth/the-daily-spark/tech-valuations-back-to-pre-ai-boom-levels) indicates the initial AI investment frenzy is cooling, potentially affecting funding for AI safety research and development priorities.
+3. **AI Interpretability Methods Extended to Biomedical Models** - Research on [Sparse Autoencoders for Single-Cell Models](https://www.lesswrong.com/posts/b3cvG387LKmbiBPaH/sparse-autoencoders-for-single-cell-models-1) applies mechanistic interpretability techniques from AI safety to biological foundation models, while [Nature Machine Intelligence published work on interpretability in biomedicine](https://www.nature.com/articles/s42256-026-01177-0), demonstrating the broader utility and cross-domain applications of AI safety methodologies.
 
 ## Section Summaries
 
-**Blog Posts &amp; Articles**: [The policy surrounding Mythos marks an irreversible power shift](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) dominates discussion with claims about permanent changes to AI access policies, while [The Blast Radius Principle](https://www.lesswrong.com/posts/rDzMraAEkBBewn7vy/the-blast-radius-principle) presents infrastructure resilience frameworks with implications for distributed AI governance.
-
-**GitHub Activity**: [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) sees important discussions about [evaluation methodology concerns](https://github.com/EleutherAI/lm-evaluation-harness/</description>
+**Blog Posts &amp; Articles**: The AI safety community is grappling with major shifts in model access policies, as [Anthropic's Mythos represents a move toward restricted access models](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) rather than public availability. [The Blast Radius Principle](https://www.lesswrong.com/p</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: GitHub Activity — 2026-04-13</title>
@@ -80,14 +78,21 @@ The governance implications proved equally significant. A [federal court upheld 
       <description>
 ## Discussions clés
 
-Le [**LM Evaluation Harness**](https://github.com/EleutherAI/lm-evaluation-harness) continue de présenter des développements importants liés à la sécurité. Une discussion particulièrement remarquable soulève des questions fondamentales sur [**si l'évaluation mesure les capacités ou l'adaptation à des données ambiguës**](https://github.com/EleutherAI/lm-evaluation-harness/issues/3698), soulignant que les benchmarks peuvent en partie mesurer comment les modèles s'adaptent à des ensembles de données probabilistes ou sémantiquement ambigus plutôt que de véritables capacités. Cela a des implications significatives pour les méthodologies d'évaluation de sécurité.
+Plusieurs discussions importantes sur la sécurité et l'alignment émergent dans les dépôts majeurs :
 
-Plusieurs corrections techniques abordent des problèmes de fiabilité d'évaluation qui pourraient impacter les évaluations de sécurité :
-- [**Bug d'agrégation médiane**](https://github.com/EleutherAI/lm-evaluation-harness/pull/3696) où la fonction retournait des éléments arbitraires au lieu de médianes statistiques
-- [**Correction du crash BigBench**](https://github.com/EleutherAI/lm-evaluation-harness/pull/3702) pour les tâches aux formats mixtes
-- [**Améliorations de la gestion des séquences d'arrêt**](https://github.com/EleutherAI/lm-evaluation-harness/pull/3700) pour les modèles de raisonnement afin d'éviter la troncature prématurée
+### Robustesse d'évaluation et suivi d'instructions
 
-Le dépôt **Anthropic Cookbook** montre un accent continu sur les techniques d'évaluation liées à la sécurité avec un nouveau [**notebook d'évaluation de dilution d'instructions**](https://github.com/anthropics/claude-cookbooks/pull/528) qui démontre comment les frameworks de raisonnement peuvent s'effondrer de ~100% à 0-30% de précision lorsqu'ils sont intégrés dans des prompts complexes. Le dépôt a également ajouté des cookbooks pour [**l'investigation autonome de bugs**](https://github.com/anthropics/claude-cookbooks/pull/527) et [**l'enrichissement de threat intelligence**](https://github.com/anthropics/claude-cookbooks/pull/496), présentant des capacités</description>
+Le dépôt [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) connaît une activité significative autour de la fiabilité d'évaluation. Un problème particulièrement notable soulève des questions fondamentales sur [si les mesures d'évaluation évaluent les capacités ou l'adaptation à des données ambiguës](https://github.com/EleutherAI/lm-evaluation-harness/issues/3698), mettant en évidence des préoccupations selon lesquelles les benchmarks pourraient partiellement mesurer l'adaptation à des données ambiguës ou incohérentes plutôt que les véritables capacités.
+
+Le cookbook d'Anthropic traite la robustesse des instructions avec un nouveau [notebook d'évaluation de dilution d'instructions](https://github.com/anthropics/claude-cookbooks/pull/528), démontrant comment les frameworks de raisonnement peuvent s'effondrer de ~100% de précision dans des prompts ciblés à 0-30% lorsqu'ils sont intégrés dans des prompts de production complexes. Cela se rapporte directement aux préoccupations d'alignment concernant le maintien du comportement voulu dans les déploiements réels.
+
+### Raisonnement de modèle et analyse de sécurité
+
+Plusieurs développements se concentrent sur la compréhension des modèles de raisonnement des modèles :
+
+- Un [correctif pour les modèles de raisonnement dans vLLM](https://github.com/EleutherAI/lm-evaluation-harness/pull/3700) traite les problèmes où les séquences d'arrêt de tâche se déclenchent à l'intérieur des blocs de raisonnement, affectant potentiellement l'évaluation des modèles avec des capacités de raisonnement interne
+- Ajout du [benchmark CRUXEval](https://github.com/EleutherAI/lm-evaluation-harness/pull/3699) pour tester le raisonnement de code dans les deux directions (prédire les sorties et les entrées valides)
+- Un rapport de bug sur [Gemm</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: GitHub Activity — 2026-04-13</title>
@@ -97,16 +102,27 @@ Le dépôt **Anthropic Cookbook** montre un accent continu sur les techniques d'
       <description>
 ## Key Discussions
 
-The [**LM Evaluation Harness**](https://github.com/EleutherAI/lm-evaluation-harness) continues to see important safety-relevant developments. A particularly noteworthy discussion raises fundamental questions about [**whether evaluation measures capability or adaptation to ambiguous data**](https://github.com/EleutherAI/lm-evaluation-harness/issues/3698), highlighting that benchmarks may partly measure how models adapt to probabilistic or semantically ambiguous datasets rather than true capabilities. This has significant implications for safety assessment methodologies.
+Several important safety and alignment discussions are emerging across major repositories:
 
-Several technical fixes address evaluation reliability issues that could impact safety assessments:
-- [**Median aggregation bug**](https://github.com/EleutherAI/lm-evaluation-harness/pull/3696) where the function returned arbitrary elements instead of statistical medians
-- [**BigBench crash fix**](https://github.com/EleutherAI/lm-evaluation-harness/pull/3702) for mixed-format tasks
-- [**Stop sequence handling**](https://github.com/EleutherAI/lm-evaluation-harness/pull/3700) improvements for reasoning models to prevent premature truncation
+### Evaluation Robustness and Instruction Following
 
-The **Anthropic Cookbook** repository shows continued focus on safety-relevant evaluation techniques with a new [**instruction dilution evaluation notebook**](https://github.com/anthropics/claude-cookbooks/pull/528) that demonstrates how reasoning frameworks can collapse from ~100% to 0-30% accuracy when embedded in complex prompts. The repository also added cookbooks for [**autonomous bug investigation**](https://github.com/anthropics/claude-cookbooks/pull/527) and [**threat intelligence enrichment**](https://github.com/anthropics/claude-cookbooks/pull/496), showcasing advanced agentic capabilities with potential dual-use implications.
+The [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) repository is seeing significant activity around evaluation reliability. A particularly noteworthy issue raises fundamental questions about [whether evaluation measures capability or adaptation to ambiguous data](https://github.com/EleutherAI/lm-evaluation-harness/issues/3698), highlighting concerns that benchmarks may partially measure adaptation to ambiguous or inconsistent data rather than true capabilities.
 
-**NVIDIA NeMo Guardrails** is undergoing significant architectural changes to decouple from LangChain dependencies through a multi-part refactoring effort, including [**framework-agnostic type systems**](https:</description>
+The Anthropic cookbook is addressing instruction robustness with a new [instruction dilution evaluation notebook](https://github.com/anthropics/claude-cookbooks/pull/528), demonstrating how reasoning frameworks can collapse from ~100% accuracy in focused prompts to 0-30% when embedded in complex production prompts. This relates directly to alignment concerns about maintaining intended behavior in real-world deployments.
+
+### Model Reasoning and Safety Analysis
+
+Multiple developments focus on understanding model reasoning patterns:
+
+- A [fix for reasoning models in vLLM](https://github.com/EleutherAI/lm-evaluation-harness/pull/3700) addresses issues where task stop sequences fire inside reasoning blocks, potentially affecting evaluation of models with internal reasoning capabilities
+- Addition of [CRUXEval benchmark](https://github.com/EleutherAI/lm-evaluation-harness/pull/3699) for testing code reasoning in both directions (predicting outputs and valid inputs)
+- A bug report about [Gemma 4 misidentifying crash root causes](https://github.com/google-deepmind/gemma/issues/621) highlights potential issues with model reasoning reliability in technical contexts
+
+### Autonomous Agent Safety
+
+The Anthropic cookbook includes several concerning developments in autonomous agent capabilities:
+
+- An [autonomous bug i</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Hacker News — 2026-04-13</title>
@@ -116,19 +132,15 @@ The **Anthropic Cookbook** repository shows continued focus on safety-relevant e
       <description>
 ## Sujets brûlants
 
-Les principales discussions révèlent des préoccupations croissantes concernant la fiabilité des systèmes d'IA et la maturation des marchés de l'IA :
+1. **Dégradation des performances de Claude Opus 4.6** - L'actualité la plus préoccupante en matière de sécurité de l'IA concerne [la précision de Claude Opus 4.6 qui chute de 83% à 68% sur les tests d'hallucination BridgeBench](https://twitter.com/bridgemindai/status/2043321284113670594), avec une [analyse de suivi](https://www.bridgebench.ai/hallucination) suggérant que le modèle hallucine désormais deux fois plus fréquemment qu'au moment de sa sortie initiale. Cela soulève des questions critiques sur la fiabilité des modèles dans le temps et les pratiques de déploiement.
 
-1. **[Les valorisations tech sont revenues aux niveaux d'avant le boom de l'IA](https://www.apollo.com/wealth/the-daily-spark/tech-valuations-back-to-pre-ai-boom-levels)** (136 points) - La correction du marché suggère que le cycle d'engouement initial pour l'IA pourrait se refroidir, avec des implications pour le financement de la sécurité de l'IA et les priorités de recherche alors que les modèles d'investissement se normalisent.
+2. **Correction du marché de l'IA** - [Les valorisations technologiques reviennent aux niveaux d'avant l'essor de l'IA](https://www.apollo.com/wealth/the-daily-spark/tech-valuations-back-to-pre-ai-boom-levels) (136 points, 37 commentaires) suggère un potentiel recalibrage du marché autour des capacités de l'IA et de la viabilité commerciale, ce qui pourrait impacter les priorités d'investissement en sécurité.
 
-2. **[Show HN: Claudraband – Code Claude pour l'utilisateur expérimenté](https://github.com/halfwhey/claudraband)** (108 points) - Les outils développés par la communauté autour de Claude démontrent une dépendance croissante aux assistants de codage IA, soulevant des questions sur les processus de révision de code et les implications potentielles en matière de sécurité.
+3. **Évolution des outils de développement** - [Claudraband](https://github.com/halfwhey/claudraband), un outil pour utilisateurs avancés de Claude, a attiré une attention significative (108 points, 38 commentaires), indiquant une intégration continue des assistants IA dans les flux de travail des développeurs malgré les préoccupations de fiabilité.
 
-3. **[La précision de Claude Opus 4.6 sur le test d'hallucination BridgeBench chute de 83% à 68%](https://twitter.com/bridgemindai/status/2043321284113670594)** (60 points) - Une régression significative des performances d'hallucination suggère des problèmes potentiels de dégradation du modèle, une préoccupation critique de sécurité pour les systèmes déployés.
+4. **Cadrage de l'impact sociétal de l'IA** - Une discussion autour de ["L'IA n'est pas une crise du travail. C'est une crise du sens"](https://twitter.com/lessin/status/2043370537280532771) reflète l'évolution des perspectives sur les implications plus larges de l'IA au-delà des perturbations économiques.
 
-4. **[Opus 4.6 hallucine deux fois plus aujourd'hui qu'au moment de sa sortie](https://www.bridgebench.ai/hallucination)** (14 points) - Discussion de suivi renforçant les préoccupations concernant la détérioration de la fiabilité de Claude, soulignant l'importance de la surveillance continue de la sécurité.
-
-5. **[L'IA n'est pas une crise du travail. C'est une crise du sens](https://twitter.com/lessin/status/2043370537280532771)** (9 points) - Perspective philosophique sur l'impact sociétal de l'IA au-delà de l'emploi, touchant aux questions plus profondes du but humain et de l'alignment de l'IA avec les valeurs humaines.
-
-## Sentiment de la com</description>
+5. **Responsabilité de l'industrie** - Un fil Ask HN questionnant ["Quelles sont toutes les mauvaises choses que les entreprises d'IA ont faites et que nous avons oubliées"](https://news.ycombinator.com/item?id=47739653) indique un intérêt croissant de la communauté pour tenir les entreprises d'IA responsables de leurs </description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Hacker News — 2026-04-13</title>
@@ -138,21 +150,21 @@ Les principales discussions révèlent des préoccupations croissantes concernan
       <description>
 ## Hot Topics
 
-The top discussions reveal growing concerns about AI system reliability and the maturation of AI markets:
+1. **Claude Opus 4.6 Performance Degradation** - The most concerning AI safety story involves [Claude Opus 4.6's accuracy dropping from 83% to 68% on BridgeBench hallucination tests](https://twitter.com/bridgemindai/status/2043321284113670594), with a [follow-up analysis](https://www.bridgebench.ai/hallucination) suggesting the model now hallucinates twice as frequently as when initially released. This raises critical questions about model reliability over time and deployment practices.
 
-1. **[Tech valuations are back to pre-AI boom levels](https://www.apollo.com/wealth/the-daily-spark/tech-valuations-back-to-pre-ai-boom-levels)** (136 points) - Market correction suggests the initial AI hype cycle may be cooling, with implications for AI safety funding and research priorities as investment patterns normalize.
+2. **AI Market Correction** - [Tech valuations returning to pre-AI boom levels](https://www.apollo.com/wealth/the-daily-spark/tech-valuations-back-to-pre-ai-boom-levels) (136 points, 37 comments) suggests potential market recalibration around AI capabilities and commercial viability, which could impact safety investment priorities.
 
-2. **[Show HN: Claudraband – Claude Code for the Power User](https://github.com/halfwhey/claudraband)** (108 points) - Community-built tooling around Claude demonstrates increasing reliance on AI coding assistants, raising questions about code review processes and potential security implications.
+3. **Developer Tooling Evolution** - [Claudraband](https://github.com/halfwhey/claudraband), a power-user tool for Claude, attracted significant attention (108 points, 38 comments), indicating continued integration of AI assistants into developer workflows despite reliability concerns.
 
-3. **[Claude Opus 4.6 accuracy on BridgeBench hallucination test drops from 83% to 68%](https://twitter.com/bridgemindai/status/2043321284113670594)** (60 points) - Significant regression in hallucination performance suggests potential model degradation issues, a critical safety concern for deployed systems.
+4. **AI's Societal Impact Framing** - A discussion around ["AI Is Not a Labor Crisis. It Is a Meaning Crisis"](https://twitter.com/lessin/status/2043370537280532771) reflects evolving perspectives on AI's broader implications beyond economic disruption.
 
-4. **[Opus 4.6 hallucinates twice as more today than when it released](https://www.bridgebench.ai/hallucination)** (14 points) - Follow-up discussion reinforcing concerns about Claude's deteriorating reliability, highlighting the importance of continuous safety monitoring.
-
-5. **[AI Is Not a Labor Crisis. It Is a Meaning Crisis](https://twitter.com/lessin/status/2043370537280532771)** (9 points) - Philosophical perspective on AI's societal impact beyond employment, touching on deeper questions of human purpose and AI alignment with human values.
+5. **Industry Accountability** - An Ask HN thread questioning ["What are all the bad things that AI companies have done which we forgot"](https://news.ycombinator.com/item?id=47739653) indicates growing community interest in holding AI companies accountable for past actions.
 
 ## Community Sentiment
 
-The Hacker News community is displaying a notably pragmatic and somewhat cautious tone toward AI developments. There's growing attention to practical safety tools and monitoring, evidenced by multiple "Show HN" posts for AI safety utilities. The discussion around Claude's hallucination regression suggests increased sophistication in the community's ability to</description>
+The community sentiment reflects growing pragmatism mixed with concern. There's notable anxiety about model reliability degradation, particularly around Claude's performance issues, suggesting users are experiencing real-world impacts of AI system instability. 
+
+The market correction discussion shows a maturing</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: safety-journals.fr — 2026-04-13</title>
@@ -164,7 +176,9 @@ The Hacker News community is displaying a notably pragmatic and somewhat cautiou
 
 **[Interpretability and implicit model semantics in biomedicine and deep learning](https://www.nature.com/articles/s42256-026-01177-0)** - *Nature Machine Intelligence*
 
-Cet article examine l'intersection critique entre l'interprétabilité des modèles et la compréhension sémantique dans les applications d'IA biomédicale. La recherche met en évidence comment la sémantique implicite des modèles — les hypothèses non énoncées et les représentations apprises au sein des systèmes d'apprentissage profond — peut avoir un impact significatif à la fois sur les performances du modèle et la sécurité dans des contextes médicaux à enjeux élevés. Pour la sécurité de l'IA, ce travail souligne l'importance de développer des cadres d'interprétabilité robustes qui vont au-delà des explications de surface pour découvrir les structures sémantiques plus profondes qui guident la prise de décision des modèles, particulièrement dans les domaines où un mauvais alignment pourrait avoir des conséquences mortelles.</description>
+Cet article examine l'intersection critique entre l'interprétabilité de l'IA et les applications biomédicales, où la transparence des modèles est essentielle tant pour la sécurité que pour la conformité réglementaire. La recherche explore comment les représentations sémantiques implicites dans les modèles d'apprentissage profond peuvent être rendues plus explicites et interprétables, particulièrement dans les contextes médicaux à enjeux élevés où les décisions d'IA impactent directement les résultats des patients. Les résultats ont des implications significatives pour l'alignment de l'IA dans les environnements de soins de santé, car ils abordent le défi fondamental de comprendre ce que les modèles ont appris et d'assurer que leur raisonnement s'aligne avec les connaissances médicales et les principes éthiques.
+
+*Note : Les données fournies contiennent des informations limitées sur la méthodologie spécifique de cet article et les résultats détaillés. Une analyse plus complète nécessiterait l'accès au contenu intégral de l'article.*</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: safety-journals — 2026-04-13</title>
@@ -176,7 +190,9 @@ Cet article examine l'intersection critique entre l'interprétabilité des modè
 
 **[Interpretability and implicit model semantics in biomedicine and deep learning](https://www.nature.com/articles/s42256-026-01177-0)** - *Nature Machine Intelligence*
 
-This article examines the critical intersection of model interpretability and semantic understanding in biomedical AI applications. The research highlights how implicit model semantics—the unstated assumptions and learned representations within deep learning systems—can significantly impact both model performance and safety in high-stakes medical contexts. For AI safety, this work underscores the importance of developing robust interpretability frameworks that go beyond surface-level explanations to uncover the deeper semantic structures that guide model decision-making, particularly in domains where misalignment could have life-threatening consequences.</description>
+This article examines the critical intersection of AI interpretability and biomedical applications, where model transparency is essential for both safety and regulatory compliance. The research explores how implicit semantic representations in deep learning models can be made more explicit and interpretable, particularly in high-stakes medical contexts where AI decisions directly impact patient outcomes. The findings have significant implications for AI alignment in healthcare settings, as they address the fundamental challenge of understanding what models have learned and ensuring their reasoning aligns with medical knowledge and ethical principles.
+
+*Note: The provided data contains limited information about this article's specific methodology and detailed findings. A more comprehensive analysis would require access to the full paper content.*</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Blog Posts — 2026-04-13</title>
@@ -186,17 +202,17 @@ This article examines the critical intersection of model interpretability and se
       <description>
 ## Actualités principales
 
-Le développement le plus significatif en sécurité de l'IA aujourd'hui concerne **[La politique entourant Mythos marque un changement de pouvoir irréversible](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power)**. L'auteur soutient que le modèle "Mythos" d'Anthropic représente un moment décisif dans la politique de déploiement de l'IA. Contrairement aux modèles de pointe précédents depuis la sortie de ChatGPT, Mythos ne sera pas rendu disponible publiquement dans sa forme complète et non bridée. Au lieu de cela, Anthropic prévoit de restreindre l'accès à certaines entreprises sélectionnées par le biais du "Project Glasswing", ostensiblement pour des applications de cybersécurité. Ceci marque la fin d'une époque où n'importe qui pouvait accéder aux systèmes d'IA les plus performants pour une somme modique.
+### La sortie de Mythos signale un changement de pouvoir majeur dans l'accès à l'IA
 
-**[Le principe du rayon d'explosion](https://www.lesswrong.com/posts/rDzMraAEkBBewn7vy/the-blast-radius-principle)** présente un cadre pour comprendre les vulnérabilités des infrastructures, en tirant des leçons des attaques contre le réseau énergétique ukrainien. L'article plaide pour la décentralisation comme stratégie de défense fondamentale, avec des implications potentielles pour le déploiement et la gouvernance des systèmes d'IA. Le principe suggère que les systèmes d'IA centralisés peuvent créer des points de défaillance unique dangereux.
+[La politique entourant Mythos marque un changement de pouvoir irréversible](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) soutient que le dernier modèle d'Anthropic « Mythos » représente un moment décisif pour la gouvernance de l'IA. Contrairement à tous les modèles depuis ChatGPT, Mythos ne sera pas disponible publiquement dans sa pleine capacité. Au lieu de cela, Anthropic prévoit de fournir l'accès uniquement à des entreprises sélectionnées à travers le « Projet Glasswing » pour des applications de cybersécurité. L'auteur affirme que cela marque la fin de l'époque où n'importe qui pouvait accéder aux capacités d'IA de pointe pour quelques dollars, représentant un « changement de pouvoir irréversible » vers des modèles d'accès restreint.
 
-## Arguments clés
+### Parallèles entre vulnérabilité des infrastructures et sécurité de l'IA
 
-L'**analyse du changement de pouvoir de Mythos** présente plusieurs affirmations critiques sur la trajectoire de la gouvernance de l'IA :
-- L'ère de l'accès public aux modèles d'IA de pointe s'est définitivement terminée
-- Les capacités futures de l'IA seront contrôlées par les entreprises et les gouvernements
-- Cela représente un changement "irréversible" dans la façon dont les systèmes d'IA avancés sont déployés
-- Ce changement s'opère par des décisions d'entreprises privées plutôt que par des cadres réglementaires for</description>
+[Le principe du rayon d'explosion](https://www.lesswrong.com/posts/rDzMraAEkBBewn7vy/the-blast-radius-principle) tire des leçons des attaques d'infrastructures ukrainiennes pour plaider en faveur de stratégies de décentralisation. L'article utilise des exemples comme la destruction de la centrale électrique de Trypilska et du barrage de Kakhovka pour illustrer comment les systèmes centralisés créent des points de défaillance uniques avec des effets de « rayon d'explosion » massifs. Bien qu'il ne soit pas explicitement axé sur l'IA, les principes ont des implications claires pour l'architecture de sécurité de l'IA et les risques de concentration des capacités d'IA.
+
+### La recherche en interprétabilité s'étend aux modèles biologiques
+
+[Autoencodeurs parses pour modèles de cellules individuelles](https://www.lesswrong.com/posts/b3cvG387LKmbiBPaH/sparse-autoencoders-for-single-cell-models-1) applique les techniques d'interprétabilité mécaniste de la sécurité de l'IA aux modèles de fon</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Blog Posts — 2026-04-13</title>
@@ -206,21 +222,19 @@ L'**analyse du changement de pouvoir de Mythos** présente plusieurs affirmation
       <description>
 ## Top Stories
 
-The most significant AI safety development today concerns **[The policy surrounding Mythos marks an irreversible power shift](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power)**. The author argues that Anthropic's "Mythos" model represents a watershed moment in AI deployment policy. Unlike previous state-of-the-art models since ChatGPT's release, Mythos will not be made publicly available in its full, "un-nerfed" form. Instead, Anthropic plans to restrict access to select companies through "Project Glasswing," ostensibly for cybersecurity applications. This marks the end of an era where anyone could access the most capable AI systems for a nominal fee.
+### Mythos Release Signals Major Power Shift in AI Access
 
-**[The Blast Radius Principle](https://www.lesswrong.com/posts/rDzMraAEkBBewn7vy/the-blast-radius-principle)** presents a framework for understanding infrastructure vulnerabilities, drawing lessons from Ukraine's energy grid attacks. The post advocates for decentralization as a core defense strategy, with potential implications for AI system deployment and governance. The principle suggests that centralized AI systems may create dangerous single points of failure.
+[The policy surrounding Mythos marks an irreversible power shift](https://www.lesswrong.com/posts/3MhJELzwpbR42xsJ3/the-policy-surrounding-mythos-marks-an-irreversible-power) argues that Anthropic's latest model "Mythos" represents a watershed moment for AI governance. Unlike every model since ChatGPT, Mythos will not be publicly available in its full capacity. Instead, Anthropic plans to provide access only to select companies through "Project Glasswing" for cybersecurity applications. The author contends this marks the end of the era where anyone could access state-of-the-art AI capabilities for a few dollars, representing an "irreversible power shift" toward restricted access models.
 
-## Key Arguments
+### Infrastructure Vulnerability and AI Safety Parallels
 
-The **Mythos power shift analysis** presents several critical claims about the trajectory of AI governance:
-- The era of public access to state-of-the-art AI models has permanently ended
-- Future AI capabilities will be gatekept by corporations and governments
-- This represents an "irreversible" change in how advanced AI systems are deployed
-- The shift occurs through private corporate decisions rather than formal regulatory frameworks
+[The Blast Radius Principle](https://www.lesswrong.com/posts/rDzMraAEkBBewn7vy/the-blast-radius-principle) draws lessons from Ukrainian infrastructure attacks to argue for decentralization strategies. The piece uses examples like the destruction of the Trypilska power plant and Kakhovka dam to illustrate how centralized systems create single points of failure with massive "blast radius" effects. While not explicitly focused on AI, the principles have clear implications for AI safety architecture and the risks of concentrated AI capabilities.
 
-The **Blast Radius Principle** argues that infrastructure resilience requires distributed architectures rather than centralized systems. Applied to AI safety, this suggests that concentrated AI capabilities in few hands may create systemic risks, supporting arguments for more distributed AI development and deployment models.
+### Interpretability Research Extends to Biological Models
 
-## Co</description>
+[Sparse Autoencoders for Single-Cell Models](https://www.lesswrong.com/posts/b3cvG387LKmbiBPaH/sparse-autoencoders-for-single-cell-models-1) applies mechanistic interpretability techniques from AI safety to biological foundation models trained on RNA sequencing data. The author argues that the field is prematurely scaling these models without extracting sufficient knowledge from existing ones, and proposes using sparse autoencoders to better understand their internal representations—a technique borrowed directly from AI alignment research.
+
+## Key Argume</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Executive Summary — 2026-04-12</title>
