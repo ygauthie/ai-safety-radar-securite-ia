@@ -9,6 +9,31 @@ export interface RssItem {
   pubDate: string;
 }
 
+const HEADERS = {
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+  "Accept": "application/rss+xml, application/xml, text/xml, */*",
+  "Accept-Language": "en-US,en;q=0.9",
+};
+
+async function fetchFeedXml(url: string, name: string): Promise<string | null> {
+  // Try direct fetch first
+  const res = await fetch(url, { headers: HEADERS });
+  if (res.ok) return res.text();
+
+  // If blocked, try proxy fallback
+  if (res.status === 403 || res.status === 401) {
+    console.log(`  ${name}: direct fetch blocked (${res.status}), trying proxy...`);
+    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+    const proxyRes = await fetch(proxyUrl);
+    if (proxyRes.ok) return proxyRes.text();
+    console.error(`RSS proxy also failed for ${name}: ${proxyRes.status}`);
+    return null;
+  }
+
+  console.error(`RSS fetch failed for ${name}: ${res.status}`);
+  return null;
+}
+
 export async function fetchRssFeeds(): Promise<RssItem[]> {
   const config = loadConfig();
   const since = daysAgo(2);
@@ -16,18 +41,8 @@ export async function fetchRssFeeds(): Promise<RssItem[]> {
 
   for (const feed of config.rss_feeds) {
     try {
-      const res = await fetch(feed.url, {
-        headers: {
-          "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "Accept": "application/rss+xml, application/xml, text/xml, */*",
-          "Accept-Language": "en-US,en;q=0.9",
-        },
-      });
-      if (!res.ok) {
-        console.error(`RSS fetch failed for ${feed.name}: ${res.status}`);
-        continue;
-      }
-      const xml = await res.text();
+      const xml = await fetchFeedXml(feed.url, feed.name);
+      if (!xml) continue;
       const items = parseRssXml(xml, feed.name, since).slice(0, 3);
       console.log(`  ${feed.name}: ${items.length} items`);
       allItems.push(...items);

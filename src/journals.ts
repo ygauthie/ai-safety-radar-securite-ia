@@ -9,6 +9,29 @@ export interface JournalArticle {
   pubDate: string;
 }
 
+const HEADERS = {
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+  "Accept": "application/rss+xml, application/xml, text/xml, */*",
+  "Accept-Language": "en-US,en;q=0.9",
+};
+
+async function fetchJournalFeedXml(url: string, name: string): Promise<string | null> {
+  const res = await fetch(url, { headers: HEADERS });
+  if (res.ok) return res.text();
+
+  if (res.status === 403 || res.status === 401) {
+    console.log(`  ${name}: direct fetch blocked (${res.status}), trying proxy...`);
+    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+    const proxyRes = await fetch(proxyUrl);
+    if (proxyRes.ok) return proxyRes.text();
+    console.error(`Journal proxy also failed for ${name}: ${proxyRes.status}`);
+    return null;
+  }
+
+  console.error(`Journal RSS fetch failed for ${name}: ${res.status}`);
+  return null;
+}
+
 export async function fetchJournals(): Promise<JournalArticle[]> {
   const config = loadConfig();
   const since = daysAgo(1);
@@ -17,18 +40,8 @@ export async function fetchJournals(): Promise<JournalArticle[]> {
 
   for (const feed of config.journal_feeds) {
     try {
-      const res = await fetch(feed.url, {
-        headers: {
-          "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "Accept": "application/rss+xml, application/xml, text/xml, */*",
-          "Accept-Language": "en-US,en;q=0.9",
-        },
-      });
-      if (!res.ok) {
-        console.error(`Journal RSS fetch failed for ${feed.name}: ${res.status}`);
-        continue;
-      }
-      const xml = await res.text();
+      const xml = await fetchJournalFeedXml(feed.url, feed.name);
+      if (!xml) continue;
       const items = parseRssXml(xml, feed.name, since, keywords);
       allItems.push(...items);
     } catch (e) {
