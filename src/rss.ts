@@ -24,7 +24,7 @@ export async function fetchRssFeeds(): Promise<RssItem[]> {
         continue;
       }
       const xml = await res.text();
-      const items = parseRssXml(xml, feed.name, since);
+      const items = parseRssXml(xml, feed.name, since).slice(0, 3);
       allItems.push(...items);
     } catch (e) {
       console.error(`RSS error for ${feed.name}:`, e);
