@@ -1,6 +1,6 @@
 import { loadConfig } from "./config.js";
 import { daysAgo } from "./date.js";
-import { existsSync, readFileSync, readdirSync } from "fs";
+import { existsSync, readFileSync } from "fs";
 import { join } from "path";
 
 export interface RssItem {
@@ -42,8 +42,48 @@ async function fetchFeedXml(url: string, name: string): Promise<string | null> {
   });
   if (res.ok) return res.text();
 
+  // For Substack feeds, try the JSON API as fallback
+  if (res.status === 403 && url.includes("substack.com")) {
+    console.log(`  ${name}: trying Substack API fallback...`);
+    return fetchSubstackApi(url, name);
+  }
+
   console.error(`RSS fetch failed for ${name}: ${res.status}`);
   return null;
+}
+
+async function fetchSubstackApi(feedUrl: string, name: string): Promise<string | null> {
+  // Extract publication subdomain from feed URL
+  const match = feedUrl.match(/https?:\/\/([^.]+)\.substack\.com/);
+  if (!match) return null;
+
+  const pub = match[1];
+  const apiUrl = `https://${pub}.substack.com/api/v1/archive?sort=new&limit=12&offset=0`;
+  const res = await fetch(apiUrl);
+  if (!res.ok) {
+    console.error(`  ${name}: Substack API also failed: ${res.status}`);
+    return null;
+  }
+
+  const posts = (await res.json()) as Array<{
+    title?: string;
+    subtitle?: string;
+    canonical_url?: string;
+    post_date?: string;
+    description?: string;
+  }>;
+
+  // Convert to RSS XML so the existing parser can handle it
+  const items = posts
+    .map((p) => {
+      const desc = (p.subtitle || p.description || "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      const title = (p.title || "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      return `<item><title>${title}</title><link>${p.canonical_url || ""}</link><description>${desc}</description><pubDate>${p.post_date || ""}</pubDate></item>`;
+    })
+    .join("\n");
+
+  console.log(`  ${name}: got ${posts.length} posts from Substack API`);
+  return `<rss><channel>${items}</channel></rss>`;
 }
 
 export async function fetchRssFeeds(): Promise<RssItem[]> {

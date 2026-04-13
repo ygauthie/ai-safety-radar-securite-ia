@@ -36,12 +36,12 @@ jobs:
           done <<'FEEDS'
           Alignment Forum|https://www.alignmentforum.org/feed.xml
           LessWrong|https://www.lesswrong.com/feed.xml?view=community-rss&karmaThreshold=30
-          Import AI|https://importai.substack.com/feed
-          Hyperdimensional|https://www.hyperdimensional.co/feed
-          Don't Worry About the Vase|https://thezvi.substack.com/feed
-          Marcus on AI|https://garymarcus.substack.com/feed
-          The Cognitive Revolution|https://cognitiverevolution.substack.com/feed
-          Planned Obsolescence|https://www.planned-obsolescence.org/feed
+          Import AI (Jack Clark)|https://importai.substack.com/feed
+          Hyperdimensional (Dean Ball)|https://www.hyperdimensional.co/feed
+          Don't Worry About the Vase (Zvi Mowshowitz)|https://thezvi.substack.com/feed
+          Marcus on AI (Gary Marcus)|https://garymarcus.substack.com/feed
+          The Cognitive Revolution (Nathan Labenz)|https://cognitiverevolution.substack.com/feed
+          Planned Obsolescence (Ajeya Cotra & Kelsey Piper)|https://www.planned-obsolescence.org/feed
           Miles Brundage|https://milesbrundage.substack.com/feed
           AI Safety Newsletter CAIS|https://newsletter.safe.ai/feed
           AI Summer|https://www.aisummer.org/feed
