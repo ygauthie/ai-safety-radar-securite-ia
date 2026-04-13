@@ -99,8 +99,6 @@ rss_feeds:
     url: https://www.hyperdimensional.co/feed
   - name: Don't Worry About the Vase (Zvi Mowshowitz)
     url: https://thezvi.substack.com/feed
-  - name: Marcus on AI (Gary Marcus)
-    url: https://garymarcus.substack.com/feed
   - name: The Cognitive Revolution (Nathan Labenz)
     url: https://cognitiverevolution.substack.com/feed
   - name: Planned Obsolescence (Ajeya Cotra & Kelsey Piper)
@@ -109,8 +107,10 @@ rss_feeds:
     url: https://milesbrundage.substack.com/feed
   - name: AI Safety Newsletter (CAIS)
     url: https://newsletter.safe.ai/feed
-  - name: AI Summer (Timothy B. Lee & Dean Ball)
-    url: https://www.aisummer.org/feed
+  - name: Interconnects (Nathan Lambert)
+    url: https://www.interconnects.ai/feed
+  - name: AI Snake Oil (Narayanan & Kapoor)
+    url: https://aisnakeoil.substack.com/feed
   - name: AI Safety & Governance (Victor Akinwande)
     url: https://www.safeai.news/feed
   # AI Safety Research Labs
@@ -118,6 +118,15 @@ rss_feeds:
     url: https://metr.org/feed.xml
   - name: Alignment Research Center (ARC)
     url: https://alignment.org/blog/feed
+  - name: Future of Life Institute
+    url: https://futureoflife.org/feed/
+  - name: MIRI
+    url: https://intelligence.org/feed/
+  # Governance
+  - name: Georgetown CSET
+    url: https://cset.georgetown.edu/feed/
+  - name: AI Now Institute
+    url: https://ainowinstitute.org/feed
 
 # Websites to crawl via sitemap for new content
 websites:
