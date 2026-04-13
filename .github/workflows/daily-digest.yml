@@ -26,6 +26,38 @@ jobs:
 
       - run: pnpm install
 
+      - name: Pre-fetch RSS feeds via curl
+        run: |
+          mkdir -p .feed-cache
+          while IFS='|' read -r name url; do
+            slug=$(echo "$name" | tr ' ()/' '____' | tr -cd 'a-zA-Z0-9_-')
+            echo "Fetching $name..."
+            curl -sL --max-time 15 -o ".feed-cache/$slug.xml" "$url" || echo "  Failed: $name"
+          done <<'FEEDS'
+          Alignment Forum|https://www.alignmentforum.org/feed.xml
+          LessWrong|https://www.lesswrong.com/feed.xml?view=community-rss&karmaThreshold=30
+          Import AI|https://importai.substack.com/feed
+          Hyperdimensional|https://www.hyperdimensional.co/feed
+          Don't Worry About the Vase|https://thezvi.substack.com/feed
+          Marcus on AI|https://garymarcus.substack.com/feed
+          The Cognitive Revolution|https://cognitiverevolution.substack.com/feed
+          Planned Obsolescence|https://www.planned-obsolescence.org/feed
+          Miles Brundage|https://milesbrundage.substack.com/feed
+          AI Safety Newsletter CAIS|https://newsletter.safe.ai/feed
+          AI Summer|https://www.aisummer.org/feed
+          AI Safety Governance|https://www.safeai.news/feed
+          METR|https://metr.org/feed.xml
+          ARC|https://alignment.org/blog/feed
+          Nature|https://www.nature.com/nature.rss
+          Science|https://www.science.org/rss/news_current.xml
+          PNAS|https://www.pnas.org/rss/current.xml
+          PLOS ONE (Computer Science)|https://journals.plos.org/plosone/feed/atom?subject=Computer+and+information+sciences
+          Nature Machine Intelligence|https://www.nature.com/natmachintell.rss
+          AI & Society (Springer)|https://link.springer.com/search.rss?facet-journal-id=146&query=
+          Ethics and Information Technology|https://link.springer.com/search.rss?facet-journal-id=10676&query=
+          FEEDS
+          ls -la .feed-cache/
+
       - name: Generate daily digest
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}

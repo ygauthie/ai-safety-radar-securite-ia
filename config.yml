@@ -75,21 +75,15 @@ journal_feeds:
     url: https://www.science.org/rss/news_current.xml
   - name: PNAS
     url: https://www.pnas.org/rss/current.xml
-  - name: Science Advances
-    url: https://www.science.org/rss/advances_current.xml
   - name: PLOS ONE (Computer Science)
     url: https://journals.plos.org/plosone/feed/atom?subject=Computer+and+information+sciences
   # AI/ML specialist journals
   - name: Nature Machine Intelligence
     url: https://www.nature.com/natmachintell.rss
-  - name: Journal of Artificial Intelligence Research (JAIR)
-    url: https://www.jair.org/index.php/jair/gateway/plugin/WebFeedGatewayPlugin/rss2
   - name: AI & Society (Springer)
     url: https://link.springer.com/search.rss?facet-journal-id=146&query=
   - name: Ethics and Information Technology
     url: https://link.springer.com/search.rss?facet-journal-id=10676&query=
-  - name: Big Data & Society
-    url: https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=bdsb&type=etoc&feed=rss
 
 # RSS feeds to monitor
 rss_feeds:
@@ -98,8 +92,6 @@ rss_feeds:
     url: https://www.alignmentforum.org/feed.xml
   - name: LessWrong (AI tag)
     url: https://www.lesswrong.com/feed.xml?view=community-rss&karmaThreshold=30
-  - name: AI Alignment Newsletter
-    url: https://rohinshah.com/alignment-newsletter-feed/
   # Substacks
   - name: Import AI (Jack Clark)
     url: https://importai.substack.com/feed
