@@ -116,8 +116,6 @@ Today is ${date}. Below are recent articles from peer-reviewed scientific and AI
 Produce a structured digest in ${lang === "fr" ? "French" : "English"}:
 
 1. **Key Articles**: Highlight the most significant articles with a 2-3 sentence summary of each, focusing on methodology, findings, and implications for AI safety.
-2. **Trends**: Identify emerging themes across journals.
-3. **Notable Sources**: Call out any landmark publications in high-impact journals (Nature, Science, PNAS, etc.).
 
 Format as clean Markdown with links to original articles.
 
