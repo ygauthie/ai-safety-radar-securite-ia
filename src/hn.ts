@@ -15,7 +15,7 @@ export async function fetchHackerNews(): Promise<HnStory[]> {
   const since = Math.floor(daysAgo(1).getTime() / 1000);
   const allStories: HnStory[] = [];
 
-  const fetches = config.hn_keywords.map(async (keyword) => {
+  const fetches = config.hn_keywords.keywords.map(async (keyword) => {
     const url = `https://hn.algolia.com/api/v1/search_by_date?query=${encodeURIComponent(keyword)}&tags=story&numericFilters=created_at_i>${since}&hitsPerPage=20`;
     try {
       const res = await fetch(url);

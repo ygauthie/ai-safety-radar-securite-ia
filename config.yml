@@ -1,5 +1,10 @@
 # AI Safety Daily Brief Configuration
 
+# Source credibility tiers:
+#   tier 1: Institutional / peer-reviewed (government, journals, established think tanks)
+#   tier 2: Established research & expert analysis (labs, safety orgs, expert newsletters)
+#   tier 3: Community & general discussion (forums, HN, GitHub, general commentary)
+
 # GitHub topics to discover repos dynamically (top 20 most recently active per topic)
 github_topics:
   - ai-safety
@@ -28,6 +33,7 @@ github_repos:
 
 # ArXiv categories and keywords for AI safety papers
 arxiv:
+  tier: 2
   categories:
     - cs.AI
     - cs.CL
@@ -71,67 +77,94 @@ journal_feeds:
   # High-impact general science
   - name: Nature
     url: https://www.nature.com/nature.rss
+    tier: 1
   - name: Science
     url: https://www.science.org/rss/news_current.xml
+    tier: 1
   - name: PNAS
     url: https://www.pnas.org/rss/current.xml
+    tier: 1
   - name: PLOS ONE (Computer Science)
     url: https://journals.plos.org/plosone/feed/atom?subject=Computer+and+information+sciences
+    tier: 1
   # AI/ML specialist journals
   - name: Nature Machine Intelligence
     url: https://www.nature.com/natmachintell.rss
+    tier: 1
   - name: AI & Society (Springer)
     url: https://link.springer.com/search.rss?facet-journal-id=146&query=
+    tier: 1
   - name: Ethics and Information Technology
     url: https://link.springer.com/search.rss?facet-journal-id=10676&query=
+    tier: 1
   # Think tanks (keyword-filtered)
   - name: RAND Corporation
     url: https://www.rand.org/pubs/articles.xml
+    tier: 1
 
 # RSS feeds to monitor
 rss_feeds:
   # Community forums
   - name: Alignment Forum
     url: https://www.alignmentforum.org/feed.xml
+    tier: 2
   - name: LessWrong (AI tag)
     url: https://www.lesswrong.com/feed.xml?view=community-rss&karmaThreshold=30
+    tier: 3
   # Substacks
   - name: Import AI (Jack Clark)
     url: https://importai.substack.com/feed
+    tier: 2
   - name: Hyperdimensional (Dean Ball)
     url: https://www.hyperdimensional.co/feed
+    tier: 2
   - name: Don't Worry About the Vase (Zvi Mowshowitz)
     url: https://thezvi.substack.com/feed
+    tier: 2
   - name: The Cognitive Revolution (Nathan Labenz)
     url: https://cognitiverevolution.substack.com/feed
+    tier: 2
   - name: Planned Obsolescence (Ajeya Cotra & Kelsey Piper)
     url: https://www.planned-obsolescence.org/feed
+    tier: 2
   - name: Miles Brundage
     url: https://milesbrundage.substack.com/feed
+    tier: 2
   - name: AI Safety Newsletter (CAIS)
     url: https://newsletter.safe.ai/feed
+    tier: 2
   - name: Interconnects (Nathan Lambert)
     url: https://www.interconnects.ai/feed
+    tier: 2
   - name: AI Snake Oil (Narayanan & Kapoor)
     url: https://aisnakeoil.substack.com/feed
+    tier: 2
   - name: AI Safety & Governance (Victor Akinwande)
     url: https://www.safeai.news/feed
+    tier: 2
   # AI Safety Research Labs
   - name: METR
     url: https://metr.org/feed.xml
+    tier: 2
   - name: Alignment Research Center (ARC)
     url: https://alignment.org/blog/feed
+    tier: 2
   - name: Future of Life Institute
     url: https://futureoflife.org/feed/
+    tier: 2
   - name: MIRI
     url: https://intelligence.org/feed/
+    tier: 2
   # Governance
   - name: Georgetown CSET
     url: https://cset.georgetown.edu/feed/
+    tier: 1
   - name: AI Now Institute
     url: https://ainowinstitute.org/feed
+    tier: 2
   - name: Ada Lovelace Institute
     url: https://www.adalovelaceinstitute.org/feed/
+    tier: 2
 
 # Websites to crawl via sitemap for new content
 websites:
@@ -140,37 +173,45 @@ websites:
     include_patterns:
       - /research/
       - /news/
+    tier: 2
   - name: OpenAI Blog
     sitemap: https://openai.com/sitemap.xml
     include_patterns:
       - /index/
       - /research/
+    tier: 2
   - name: DeepMind Blog
     sitemap: https://deepmind.google/sitemap.xml
     include_patterns:
       - /research/
       - /discover/
+    tier: 2
   - name: Apollo Research
     sitemap: https://www.apolloresearch.ai/sitemap.xml
     include_patterns:
       - /blog/
       - /research/
+    tier: 2
   - name: Epoch AI
     sitemap: https://epoch.ai/sitemap-index.xml
     include_patterns:
       - /blog/
+    tier: 2
   - name: IAPS (Institute for AI Policy & Strategy)
     sitemap: https://www.iaps.ai/sitemap.xml
     include_patterns:
       - /research/
+    tier: 2
   - name: Conjecture
     sitemap: https://conjecture.dev/sitemap.xml
     include_patterns:
       - /research/
+    tier: 2
   - name: International AI Safety Report
     sitemap: https://internationalaisafetyreport.org/sitemap.xml
     include_patterns:
       - /publication/
+    tier: 1
 
 # National AI Safety Institutes
 aisi_websites:
@@ -181,54 +222,66 @@ aisi_websites:
       - artificial intelligence
       - AI safety
       - AI risk
+    tier: 1
   - name: UK AI Safety Institute
     url: https://www.aisi.gov.uk/research
     urls:
       - https://www.aisi.gov.uk/blog
+    tier: 1
   - name: Canada AI Safety Institute (CAISI)
     url: https://ised-isde.canada.ca/site/artificial-intelligence-safety-institute/en
+    tier: 1
   - name: Japan AI Safety Institute (J-AISI)
     url: https://aisi-go-jp.translate.goog/activity/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US
+    tier: 1
   - name: Singapore AI Safety Institute
     url: https://www.sgaisi.sg/our-works/
+    tier: 1
   - name: European AI Office
     url: https://digital-strategy.ec.europa.eu/en/news
+    tier: 1
   - name: Korea AI Safety Institute
     url: https://www.msit.go.kr/eng/index.do
+    tier: 1
 
 # Hacker News search keywords
 hn_keywords:
-  - activation steering
-  - adversarial robustness
-  - AI ethics
-  - AI evaluation
-  - AI governance
-  - AI guardrails
-  - AI oversight
-  - AI regulation
-  - AI safety
-  - AI Safety Institute
-  - AI Security Institute
-  - alignment
-  - CAISI
-  - collusion risk
-  - constitutional AI
-  - content provenance
-  - deception
-  - deepfake detection
-  - existential risk
-  - hallucination
-  - honesty evaluation
-  - interpretability
-  - jailbreak
-  - mechanistic interpretability
-  - multilingual AI safety
-  - red teaming
-  - responsible AI
-  - RLHF
-  - scalable oversight
-  - synthetic content detection
-  - value alignment
+  tier: 3
+  keywords:
+    - activation steering
+    - adversarial robustness
+    - AI ethics
+    - AI evaluation
+    - AI governance
+    - AI guardrails
+    - AI oversight
+    - AI regulation
+    - AI safety
+    - AI Safety Institute
+    - AI Security Institute
+    - alignment
+    - CAISI
+    - collusion risk
+    - constitutional AI
+    - content provenance
+    - deception
+    - deepfake detection
+    - existential risk
+    - hallucination
+    - honesty evaluation
+    - interpretability
+    - jailbreak
+    - mechanistic interpretability
+    - multilingual AI safety
+    - red teaming
+    - responsible AI
+    - RLHF
+    - scalable oversight
+    - synthetic content detection
+    - value alignment
+
+# GitHub activity tier
+github_tier: 3
 
 # Supported languages (en is default, fr planned)
 languages:

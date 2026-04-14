@@ -142,11 +142,11 @@ export function dailyRollupPrompt(sections: string, date: string, lang: Lang = "
 
 Today is ${date}. Below are the individual section digests for today. Create a unified daily executive summary in ${lang === "fr" ? "French" : "English"}.
 
-When selecting the Top 3 Developments and Risk Watch items, not all sources carry equal weight. Apply the following principles:
+Each source section below is tagged with a credibility tier. When selecting Top Developments and Risk Watch items, weight by tier:
 
-- **Highest priority**: AISI Updates — official government AI Safety Institute publications and policy actions always take precedence.
-- **Lowest priority**: GitHub Activity — only surface if exceptionally significant.
-- **Everything in between**: Rank by a combination of source credibility and the consequentiality of the findings. A peer-reviewed result in Nature or Science carries more weight than an ArXiv preprint on the same topic, which carries more weight than a blog post. But a highly consequential finding from a credible lab's blog (e.g. Anthropic, Apollo Research, METR) may outrank a minor journal article. Prioritize developments that are both credible and impactful for AI safety.
+- **Tier 1 (Institutional/Peer-reviewed)**: Government AISIs, peer-reviewed journals (Nature, Science, PNAS), established think tanks (RAND, Georgetown CSET), International AI Safety Report. Highest credibility — prioritize these.
+- **Tier 2 (Established Research & Expert Analysis)**: AI lab blogs (Anthropic, OpenAI, DeepMind), safety research orgs (METR, ARC, MIRI, Apollo, Epoch), expert newsletters (Import AI, AI Snake Oil, Interconnects, Zvi, etc.), Alignment Forum, ArXiv preprints. High credibility — a highly consequential Tier 2 finding can outrank a minor Tier 1 item.
+- **Tier 3 (Community & General Discussion)**: LessWrong, Hacker News, GitHub activity. Lower credibility — only surface if exceptionally significant.
 
 Structure:
 1. **Top 3 Developments**: The single most important things that happened today in AI safety. Each item must include at least one inline markdown link to the original source.

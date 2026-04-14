@@ -2,15 +2,19 @@ import { readFileSync } from "fs";
 import yaml from "js-yaml";
 import { join } from "path";
 
+export type Tier = 1 | 2 | 3;
+
 export interface RssFeed {
   name: string;
   url: string;
+  tier?: Tier;
 }
 
 export interface Website {
   name: string;
   sitemap: string;
   include_patterns: string[];
+  tier?: Tier;
 }
 
 export interface AisiWebsite {
@@ -19,20 +23,26 @@ export interface AisiWebsite {
   urls?: string[];
   rss?: string;
   keywords?: string[];
+  tier?: Tier;
 }
 
 export interface Config {
   github_topics: string[];
   github_repos: string[];
+  github_tier?: Tier;
   journal_feeds: RssFeed[];
   arxiv: {
+    tier?: Tier;
     categories: string[];
     keywords: string[];
   };
   rss_feeds: RssFeed[];
   websites: Website[];
   aisi_websites: AisiWebsite[];
-  hn_keywords: string[];
+  hn_keywords: {
+    tier?: Tier;
+    keywords: string[];
+  };
   languages: string[];
 }
 

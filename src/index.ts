@@ -100,37 +100,37 @@ async function main() {
     const content = `# ArXiv - AI Safety Papers (${date})\n\n${arxivReport}`;
     saveReport(date, "safety-arxiv.md", content);
     enFiles.push({ filename: "safety-arxiv.md", content });
-    sections.push(`## ArXiv Papers\n\n${arxivReport}`);
+    sections.push(`## ArXiv Papers [Tier 2]\n\n${arxivReport}`);
   }
   if (rssReport) {
     const content = `# Blog Posts & Articles (${date})\n\n${rssReport}`;
     saveReport(date, "safety-rss.md", content);
     enFiles.push({ filename: "safety-rss.md", content });
-    sections.push(`## Blog Posts & Articles\n\n${rssReport}`);
+    sections.push(`## Blog Posts & Articles [Tier 2]\n\n${rssReport}`);
   }
   if (githubReport) {
     const content = `# GitHub Activity (${date})\n\n${githubReport}`;
     saveReport(date, "safety-github.md", content);
     enFiles.push({ filename: "safety-github.md", content });
-    sections.push(`## GitHub Activity\n\n${githubReport}`);
+    sections.push(`## GitHub Activity [Tier 3]\n\n${githubReport}`);
   }
   if (hnReport) {
     const content = `# Hacker News Discussions (${date})\n\n${hnReport}`;
     saveReport(date, "safety-hn.md", content);
     enFiles.push({ filename: "safety-hn.md", content });
-    sections.push(`## Hacker News\n\n${hnReport}`);
+    sections.push(`## Hacker News [Tier 3]\n\n${hnReport}`);
   }
   if (aisiReport) {
     const content = `# AI Safety Institutes (${date})\n\n${aisiReport}`;
     saveReport(date, "safety-aisi.md", content);
     enFiles.push({ filename: "safety-aisi.md", content });
-    sections.push(`## AI Safety Institutes\n\n${aisiReport}`);
+    sections.push(`## AI Safety Institutes [Tier 1]\n\n${aisiReport}`);
   }
   if (journalReport) {
     const content = `# Journal Articles (${date})\n\n${journalReport}`;
     saveReport(date, "safety-journals.md", content);
     enFiles.push({ filename: "safety-journals.md", content });
-    sections.push(`## Journal Articles\n\n${journalReport}`);
+    sections.push(`## Journal Articles [Tier 1]\n\n${journalReport}`);
   }
 
   // Phase 3: Generate daily rollup
