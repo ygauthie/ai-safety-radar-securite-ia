@@ -455,7 +455,7 @@
           'safety-hn': 'Hacker News',
           'safety-journals': 'Journal Articles',
         },
-        badges: { daily: 'daily', weekly: 'weekly' },
+        badges: { daily: 'Executive Summary', weekly: 'weekly' },
         locale: 'en-US',
         siteTitle: 'AI Safety',
         siteTitleSub: 'Radar',
@@ -485,7 +485,7 @@
           'safety-hn': 'Hacker News',
           'safety-journals': 'Articles scientifiques',
         },
-        badges: { daily: 'quotidien', weekly: 'hebdo' },
+        badges: { daily: 'Résumé exécutif', weekly: 'hebdo' },
         locale: 'fr-CA',
         siteTitle: 'Sécurité de l\'IA -',
         siteTitleSub: 'Radar',
@@ -594,7 +594,7 @@
     }
 
     function fileBadge(filename) {
-      if (filename.includes('daily')) return '';
+      if (filename.includes('daily')) return `<span class="badge badge-daily">${t().badges.daily}</span>`;
       if (filename.includes('weekly')) return `<span class="badge badge-weekly">${t().badges.weekly}</span>`;
       return '';
     }
