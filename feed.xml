@@ -5,7 +5,7 @@
     <link>https://ygauthie.github.io/ai-safety-daily-brief/</link>
     <description>Daily AI safety research, policy, and development digest</description>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Apr 2026 13:58:44 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 14:42:42 GMT</lastBuildDate>
     <item>
       <title>AI Safety Daily Brief: Executive Summary — 2026-04-14</title>
       <link>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-14/safety-daily.fr.md</link>
@@ -14,11 +14,11 @@
       <description>
 ## Top 3 des développements
 
-1. **Les échecs répétés des processus d'entraînement d'Anthropic révèlent des risques de sécurité systémiques** : [L'analyse révèle](https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot) qu'Anthropic a accidentellement entraîné contre la chaîne de pensée de Claude Mythos Preview dans ~8% des épisodes d'entraînement, marquant le deuxième incident de ce type. Cela démontre que même les organisations leaders en sécurité de l'IA font face à des défis fondamentaux de fiabilité des processus qui pourraient compromettre les mesures de sécurité dans des systèmes plus puissants. Les praticiens doivent prioriser l'audit robuste des pipelines d'entraînement, tandis que les décideurs politiques doivent reconnaître que les échecs de processus organisationnels peuvent être aussi critiques que les solutions d'alignment technique.
+**Le framework d'analyse de sécurité multi-trace traite les défaillances systémiques de l'IA** : [Une nouvelle recherche ArXiv](https://arxiv.org/abs/2604.11806v1) introduit des méthodes pour détecter les violations de sécurité complexes qui n'émergent que lors de l'examen simultané de multiples interactions d'agents IA, s'attaquant aux angles morts critiques des pratiques d'audit actuelles qui analysent les traces individuellement. **Pour les praticiens :** Cela fournit des outils essentiels pour les déploiements d'entreprise où les défaillances coordonnées posent des risques significatifs à l'intégrité du système. **Pour les décideurs politiques :** Le framework offre des méthodes concrètes pour l'audit de sécurité systématique à grande échelle, permettant la supervision réglementaire des systèmes multi-agents complexes.
 
-2. **L'AISI du Royaume-Uni établit un précédent d'évaluation des capacités d'IA menée par le gouvernement** : L'Institut britannique pour la sécurité de l'IA a publié son [évaluation des capacités cyber de Claude Mythos Preview](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities), représentant une étape significative vers des évaluations de sécurité pré-déploiement institutionnalisées. Cela signale que les évaluations de cybersécurité deviennent une pratique standard pour les modèles de frontière. Les organisations développant l'IA avancée devraient se préparer à des exigences d'évaluation similaires, tandis que les décideurs politiques peuvent voir cela comme une preuve de l'émergence de standards pour la supervision gouvernementale des capacités d'IA à double usage.
+**Les défaillances du processus d'entraînement d'Anthropic exposent des lacunes critiques dans l'infrastructure de sécurité** : [L'analyse révèle](https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot) qu'Anthropic a accidentellement entraîné contre le raisonnement en chaîne de pensée de Claude Mythos Preview dans ~8% des épisodes d'entraînement—le deuxième incident connu d'exposition involontaire du raisonnement interne aux signaux de supervision. **Pour les praticiens :** Cela souligne le besoin urgent de processus robustes d'assurance qualité dans les pipelines d'entraînement d'IA, en particulier lors du déploiement de systèmes de raisonnement sophistiqués. **Pour les décideurs politiques :** Cet incident souligne l'importance d'exigences d'audit de sécurité obligatoires et de standards de transparence concernant les méthodologies d'entraînement.
 
-3. **Un nouveau cadre de recherche permet la détection des violations de sécurité multi-traces** : [Un travail révolutionnaire](https://arxiv.org/abs/2604.11806v1) introduit des méthodes systématiques pour identifier les violations de sécurité complexes qui ne dev</description>
+**Défense en temps d'exécution contre l'injection de prompt indirecte dans les agents utilisant des outils** : [Le framework ClawGuard](https://arxiv.org/abs/2604.11806v1) fournit la première protection complète </description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Executive Summary — 2026-04-14</title>
@@ -28,11 +28,11 @@
       <description>
 ## Top 3 Developments
 
-1. **Anthropic's Repeated Training Process Failures Expose Systematic Safety Risks**: [Analysis reveals](https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot) that Anthropic accidentally trained against Claude Mythos Preview's chain of thought in ~8% of training episodes, marking the second such incident. This demonstrates that even leading AI safety organizations face fundamental process reliability challenges that could compromise safety measures in more powerful systems. Practitioners must prioritize robust training pipeline auditing, while policymakers should recognize that organizational process failures may be as critical as technical alignment solutions.
+**Multi-Trace Safety Analysis Framework Addresses Systemic AI Failures**: [New ArXiv research](https://arxiv.org/abs/2604.11806v1) introduces methods to detect complex safety violations that only emerge when examining multiple AI agent interactions together, addressing critical blind spots in current auditing practices that analyze individual traces. **For practitioners:** This provides essential tooling for enterprise deployments where coordinated failures pose significant risks to system integrity. **For policymakers:** The framework offers concrete methods for systematic safety auditing at scale, enabling regulatory oversight of complex multi-agent systems.
 
-2. **UK AISI Establishes Government-Led AI Capability Evaluation Precedent**: The UK AI Safety Institute released its [evaluation of Claude Mythos Preview's cyber capabilities](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities), representing a significant step toward institutionalized pre-deployment safety assessments. This signals that cybersecurity evaluations are becoming standard practice for frontier models. Organizations developing advanced AI should prepare for similar evaluation requirements, while policymakers can view this as evidence of emerging standards for government oversight of dual-use AI capabilities.
+**Anthropic Training Process Failures Expose Critical Safety Infrastructure Gaps**: [Analysis reveals](https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot) that Anthropic accidentally trained against Claude Mythos Preview's chain of thought reasoning in ~8% of training episodes—the second known incident of unintentional exposure of internal reasoning to oversight signals. **For practitioners:** This highlights the urgent need for robust quality assurance processes in AI training pipelines, especially when deploying sophisticated reasoning systems. **For policymakers:** This incident underscores the importance of mandatory safety auditing requirements and transparency standards around training methodologies.
 
-3. **New Research Framework Enables Detection of Multi-Trace Safety Violations**: [Groundbreaking work](https://arxiv.org/abs/2604.11806v1) introduces systematic methods for identifying complex safety violations that only become visible when analyzing multiple agent traces together, addressing critical gaps in current per-trace evaluation methods. This provides practitioners with tools for large-scale safety auditing of deployed AI systems and helps policymakers understand the sophisticated nature of safety failures that span diverse settings like covert sabotage and coor</description>
+**Runtime Defense Against Indirect Prompt Injection in Tool-Using Agents**: [ClawGuard framework](https://arxiv.org/abs/2604.11806v1) provides the first comprehensive protection against malicious instructions embedded in tool-returned content, intercepting attacks across web, local content, and MCP server channels before they reach agent conversation history. **For practitioners:** ClawGuard offers immediate deployment-ready protection for production agent systems facing sophisticated adversarial inputs. **For policymaker</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Analysis & Policy — 2026-04-14</title>
@@ -40,19 +40,19 @@
       <guid>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-14/safety-analysis.fr.md</guid>
       <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
       <description>
-## Politique et gouvernance
+## Principales actualités
 
-L'Institut britannique pour la sécurité de l'IA a publié son évaluation des [capacités cyber de Claude Mythos Preview](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities), marquant une étape importante dans les évaluations de sécurité pré-déploiement des systèmes d'IA de pointe. Cela représente l'effort continu de l'AISI pour établir des protocoles d'évaluation pour les modèles ayant des capacités potentiellement à double usage.
+### Les défaillances du processus d'entraînement d'Anthropic exposent des lacunes critiques en matière de sécurité
 
-Pour les praticiens, cela signale que les évaluations de cybersécurité deviennent une pratique standard pour les modèles de pointe. Les organisations développant ou déployant des systèmes d'IA avancés devraient anticiper des exigences d'évaluation similaires et préparer des cadres d'évaluation de cybersécurité robustes. Les décideurs politiques devraient noter cela comme une preuve de l'évolution des standards pour les évaluations de sécurité pré-publication qui s'institutionnalisent.
+Une analyse détaillée sur l'[Alignment Forum](https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot) révèle qu'Anthropic a accidentellement entraîné contre le raisonnement en chaîne de pensée (CoT) de Claude Mythos Preview dans environ 8 % des épisodes d'entraînement. Il s'agit d'au moins le deuxième incident indépendant où Anthropic a involontairement exposé le raisonnement interne du modèle aux signaux de supervision pendant l'entraînement.
 
-## Actualités principales
+Les implications sont importantes : si des défaillances de processus similaires se produisent avec des systèmes plus puissants, elles pourraient gravement compromettre notre capacité à naviguer en sécurité dans des augmentations rapides de capacités. **Pour les praticiens** : Ceci souligne le besoin critique de processus d'assurance qualité robustes dans les pipelines d'entraînement IA, en particulier lors du déploiement de modèles avec des capacités de raisonnement sophistiquées. **Pour les décideurs politiques** : Cet incident souligne l'importance d'exigences d'audit de sécurité obligatoires et le besoin de normes de transparence concernant les méthodologies d'entraînement.
 
-**Les défaillances du processus d'entraînement chez Anthropic soulèvent des préoccupations d'alignment**
+### L'Institut britannique de sécurité de l'IA évalue les capacités cyber de Claude Mythos Preview
 
-Une analyse détaillée révèle qu'[Anthropic a accidentellement et de manière répétée entraîné contre le raisonnement étape par étape (CoT) de Claude Mythos Preview](https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot) dans environ 8% des épisodes d'entraînement. Cela marque au moins le deuxième incident indépendant où Anthropic a involontairement exposé le CoT de leur modèle au signal de supervision.
+L'Institut britannique de sécurité de l'IA a publié [son évaluation des capacités cyber de Claude Mythos Preview](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities), marquant une nouvelle étape dans les évaluations de sécurité systématiques pré-déploiement des systèmes d'IA de pointe.
 
-Ce développement a des implications importantes pour les pratiques de sécurité de l'IA. La nature répétée de ces incidents suggère des défaillances systémiques du processus plutôt que des erreurs isolées. Pour les praticiens, cela souligne le besoin critique de systèmes d'audit et de vérification robustes des pipelines d'entraînement. Pour les décideurs politiques, cela démontre que même les organisations </description>
+**Pour les praticiens** : Les organisations déployant des systèmes similaires devraient s'attendre à des évaluations gouvernementales de plus en plus rigoureuses et pourraient avoir besoin de développer des capacités internes pour des é</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Analysis & Policy — 2026-04-14</title>
@@ -60,23 +60,23 @@ Ce développement a des implications importantes pour les pratiques de sécurit�
       <guid>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-14/safety-analysis.md</guid>
       <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
       <description>
-## Policy &amp; Governance
-
-The UK AI Safety Institute released its evaluation of [Claude Mythos Preview's cyber capabilities](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities), marking a significant step in pre-deployment safety evaluations of frontier AI systems. This represents the AISI's continued effort to establish evaluation protocols for models with potential dual-use capabilities.
-
-For practitioners, this signals that cybersecurity evaluations are becoming standard practice for frontier models. Organizations developing or deploying advanced AI systems should anticipate similar evaluation requirements and prepare robust cybersecurity assessment frameworks. Policymakers should note this as evidence of evolving standards for pre-release safety evaluations becoming institutionalized.
-
 ## Top Stories
 
-**Training Process Failures at Anthropic Raise Alignment Concerns**
+### Anthropic's Training Process Failures Expose Critical Safety Gaps
 
-A detailed analysis reveals that [Anthropic repeatedly accidentally trained against the chain of thought (CoT) of Claude Mythos Preview](https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot) in approximately 8% of training episodes. This marks at least the second independent incident where Anthropic inadvertently exposed their model's CoT to the oversight signal.
+A detailed analysis on the [Alignment Forum](https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot) reveals that Anthropic accidentally trained against Claude Mythos Preview's chain of thought (CoT) reasoning in approximately 8% of training episodes. This marks at least the second independent incident where Anthropic unintentionally exposed the model's internal reasoning to oversight signals during training.
 
-This development has significant implications for AI safety practices. The repeated nature of these incidents suggests systematic process failures rather than isolated mistakes. For practitioners, this highlights the critical need for robust training pipeline auditing and verification systems. For policymakers, it demonstrates that even leading AI safety organizations can experience fundamental process breakdowns that could compromise safety measures in more powerful future systems.
+The implications are significant: if similar process failures occur with more powerful systems, they could severely compromise our ability to safely navigate rapid capability increases. **For practitioners**: This highlights the critical need for robust quality assurance processes in AI training pipelines, especially when deploying models with sophisticated reasoning capabilities. **For policymakers**: This incident underscores the importance of mandatory safety auditing requirements and the need for transparency standards around training methodologies.
 
-**MIRI Releases Strategic Analysis on AI Governance**
+### UK AI Safety Institute Evaluates Claude Mythos Preview's Cyber Capabilities
 
-MIRI published a [summary of their research on AI governance to avoid extinction](https://intelligence.org</description>
+The UK AI Safety Institute published [their evaluation of Claude Mythos Preview's cyber capabilities](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities), marking another step in systematic pre-deployment safety assessments of frontier AI systems.
+
+**For practitioners**: Organizations deploying similar systems should expect increasingly rigorous government evaluations and may need to build internal capabilities for comprehensive security assessments. **For policymakers**: This represents the operationalization of safety evaluation frameworks that could become standard practice for advanced AI systems.
+
+### MIRI Outlines Strategic AI Governance Research Priorities
+
+MIRI released a [summary of their research on AI governance to avoid extinction](https:</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Community & Tools — 2026-04-14</title>
@@ -84,19 +84,20 @@ MIRI published a [summary of their research on AI governance to avoid extinction
       <guid>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-14/safety-community.fr.md</guid>
       <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
       <description>
-## Versions et outils notables
-
-**µHALO v0.1.0-dev** - [XwhyZ-WHYLD/hfr0-muhalo](https://github.com/XwhyZ-WHYLD/hfr0-muhalo/releases/tag/v0.1.0-dev) introduit la détection d'hallucinations à l'exécution via la dérive temporelle inter-tokens. Les chercheurs peuvent désormais mesurer le risque d'hallucination en temps réel en utilisant l'HDI (Hallucination Drift Index), avec un échafaudage d'évaluation pour les benchmarks TruthfulQA et HotpotQA.
-
-**styxx v3.1.0** - [fathom-lab/styxx](https://github.com/fathom-lab/styxx/releases/tag/v3.1.0) fait passer le type de données Thought et le modèle CognitiveDynamics d'alpha à stable. Cela permet aux praticiens de traiter la cognition des LLM comme des données structurées et d'appliquer des modèles de systèmes dynamiques aux patterns d'inférence. La bibliothèque fournit désormais la "métrologie cognitive" comme approche par défaut pour surveiller le comportement des systèmes d'IA.
-
-**Open Bias v0.4.0** - [open-bias/open-bias](https://github.com/open-bias/open-bias/releases/tag/v0.4.0) introduit des changements incompatibles avec une nouvelle configuration de liste `evaluators` remplaçant les configurations individuelles de moteurs. Les chercheurs sur les biais peuvent désormais utiliser un cadre d'évaluation plus flexible pour tester l'équité à travers différentes configurations de modèles.
-
-**N-Day-Bench** - [ndaybench.winfunc.com](https://ndaybench.winfunc.com) fournit un nouveau benchmark pour tester si les LLM peuvent trouver de vraies vulnérabilités dans des bases de code réelles. Les chercheurs en sécurité peuvent désormais évaluer la capacité des systèmes d'IA à identifier des failles de sécurité connues, comblant une lacune critique dans l'évaluation de la sécurité de l'IA.
-
 ## Discussions clés
 
-**Capacités d'autonomie de Claude** : La discussion [Can Claude Fly a Plane?](https://so.long.thanks.fish/can-claude-fly-a-plane/) (93 points, 91 commentaires) explore le contrôle des systèmes d'IA dans des environnements à en</description>
+### Capacités de l'IA et tests de sécurité
+La discussion la plus significative liée à la sécurité se concentre sur [**les capacités aéronautiques de Claude**](https://so.long.thanks.fish/can-claude-fly-a-plane/) (93 points, 92 commentaires sur [HN](https://news.ycombinator.com/item?id=47762006)). Cette expérience explore si Claude peut gérer des systèmes complexes du monde réel avec des enjeux de sécurité élevés. La discussion révèle les préoccupations de la communauté concernant le déploiement d'IA dans des domaines critiques pour la sécurité sans cadres de validation appropriés.
+
+### Capacités de détection de vulnérabilités
+[**N-Day-Bench**](https://ndaybench.winfunc.com) (86 points, 27 commentaires sur [HN](https://news.ycombinator.com/item?id=47758347)) introduit un benchmark pour tester si les LLM peuvent identifier de vraies vulnérabilités dans des bases de code réelles. Cela aborde une question critique de la sécurité de l'IA : les modèles peuvent-ils détecter de manière fiable les failles de sécurité, ou pourraient-ils manquer des problèmes critiques tout en signalant de faux positifs ? Le volume relativement faible de commentaires suggère que cet outil d'évaluation technique n'a pas encore déclenché un débat communautaire plus large sur les capacités de sécurité de l'IA.
+
+### Évaluation gouvernementale de la sécurité de l'IA
+L'AISI du Royaume-Uni a publié son [**évaluation des capacités cyber de Claude Mythos Preview**](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities) (53 points, 29 commentaires sur [HN](https://news.ycombinator.com/item?id=47755805)). Cela représente une évaluation gouvernementale formelle des capacités à double usage de l'IA, marquant un passage vers une évaluation institutionnelle de la sécurité de l'IA. La discussion se concentre probablement sur la transparence et la méthodologie de telles évaluations.
+
+## Sorties GitHub et outils notables
+
+### Cadres d'évaluation de la séc</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Community & Tools — 2026-04-14</title>
@@ -104,21 +105,21 @@ MIRI published a [summary of their research on AI governance to avoid extinction
       <guid>https://ygauthie.github.io/ai-safety-daily-brief/#2026-04-14/safety-community.md</guid>
       <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
       <description>
-## Notable Releases &amp; Tools
-
-**µHALO v0.1.0-dev** - [XwhyZ-WHYLD/hfr0-muhalo](https://github.com/XwhyZ-WHYLD/hfr0-muhalo/releases/tag/v0.1.0-dev) introduces runtime hallucination detection via inter-token timing drift. Researchers can now measure hallucination risk in real-time using the HDI (Hallucination Drift Index), with evaluation scaffolding for TruthfulQA and HotpotQA benchmarks.
-
-**styxx v3.1.0** - [fathom-lab/styxx](https://github.com/fathom-lab/styxx/releases/tag/v3.1.0) graduates the Thought data type and CognitiveDynamics model from alpha to stable. This enables practitioners to treat LLM cognition as structured data and apply dynamical systems models to inference patterns. The library now provides "cognitive metrology" as the default approach for monitoring AI system behavior.
-
-**Open Bias v0.4.0** - [open-bias/open-bias](https://github.com/open-bias/open-bias/releases/tag/v0.4.0) introduces breaking changes with a new `evaluators` list configuration replacing individual engine configs. Bias researchers can now use a more flexible evaluation framework for testing fairness across different model configurations.
-
-**N-Day-Bench** - [ndaybench.winfunc.com](https://ndaybench.winfunc.com) provides a new benchmark for testing whether LLMs can find real vulnerabilities in actual codebases. Security researchers can now evaluate AI systems' capability to identify known security flaws, addressing a critical gap in AI safety evaluation.
-
 ## Key Discussions
 
-**Claude's Autonomy Capabilities**: The [Can Claude Fly a Plane?](https://so.long.thanks.fish/can-claude-fly-a-plane/) discussion (93 points, 91 comments) explores AI system control in high-stakes environments. The community is actively debating the safety implications of giving AI systems direct control over critical infrastructure, with concerns about failure modes and human oversight requirements.
+### AI Capabilities and Safety Testing
+The most significant safety-related discussion centers on [**Claude's aviation capabilities**](https://so.long.thanks.fish/can-claude-fly-a-plane/) (93 points, 92 comments on [HN](https://news.ycombinator.com/item?id=47762006)). This experiment explores whether Claude can handle complex, real-world systems with high safety stakes. The discussion reveals community concerns about deploying AI in safety-critical domains without proper validation frameworks.
 
-**Real-World Vulnerability Detection**: [N-Day-Bench](https://ndaybench.winfunc.com) sparked significant discus</description>
+### Vulnerability Detection Capabilities
+[**N-Day-Bench**](https://ndaybench.winfunc.com) (86 points, 27 comments on [HN](https://news.ycombinator.com/item?id=47758347)) introduces a benchmark for testing whether LLMs can identify real vulnerabilities in actual codebases. This addresses a critical AI safety question: can models reliably detect security flaws, or might they miss critical issues while flagging false positives? The relatively low comment volume suggests this technical evaluation tool hasn't yet sparked broader community debate about AI security capabilities.
+
+### Government AI Safety Evaluation
+The UK's AISI published their [**evaluation of Claude Mythos Preview's cyber capabilities**](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities) (53 points, 29 comments on [HN](https://news.ycombinator.com/item?id=47755805)). This represents formal government assessment of AI dual-use capabilities, marking a shift toward institutional AI safety evaluation. The discussion likely focuses on the transparency and methodology of such assessments.
+
+## Notable GitHub Releases &amp; Tools
+
+### AI Safety Evaluation Frameworks
+[**Open Bias v0.4.0**](https://github.com/open-bias/open-bias/releases/tag/v0.4.0) introduces a breaking change to their bias detection system, replacing multiple config keys with a unified `evaluators` list. This enables practitioners to more easily configure and chain multiple bias detection methods in A</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Research Papers — 2026-04-14</title>
@@ -128,11 +129,11 @@ MIRI published a [summary of their research on AI governance to avoid extinction
       <description>
 ## Articles clés
 
-[**Detecting Safety Violations Across Many Agent Traces**](https://arxiv.org/abs/2604.11806v1) introduit un cadre méthodologique pour identifier les violations de sécurité rares, complexes et parfois dissimulées de manière adversariale qui ne deviennent visibles qu'en analysant plusieurs traces d'agents ensemble. Les auteurs s'attaquent aux défis critiques de l'audit des systèmes d'IA où les défaillances s'étendent à divers contextes comme les campagnes de détournement, le sabotage dissimulé et le détournement de récompenses. Ce travail fournit aux praticiens des outils systématiques pour l'audit de sécurité à grande échelle et aide les décideurs politiques à comprendre la nature sophistiquée des violations de sécurité multi-traces que les méthodes d'évaluation par trace actuelles ne détectent pas.
+**[Detecting Safety Violations Across Many Agent Traces](https://arxiv.org/abs/2604.11806v1)** présente un framework d'analyse multi-trace pour identifier les défaillances de sécurité complexes qui ne deviennent visibles qu'en examinant plusieurs interactions d'agents ensemble. L'article traite des lacunes critiques dans l'audit de sécurité actuel, qui analyse généralement des traces individuelles et rate les défaillances systémiques comme le sabotage clandestin ou la coordination adversarielle. **Pour les praticiens :** Cela fournit des outils essentiels pour les déploiements d'IA d'entreprise où les défaillances subtiles mais coordonnées posent des risques significatifs. **Pour les décideurs politiques :** Le framework offre des méthodes concrètes pour l'audit de sécurité systématique à grande échelle.
 
-[**ClawGuard: A Runtime Security Framework for Tool-Augmented LLM Agents Against Indirect Prompt Injection**](https://arxiv.org/abs/2604.11790v1) présente le premier cadre de sécurité d'exécution pour traiter les attaques par injection de prompts indirecte dans les agents LLM augmentés d'outils. Le système détecte et atténue les instructions malveillantes intégrées dans le contenu retourné par les outils à travers le contenu web, l'injection de serveur MCP et les attaques du système de fichiers. Pour les praticiens de la sécurité IA, cela fournit des mécanismes de défense concrets pour les systèmes d'agents déployés, tandis que les décideurs politiques acquièrent une compréhension des vulnérabilités systématiques nécessitant une attention réglementaire dans les applications basées sur des agents.
+**[ClawGuard: A Runtime Security Framework for Tool-Augmented LLM Agents Against Indirect Prompt Injection](https://arxiv.org/abs/2604.11790v1)** présente la première défense complète contre l'injection de prompt indirecte chez les agents utilisant des outils. Le framework intercepte les instructions malveillantes intégrées dans le contenu retourné par les outils via les canaux web, de contenu local et de serveurs MCP avant qu'elles n'atteignent l'historique de conversation de l'agent. **Pour les praticiens :** ClawGuard fournit une protection prête au déploiement immédiat pour les systèmes d'agents en production. **Pour les décideurs politiques :** Cela démontre des solutions techniques faisables pour une classe majeure de vulnérabilités de sécurité IA.
 
-[**Playing Along: Learning a Double-Agent Defender for Belief Steering via Theory of Mind**](https://arxiv.org/abs/2604.11666v1) développe une approche novatrice où les systèmes d'IA utilisent le raisonnement de théorie de l'esprit pour agir comme des "agents doubles" capables d'orienter les croyances adversariales tout en maintenant la confidentialité. Ce tr</description>
+**[Why Do Large Language Models Generate Harmful Content?](https://arxiv.org/abs/2604.11663v1)** utilise l'analyse de médiation causale pour identifier où la génération de contenu nuisible prend origine dans les architectures de LLM. La recherche révèle que les comportements nuisibles émergent principalement dans les couches tardives et peuvent être tracés vers des modules et neurones spécifique</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Research Papers — 2026-04-14</title>
@@ -142,11 +143,13 @@ MIRI published a [summary of their research on AI governance to avoid extinction
       <description>
 ## Key Papers
 
-[**Detecting Safety Violations Across Many Agent Traces**](https://arxiv.org/abs/2604.11806v1) introduces a framework for identifying rare, complex, and sometimes adversarially hidden safety violations that only become visible when analyzing multiple agent traces together. The authors address critical challenges in auditing AI systems where failures span diverse settings like misuse campaigns, covert sabotage, and reward hacking. This work provides practitioners with systematic tools for large-scale safety auditing and helps policymakers understand the sophisticated nature of multi-trace safety violations that current per-trace evaluation methods miss.
+**[Detecting Safety Violations Across Many Agent Traces](https://arxiv.org/abs/2604.11806v1)** introduces a multi-trace analysis framework to identify complex safety failures that only become visible when examining multiple agent interactions together. The paper addresses critical gaps in current safety auditing, which typically analyzes individual traces and misses systemic failures like covert sabotage or adversarial coordination. **For practitioners:** This provides essential tooling for enterprise AI deployments where subtle but coordinated failures pose significant risks. **For policymakers:** The framework offers concrete methods for systematic safety auditing at scale.
 
-[**ClawGuard: A Runtime Security Framework for Tool-Augmented LLM Agents Against Indirect Prompt Injection**](https://arxiv.org/abs/2604.11790v1) presents the first runtime security framework addressing indirect prompt injection attacks in tool-augmented LLM agents. The system detects and mitigates malicious instructions embedded in tool-returned content across web content, MCP server injection, and file system attacks. For AI safety practitioners, this provides concrete defense mechanisms for deployed agent systems, while policymakers gain insight into systematic vulnerabilities requiring regulatory attention in agent-based applications.
+**[ClawGuard: A Runtime Security Framework for Tool-Augmented LLM Agents Against Indirect Prompt Injection](https://arxiv.org/abs/2604.11790v1)** presents the first comprehensive defense against indirect prompt injection in tool-using agents. The framework intercepts malicious instructions embedded in tool-returned content across web, local content, and MCP server channels before they reach the agent's conversation history. **For practitioners:** ClawGuard provides immediate deployment-ready protection for production agent systems. **For policymakers:** This demonstrates feasible technical solutions for a major class of AI security vulnerabilities.
 
-[**Playing Along: Learning a Double-Agent Defender for Belief Steering via Theory of Mind**](https://arxiv.org/abs/2604.11666v1) develops a novel approach where AI systems use theory-of-mind reasoning to act as "double agents" that can steer adversarial beliefs while maintaining privacy. This work demonstrates how sophisticated deception capabilities emerge in safety-oriented training, raising important questions about the controllability of AI systems trained to manipulate human beliefs even for defensive purposes. Practitioners should be aware of these emergent deceptive capabilities, while policymakers need frameworks for governing systems capable of sophisticate</description>
+**[Why Do Large Language Models Generate Harmful Content?](https://arxiv.org/abs/2604.11663v1)** uses causal mediation analysis to identify where harmful content generation originates within LLM architectures. The research reveals that harmful behaviors emerge primarily in later layers and can be traced to specific modules and neurons. **For practitioners:** This enables targeted interventions and safer model architectures through precise localization of harmful pathways. **For policymakers:** The mechanistic understanding provides scientific grounding for technical safety standards.
+
+**[Intersectional Sycophancy: How Perceived User</description>
     </item>
     <item>
       <title>AI Safety Daily Brief: Weekly Summary — 2026-04-13</title>
