@@ -16,6 +16,7 @@ export interface Website {
 export interface AisiWebsite {
   name: string;
   url: string;
+  urls?: string[];
   rss?: string;
   keywords?: string[];
 }

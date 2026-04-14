@@ -49,8 +49,12 @@ export async function fetchAisi(): Promise<AisiItem[]> {
         }
       }
 
-      // Scrape page for links, but only return NEW ones not seen before
-      const pageUrls = await scrapePageLinks(site.url, site.name);
+      // Scrape all configured URLs for links, but only return NEW ones not seen before
+      const scrapeUrls = [site.url, ...(site.urls || [])];
+      const pageUrls: AisiItem[] = [];
+      for (const scrapeUrl of scrapeUrls) {
+        pageUrls.push(...await scrapePageLinks(scrapeUrl, site.name));
+      }
       for (const item of pageUrls) {
         if (!knownUrls.has(item.url)) {
           items.push(item);

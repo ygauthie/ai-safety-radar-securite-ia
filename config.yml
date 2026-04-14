@@ -166,6 +166,8 @@ aisi_websites:
       - AI risk
   - name: UK AI Safety Institute
     url: https://www.aisi.gov.uk/research
+    urls:
+      - https://www.aisi.gov.uk/blog
   - name: Canada AI Safety Institute (CAISI)
     url: https://ised-isde.canada.ca/site/artificial-intelligence-safety-institute/en
   - name: Japan AI Safety Institute (J-AISI)
