@@ -562,7 +562,7 @@
 
     // Sort files: daily/weekly first, then alphabetical
     function sortFiles(files) {
-      const priority = { 'weekly': 0, 'daily': 1 };
+      const priority = { 'weekly': 0, 'daily': 1, 'research': 2 };
       return [...files].sort((a, b) => {
         const pa = Object.entries(priority).find(([k]) => a.includes(k));
         const pb = Object.entries(priority).find(([k]) => b.includes(k));
