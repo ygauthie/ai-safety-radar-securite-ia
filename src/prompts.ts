@@ -17,7 +17,6 @@ Today is ${date}. Below are recent AI safety research papers from two sources:
 Produce a unified research digest in ${lang === "fr" ? "French" : "English"}:
 
 1. **Key Papers**: Highlight the 5-10 most significant papers. Lead with peer-reviewed articles when available — they take precedence over preprints on the same topic. Each summary should be 2-3 sentences and end with one sentence explaining why it matters.
-2. **Trends**: Identify emerging themes or research directions across both preprints and published work.
 
 Format as clean Markdown. Include paper titles as links.
 
