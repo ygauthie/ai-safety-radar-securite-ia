@@ -94,8 +94,8 @@ function main() {
     }
     return `    <item>
       <title>AI Safety Daily Brief: ${label} — ${date}</title>
-      <link>https://ygauthie.github.io/ai-safety-daily-brief/#${date}/${file}</link>
-      <guid>https://ygauthie.github.io/ai-safety-daily-brief/#${date}/${file}</guid>
+      <link>https://ygauthie.github.io/ai-safety-radar-securite-ia/#${date}/${file}</link>
+      <guid>https://ygauthie.github.io/ai-safety-radar-securite-ia/#${date}/${file}</guid>
       <pubDate>${new Date(date).toUTCString()}</pubDate>
       <description>${description}</description>
     </item>`;
@@ -105,7 +105,7 @@ function main() {
 <rss version="2.0">
   <channel>
     <title>AI Safety Daily Brief</title>
-    <link>https://ygauthie.github.io/ai-safety-daily-brief/</link>
+    <link>https://ygauthie.github.io/ai-safety-radar-securite-ia/</link>
     <description>Daily AI safety research, policy, and development digest</description>
     <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>

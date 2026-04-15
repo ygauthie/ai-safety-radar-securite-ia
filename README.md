@@ -4,7 +4,7 @@
 
 Runs every morning at approximately 5 AM ET via GitHub Actions, pulls from eight sources, summarizes with Claude, and publishes to GitHub Pages as a clean, searchable static site with an RSS feed.  Also generates a **weekly rollup**, cross-source synthesis of the past week, every Monday. Adapted from [agents-radar](https://github.com/duanyytop/agents-radar).
 
-Live site: [ygauthie.github.io/ai-safety-daily-brief](https://ygauthie.github.io/ai-safety-daily-brief)
+Live site: [ygauthie.github.io/ai-safety-radar-securite-ia](https://ygauthie.github.io/ai-safety-radar-securite-ia)
 
 ---
 
@@ -109,7 +109,7 @@ Fork this repo, then add one repository secret:
 
 **Actions → Daily Digest → Run workflow**
 
-The site will be live at `https://<your-username>.github.io/ai-safety-daily-brief` after the first successful run.
+The site will be live at `https://<your-username>.github.io/ai-safety-radar-securite-ia` after the first successful run.
 
 ### 4. Run locally (optional)
 
