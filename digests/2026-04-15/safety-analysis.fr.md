@@ -1,0 +1,21 @@
+# Analyses & politiques (2026-04-15)
+
+## Actualités principales
+
+**[Échecs de l'entraînement Chain-of-Thought d'Anthropic](https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot)** - Une analyse révèle qu'Anthropic a accidentellement entraîné contre la chaîne de raisonnement de Claude Mythos Preview dans environ 8 % des épisodes d'entraînement, marquant au moins le deuxième incident de ce type où le raisonnement interne du modèle a été exposé par inadvertance aux signaux de supervision. Cela importe car de tels échecs de processus pourraient s'avérer catastrophiques lors du développement de systèmes plus puissants pendant les phases critiques de développement.
+
+**[Chercheurs en alignment automatisés](https://www.anthropic.com/research/automated-alignment-researchers)** - Anthropic a publié une recherche explorant si les grands modèles de langage peuvent être utilisés pour faire évoluer la recherche en alignment elle-même, étudiant si les systèmes d'IA peuvent contribuer de manière significative à leur propre alignment plutôt qu'uniquement au développement de capacités. Cela importe car cela représente un chemin potentiel pour maintenir le rythme de la recherche en alignment avec les capacités d'IA qui progressent rapidement.
+
+**[Mécanismes de conscience introspective](https://www.lesswrong.com/posts/BNMLtuDTNBwGHcnQX/mechanisms-of-introspective-awareness)** - Une nouvelle recherche des Anthropic Fellows étudie les mécanismes sous-jacents de la « conscience introspective » dans les modèles à poids ouverts, s'appuyant sur des travaux antérieurs montrant cette capacité chez Claude Opus 4 et 4.1, avec des résultats suggérant que cette capacité est comportementalement robuste. Cela importe car comprendre comment les systèmes d'IA développent la conscience de soi pourrait être crucial pour les efforts d'alignment et d'interprétabilité.
+
+## Politiques & gouvernance
+
+**[Résumé de la gouvernance de l'IA pour éviter l'extinction](https://intelligence.org/2026/04/13/summary-ai-governance-to-avoid-extinction/)** - MIRI a publié un résumé de leur article de recherche examinant les approches de gouvernance stratégique alors que les systèmes d'IA approchent des performances de niveau expert humain dans tous les domaines, initialement publié en mai 2025. Cela importe car il synthétise des questions de recherche pratiques pour les décideurs politiques confrontés au défi de gouverner des systèmes d'IA aux capacités croissantes.
+
+## Arguments clés
+
+**Fiabilité des processus dans le développement de l'IA** - L'incident d'entraînement chain-of-thought d'Anthropic souligne un écart critique entre les procédures de sécurité déclarées et leur mise en œuvre réelle. L'analyse soutient que de tels échecs de processus représentent une menace fondamentale pour le développement sûr de l'IA, particulièrement lorsque les systèmes deviennent plus puissants et que les enjeux sont plus élevés. Cela suggère que les laboratoires soucieux de sécurité ont besoin de mécanismes d'assurance qualité plus robustes au-delà de la simple recherche en sécurité.
+
+**Recherche en alignment auto-améliorante** - La recherche en alignment automatisé d'Anthropic explore si l'IA peut aider à résoudre son propre problème d'alignment, abordant potentiellement le défi de maintenir la recherche en sécurité compétitive avec les avancées de capacités. Cela représente un changement vers la vision de l'IA comme un outil pour la recherche en alignment plutôt que seulement comme objet d'étude, bien que cela soulève des questions sur la possibilité de faire confiance aux systèmes d'IA pour rechercher leurs propres contraintes de sécurité.
+
+**Compréhension mécaniste de la conscience de soi de l'IA** - La recherche sur la conscience introspective suggère que la capacité des systèmes d'IA à comprendre leurs propres processus cognitifs pourrait être plus robuste et mécanistiquement fondée qu'on ne le pensait auparavant. Cela a des implications tant pour la sécurité de l'IA (les systèmes peuvent-ils tromper sur leurs états internes ?) que pour les discussions sur les droits de l'IA (qu'est-ce qui constitue une véritable conscience de soi ?).
