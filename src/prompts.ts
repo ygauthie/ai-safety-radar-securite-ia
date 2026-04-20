@@ -109,12 +109,11 @@ export function weeklyRollupPrompt(dailies: string, dateRange: string, lang: Lan
 This covers the week of ${dateRange}. Below are the daily digests from the past week. Create a comprehensive weekly summary in ${lang === "fr" ? "French" : "English"}.
 
 Structure:
-1. **Week in Review**: 3-5 paragraph overview of the most important developments and what they mean for the field.
-2. **Key Papers**: The most significant research papers of the week, with implications for practitioners and policymakers.
+1. **Week in Review**: 3-5 paragraphs covering the most important developments. Use plain, neutral language — do not editorialize. Every paper, article, blog post, or discussion mentioned must include an inline markdown link to the original source.
+2. **Key Papers**: The most significant research papers of the week. Each paper title must be a hyperlink. Each entry should be 2-3 sentences followed by one sentence explaining why the result matters — do not split implications by audience.
 3. **Industry Moves**: Notable actions by AI companies related to safety. What should other organizations learn or anticipate?
 4. **Policy & Governance**: Regulatory or governance developments. What do organizations need to prepare for or comply with?
 5. **Community Highlights**: Important discussions or community developments.
-6. **Looking Ahead**: What to watch for next week, and what practitioners and policymakers should be preparing for.
 
 Format as clean Markdown.  Do not omit links to save space — links are essential.
 
