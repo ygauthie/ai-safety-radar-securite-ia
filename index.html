@@ -297,14 +297,17 @@
     .file-link .badge {
       font-family: 'IBM Plex Mono', monospace;
       font-size: 10px;
-      color: var(--text-muted);
+      color: var(--accent);
       letter-spacing: 0.04em;
       font-weight: 500;
       flex-shrink: 0;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      padding: 1px 5px;
     }
 
-    .badge-daily { color: var(--accent); }
-    .badge-weekly { color: var(--orange); }
+    .badge-daily { color: var(--accent); border-color: var(--accent); }
+    .badge-weekly { color: var(--orange); border-color: var(--orange); }
 
     /* ------ MAIN ------ */
     .main {
@@ -318,7 +321,7 @@
     #content h1 {
       font-family: 'IBM Plex Serif', serif;
       font-weight: 500;
-      font-size: 44px;
+      font-size: 32px;
       line-height: 1.05;
       letter-spacing: -0.025em;
       color: var(--text);
@@ -345,7 +348,7 @@
     #content h2::before {
       content: "§";
       font-family: 'IBM Plex Mono', monospace;
-      font-size: 14px;
+      font-size: 20px;
       color: var(--accent);
       font-weight: 600;
       letter-spacing: 0.1em;
@@ -507,7 +510,7 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
         Source
       </a>
-      <button id="langToggle" title="Switch language">EN</button>
+      <button id="langToggle" title="Switch language" style="border-color:var(--border-strong)!important">EN</button>
       <button class="theme-toggle" id="themeToggle" title="Toggle theme">
         <svg id="iconSun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         <svg id="iconMoon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -522,7 +525,7 @@
   <div class="main">
     <div id="content">
       <div class="welcome" id="welcomeScreen">
-        <h1 id="welcomeTitle">AI Safety Daily Brief</h1>
+        <h1 id="welcomeTitle">AI Safety Daily Digest</h1>
         <p id="welcomeSub">Daily digest of AI safety research, policy, and developments.</p>
         <p id="welcomeHint" style="margin-top: 1rem; font-size: 0.9rem;">Select a digest from the sidebar to begin reading.</p>
       </div>
@@ -545,7 +548,7 @@
         welcomeSub: 'Daily digest of AI safety research, policy, and developments.',
         welcomeHint: 'Select a digest from the sidebar to begin reading.',
         fileLabels: {
-          'safety-daily': 'Daily Brief',
+          'safety-daily': 'Daily Digest',
           'safety-weekly': 'Weekly Summary',
           'safety-research': 'Research Papers',
           'safety-analysis': 'Blogs & News',
@@ -702,7 +705,7 @@
     function fileBadge(filename) {
       if (filename.includes('daily')) return `<span class="badge badge-daily">${t().badges.daily}</span>`;
       if (filename.includes('weekly')) return `<span class="badge badge-weekly">${t().badges.weekly}</span>`;
-      return `<span class="badge">${filename.includes('research') ? 'papers' : filename.includes('analysis') ? 'news' : filename.includes('community') ? 'community' : ''}</span>`;
+      return '';
     }
 
     async function loadManifest() {
