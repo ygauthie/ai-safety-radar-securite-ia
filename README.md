@@ -2,7 +2,7 @@
 
 **A daily automated digest of AI safety research, policy, and developments.**
 
-Runs every morning at approximately 5 AM ET via GitHub Actions, pulls from ten sources, summarizes with Claude, and publishes to GitHub Pages as a clean, bilingual, searchable static site with an RSS feed.  Also generates a **weekly rollup**, cross-source synthesis of the past week, every Monday. Adapted from [agents-radar](https://github.com/duanyytop/agents-radar).
+Runs every morning at approximately 5 AM ET via GitHub Actions, pulls from ten sources, summarizes with Claude, and publishes to GitHub Pages as a clean, bilingual, searchable static site with an RSS feed.  Also generates a **weekly rollup**, cross-source synthesis of the past week, every Monday. Inspired from [agents-radar](https://github.com/duanyytop/agents-radar).
 
 **Live site:** [ygauthie.github.io/ai-safety-radar-securite-ia](https://ygauthie.github.io/ai-safety-radar-securite-ia)
 
