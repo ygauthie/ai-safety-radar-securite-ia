@@ -766,7 +766,7 @@
           const d = new Date(entry.date + 'T12:00:00');
           const lang = getLang();
           const dayNum = d.getDate();
-          const dow = d.toLocaleDateString('en-US', { weekday: 'short' });
+          const dow = d.toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-US', { weekday: 'short' }).replace('.', '');
           const today = new Date(); today.setHours(0,0,0,0);
           const dCopy = new Date(d); dCopy.setHours(0,0,0,0);
           const diffDays = Math.round((today - dCopy) / 86400000);
