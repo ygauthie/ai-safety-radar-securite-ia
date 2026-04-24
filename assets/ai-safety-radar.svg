@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="AI Safety Radar logo">
+  <title>AI Safety Radar</title>
+  <desc>A blue chevron shield containing radar sweep arcs and a 2-3-2 neural network in white.</desc>
+
+  <!-- Shield -->
+  <path d="M 100 12 L 180 40 L 180 100 C 180 144 146 178 100 192 C 54 178 20 144 20 100 L 20 40 Z" fill="#0b6aa8"/>
+
+  <!-- Radar sweep cone -->
+  <path d="M 100 100 L 50 50 A 70 70 0 0 1 150 50 Z" fill="#ffffff" fill-opacity="0.15"/>
+
+  <!-- Radar arcs -->
+  <circle cx="100" cy="100" r="56" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.35"/>
+  <circle cx="100" cy="100" r="38" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.55"/>
+
+  <!-- Connections: input layer -> hidden layer -->
+  <g stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.7">
+    <line x1="68" y1="84" x2="100" y2="74"/>
+    <line x1="68" y1="84" x2="100" y2="100"/>
+    <line x1="68" y1="84" x2="100" y2="126"/>
+    <line x1="68" y1="116" x2="100" y2="74"/>
+    <line x1="68" y1="116" x2="100" y2="100"/>
+    <line x1="68" y1="116" x2="100" y2="126"/>
+
+    <!-- Connections: hidden layer -> output layer -->
+    <line x1="100" y1="74" x2="132" y2="84"/>
+    <line x1="100" y1="74" x2="132" y2="116"/>
+    <line x1="100" y1="100" x2="132" y2="84"/>
+    <line x1="100" y1="100" x2="132" y2="116"/>
+    <line x1="100" y1="126" x2="132" y2="84"/>
+    <line x1="100" y1="126" x2="132" y2="116"/>
+  </g>
+
+  <!-- Neurons -->
+  <g fill="#ffffff">
+    <circle cx="68" cy="84" r="5"/>
+    <circle cx="68" cy="116" r="5"/>
+    <circle cx="100" cy="74" r="5"/>
+    <circle cx="100" cy="100" r="5"/>
+    <circle cx="100" cy="126" r="5"/>
+    <circle cx="132" cy="84" r="5"/>
+    <circle cx="132" cy="116" r="5"/>
+  </g>
+</svg>
