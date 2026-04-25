@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="AI Safety Radar logo">
+  <title>AI Safety Radar</title>
+  <desc>Radar quadrant sweep extending beyond the circle, with a 2-3 neural network in black and a detection blip inside the fan.</desc>
+
+  <!-- Fan (extends beyond circle to r=78) -->
+  <path d="M 100 100 L 100 22 A 78 78 0 0 1 178 100 Z" fill="#0b6aa8" fill-opacity="0.22"/>
+
+  <!-- Radar circle (r=65) -->
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#0b6aa8" stroke-width="5" stroke-opacity="0.6"/>
+
+  <!-- Neural connections -->
+  <g stroke="#111111" stroke-width="4" stroke-opacity="0.9">
+    <line x1="76" y1="86" x2="124" y2="74"/>
+    <line x1="76" y1="86" x2="124" y2="100"/>
+    <line x1="76" y1="86" x2="124" y2="126"/>
+    <line x1="76" y1="114" x2="124" y2="74"/>
+    <line x1="76" y1="114" x2="124" y2="100"/>
+    <line x1="76" y1="114" x2="124" y2="126"/>
+  </g>
+
+  <!-- Regular neurons -->
+  <g fill="#111111">
+    <circle cx="76" cy="86" r="10"/>
+    <circle cx="76" cy="114" r="10"/>
+    <circle cx="124" cy="100" r="10"/>
+    <circle cx="124" cy="126" r="10"/>
+  </g>
+
+  <!-- Blip neuron (top-right output node, inside the fan) -->
+  <circle cx="124" cy="74" r="10" fill="#111111"/>
+  <circle cx="124" cy="74" r="14" fill="none" stroke="#111111" stroke-width="3" stroke-opacity="0.5"/>
+  <circle cx="124" cy="74" r="19" fill="none" stroke="#111111" stroke-width="2" stroke-opacity="0.25"/>
+</svg>
