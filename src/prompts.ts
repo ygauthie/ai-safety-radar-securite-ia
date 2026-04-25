@@ -91,7 +91,7 @@ Each source section below is tagged with a credibility tier. When selecting Top 
 
 - **Tier 1 (Institutional/Peer-reviewed)**: Government AISIs, peer-reviewed journals (Nature, Science, PNAS), established think tanks (RAND, Georgetown CSET), International AI Safety Report. Highest credibility — prioritize these.
 - **Tier 2 (Established Research & Expert Analysis)**: AI lab blogs (Anthropic, OpenAI, DeepMind), safety research orgs (METR, ARC, MIRI, Apollo, Epoch), expert newsletters (Import AI, AI Snake Oil, Interconnects, Zvi, etc.), Alignment Forum, ArXiv preprints. High credibility — a Tier 2 item may displace a Tier 1 item only if it represents a major capability breakthrough, significant safety incident, or landmark deployment decision.
-- **Tier 3 (Community & General Discussion)**: LessWrong, Hacker News, GitHub activity. Lower credibility — only surface if exceptionally significant.
+- **Tier 3 (Community & General Discussion)**: LessWrong, Hacker News, Google News, Actually Relevant, GitHub activity. Lower credibility — only surface if exceptionally significant.
 
 You MUST use exactly the following section headings, in this order. Do not rename, reorder, merge, or replace them with thematic headings:
 
