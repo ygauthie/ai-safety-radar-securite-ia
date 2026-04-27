@@ -1,4 +1,4 @@
-# <img src="assets/favicon.svg" width="45" height="45" style="vertical-align:bottom" alt=""> AI Safety Radar
+# <img src="assets/favicon.svg" width="45" height="45" style="vertical-align:top" alt=""> AI Safety Radar
 
 **A daily automated digest of AI safety research, policy, and developments.**
 
