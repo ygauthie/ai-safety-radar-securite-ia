@@ -1,0 +1,15 @@
+# Blogs & News (2026-04-27)
+
+## Top Stories
+
+**[Trump Admin Axes Former Anthropic Researcher Leading AI Safety Body](https://news.google.com/rss/articles/CBMimgFBVV95cUxOMEhLblNza0hfWmVlcmVIMmg5LU1IQURGMVdmYUlma0NQenloSXBNUUkwYWs4Y3dJdGVmWHptUExWZTdEWXBaQ1N1MzRCTDFBVnR6S1F6RG8yY2ItSFlaTDZuR2hFT0tfSzd5Vm1QQy1rYVF5cVNheTJwc1YzdGNqa0V6WjNWa2ZlWFpZM094N1had2tYVHRncG1n?oc=5)** - The Trump administration has removed a former Anthropic researcher who was leading a key AI safety organization. This signals a potential shift in the federal government's approach to AI safety governance and could impact ongoing safety research coordination between government and industry.
+
+**[OpenAI Updates Its Charter Principles After 6 Years](https://news.google.com/rss/articles/CBMirAFBVV85cUxPMWVqdHFaSWVMLXRaR0g0Z2VKSEZhbFNfMHNfRmFBQVZPT0R4TGVfd3J1QXQwbjJfaGxnUjAwTDA0QkFzZHhYc3JDeTFXMjFWOV9rNUFCWURyTk8xMkFELXVCWlZMbDczb1NmdmtjcHhOeTRpWnlBN0hOQndIRXpHU1R5SnhwMlhKeFoyQnJwSTZoRnNmSC1qc25HeUNydEw4Z0U1azV1eHNMWlZX?oc=5)** - OpenAI has revised its founding principles for the first time since 2020, marking a significant moment as the company has evolved from research lab to major commercial player. The changes could signal shifts in OpenAI's approach to safety, alignment, and responsible deployment as it scales its systems.
+
+**[Control Protocols Don't Always Need to Know Which Models Are Scheming](https://www.lesswrong.com/posts/WiYDawNhFp5cM7uqF/control-protocols-don-t-always-need-to-know-which-models-are)** - A new analysis suggests that AI control protocols can be effective without precisely determining which models exhibit deceptive alignment, potentially simplifying the challenge of monitoring dangerous AI behavior. This offers a promising direction for practical safety measures that don't require perfect deception detection capabilities.
+
+**[Retrospective on Unsupervised Elicitation Challenge](https://www.lesswrong.com/posts/aJ3NTJ6tM7yc49kQn/retrospective-on-my-unsupervised-elicitation-challenge)** - A researcher reports that Claude Opus 4.7 successfully completed an Ancient Greek homework task that previous versions failed, while various elicitation techniques proved ineffective. This demonstrates both the rapid capability improvements in frontier models and the ongoing difficulty of reliably extracting latent knowledge from AI systems.
+
+## Policy & Governance
+
+**[California Lawmakers Push New AI Safety Bills for Children](https://news.google.com/rss/articles/CBMi5wFBVV95cUxOOENiSkVlcjdGdldQTVBfUFZEWGdrVHV4OTl5dVRKVV9ZdDZxajI4S2pKUjNrS2ZNQngzczAxRlJ0eEFpNjlSb0JJbzhZTThPeHd2NVVDaDlNdmc3Q0Itcl9yWTREQjRtTVdHM0RGQTI1WTMybEl1M0tjT0FhZXRiR0Nobnd0RklFN2JBZDYzMndZZ1NtTFVSTVVqLXVZRFpUbGRoVzZZSU9ObVh3QWNyZHFHeFBvRXBIMC1oaEpCNnVXUHlNcktTOFUxc1RaWl9wcnYzdFh1NFJwdks2dXMyLVU5ZTU2X0E?oc=5)** - California legislators are advancing new AI safety legislation specifically focused on protecting children from AI-related harms. This represents an important development in targeted AI governance that could influence federal policy and establish precedents for child-focused AI safety standards.
