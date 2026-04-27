@@ -1,0 +1,7 @@
+# Blogs & Actualités (2026-04-27)
+
+## Histoires principales
+
+[**Rétrospective sur mon défi d'elicitation non supervisée**](https://www.lesswrong.com/posts/aJ3NTJ6tM7yc49kQn/retrospective-on-my-unsupervised-elicitation-challenge) - Un chercheur a testé diverses méthodes pour amener Claude à résoudre correctement des devoirs de grec ancien, constatant que seul le nouveau modèle Opus 4.7 a réussi là où la version 4.6 avait échoué, malgré des tentatives d'ingénierie de prompt et d'autres techniques d'elicitation. Cela souligne la difficulté d'extraire de manière fiable les capacités des systèmes d'IA et suggère que certaines capacités peuvent émerger de façon discontinue entre les versions de modèles.
+
+[**Les protocoles de contrôle n'ont pas toujours besoin de savoir quels modèles sont en train de comploter**](https://www.lesswrong.com/posts/WiYDawNhFp5cM7uqF/control-protocols-don-t-always-need-to-know-which-models-are) - Une nouvelle approche du contrôle de l'IA propose d'utiliser plusieurs modèles de surveillance aux niveaux de capacité incertains plutôt que d'essayer d'identifier quels modèles spécifiques pourraient être des conspirateurs, évitant potentiellement le problème difficile de déterminer quels modèles sont "suffisamment sûrs" pour être utilisés comme superviseurs. Cela pourrait fournir des protocoles de sécurité plus robustes lors de la gestion de systèmes d'IA potentiellement trompeurs où le seuil de capacité pour comploter est inconnu.

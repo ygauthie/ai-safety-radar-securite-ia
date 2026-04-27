@@ -1,0 +1,7 @@
+# Blogs & News (2026-04-27)
+
+## Top Stories
+
+[**Retrospective on my unsupervised elicitation challenge**](https://www.lesswrong.com/posts/aJ3NTJ6tM7yc49kQn/retrospective-on-my-unsupervised-elicitation-challenge) - A researcher tested various methods to get Claude to correctly solve Ancient Greek homework problems, finding that only the newer Opus 4.7 model succeeded where 4.6 failed, despite attempts at prompt engineering and other elicitation techniques. This highlights the difficulty of reliably extracting capabilities from AI systems and suggests that some capabilities may emerge discontinuously between model versions.
+
+[**Control protocols don't always need to know which models are scheming**](https://www.lesswrong.com/posts/WiYDawNhFp5cM7uqF/control-protocols-don-t-always-need-to-know-which-models-are) - A new approach to AI control proposes using multiple monitoring models of uncertain capability levels rather than trying to identify which specific models might be schemers, potentially avoiding the difficult problem of determining which models are "safe enough" to use as overseers. This could provide more robust safety protocols when dealing with potentially deceptive AI systems where the capability threshold for scheming is unknown.
