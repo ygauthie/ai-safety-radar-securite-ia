@@ -120,8 +120,15 @@ export function weeklyRollupPrompt(dailies: string, dateRange: string, lang: Lan
 
 This covers the week of ${dateRange}. Below are the daily digests from the past week. Create a comprehensive weekly summary in ${lang === "fr" ? "French" : "English"}.
 
+Style rules (apply to ALL sections):
+- Use plain, neutral language. Do not editorialize.
+- Do not use evaluative adjectives like "critical," "key," "groundbreaking," "important," "significant," "concerning," "unprecedented," or "fundamental."
+- Do not use framing phrases like "marked turning points," "several critical turning points," "represents the first…," "…largest…to date," "paradigm shift," or "watershed."
+- Do not use superlatives ("first," "largest," "most," etc.) unless they appear in the linked source's own language; if so, attribute them.
+- Example — bad: "The week marked several critical turning points in AI safety, with concerning revelations about fundamental gaps." Good: "This week's digests covered evaluation methodology, autonomous cyber capabilities, and US–China compute policy."
+
 Structure:
-1. **Week in Review**: 3-5 paragraphs covering the most important developments. Use plain, neutral language — do not editorialize. Every paper, article, blog post, or discussion mentioned must include an inline markdown link to the original source.
+1. **Week in Review**: 3-5 paragraphs covering the most important developments. Every paper, article, blog post, or discussion mentioned must include an inline markdown link to the original source.
 2. **Key Papers**: The most significant research papers of the week. Each paper title must be a hyperlink. Each entry should be 2-3 sentences followed by one sentence explaining why the result matters — do not split implications by audience.
 3. **Industry Moves**: Notable actions by AI companies related to safety. What should other organizations learn or anticipate?
 4. **Policy & Governance**: Regulatory or governance developments. What do organizations need to prepare for or comply with?
