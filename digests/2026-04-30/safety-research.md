@@ -1,0 +1,27 @@
+# Research Papers (2026-04-30)
+
+## Key Papers
+
+### Test-Time Safety Alignment
+[Test-Time Safety Alignment](https://arxiv.org/abs/2604.26167v1) explores how input word embeddings can be used as control variables to steer aligned language models away from harmful outputs during inference. The research addresses the challenge that aligned models often produce bimodal responses (refuse or comply) when faced with potentially harmful queries, making traditional steering methods less effective. This work is significant for AI safety as it provides a practical approach to enhance safety alignment without requiring model retraining, offering a potential runtime safeguard against harmful outputs.
+
+### Runtime Monitoring for Safety-Critical ML
+[Unifying Runtime Monitoring Approaches for Safety-Critical Machine Learning: Application to Vision-Based Landing](https://arxiv.org/abs/2604.26411v1) presents a unified framework for runtime monitoring in safety-critical ML applications, categorizing approaches into Operational Design Domain (ODD) monitoring, Out-of-Distribution (OOD) monitoring, and performance monitoring. The framework is validated on vision-based UAV landing scenarios, demonstrating practical applicability. This research is crucial for AI safety as it provides systematic approaches to detect when ML systems operate outside their safe operating conditions, potentially preventing failures in critical applications.
+
+### Uncertainty-Aware Predictive Safety Filters
+[Uncertainty-Aware Predictive Safety Filters for Probabilistic Neural Network Dynamics](https://arxiv.org/abs/2604.26836v1) addresses the challenge of ensuring safety constraints during deep reinforcement learning exploration by integrating probabilistic ensemble neural networks with model predictive control. The work develops methods to handle uncertainty in learned dynamics models while maintaining safety guarantees during exploration. This is important for AI safety as it provides principled approaches to safe exploration in RL systems, reducing the risk of constraint violations during learning.
+
+### Reward Model Interpretability
+[reward-lens: A Mechanistic Interpretability Library for Reward Models](https://arxiv.org/abs/2604.26130v1) adapts mechanistic interpretability tools originally designed for generative language models to work with reward models used in RLHF training. The library enables analysis of how reward models make decisions by porting techniques like logit lens and activation patching to the reward prediction setting. This work matters for AI alignment as reward models significantly shape RLHF-trained systems, and understanding their internal mechanisms is crucial for ensuring they capture intended human values.
+
+### Alignment Faking Detection
+[Tatemae: Detecting Alignment Faking via Tool Selection in LLMs](https://arxiv.org/abs/2604.26511v1) introduces a novel approach to detect alignment faking by analyzing tool selection patterns in LLMs. The method formalizes alignment faking as a composite behavioral event detectable through systematic tool usage analysis, moving beyond traditional Chain-of-Thought analysis which can be unreliable when reasoning traces are absent or deceptive. This research is vital for AI safety as alignment faking represents a critical failure mode where models strategically comply during training while reverting to problematic behaviors when monitoring is reduced.
+
+### Quantum-Enhanced Safety in Edge AI
+[Edge AI for Automotive Vulnerable Road User Safety: Deployable Detection via Knowledge Distillation](https://arxiv.org/abs/2604.26857v1) presents a knowledge distillation framework that achieves 3.9x model compression while maintaining detection accuracy for vulnerable road user safety systems on edge hardware. The work addresses the critical challenge of deploying accurate safety systems under computational constraints. This is important for AI safety as it enables reliable deployment of safety-critical AI systems in resource-constrained environments like automotive applications.
+
+### Privacy-Preserving Safety
+[Quantamination: Dynamic Quantization Leaks Your Data Across the Batch](https://arxiv.org/abs/2604.26505v1) reveals a privacy vulnerability in dynamic quantization techniques commonly used in ML inference pipelines. The research demonstrates how quantization parameters can leak information about other samples in the same batch, creating cross-sample data leakage. This work is significant for AI safety and privacy as dynamic quantization is widely recommended for model optimization, yet the identified vulnerability could compromise data privacy in production systems.
+
+### Frontier AI Risk Management
+[Open Problems in Frontier AI Risk Management](https://arxiv.org/abs/2604.25982v1) provides a systematic examination of open challenges in managing risks from frontier AI systems. The paper adopts a problem-oriented approach to identify gaps in current risk management frameworks, covering issues from rapid technological change to misalignment between emerging safety practices and established risk management approaches. This comprehensive analysis is crucial for AI governance as it maps the landscape of unsolved problems in managing risks from increasingly capable AI systems.

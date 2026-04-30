@@ -317,7 +317,8 @@
     "https://www.anthropic.com/news/anthropic-nec",
     "https://www.anthropic.com/news/election-safeguards-update",
     "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
-    "https://www.anthropic.com/news/claude-for-creative-work"
+    "https://www.anthropic.com/news/claude-for-creative-work",
+    "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -846,7 +847,10 @@
     "https://www.iaps.ai/research/tag/Onni+Aarne",
     "https://www.iaps.ai/research/tag/Compute+governance",
     "https://www.iaps.ai/research/tag/Asher+Brass",
-    "https://www.iaps.ai/research/mythos-and-the-evolving-cyber-landscape-implications-and-policy-priorities-Bu4xs"
+    "https://www.iaps.ai/research/mythos-and-the-evolving-cyber-landscape-implications-and-policy-priorities-Bu4xs",
+    "https://www.iaps.ai/research/risk-reporting-for-developers-internal-ai-model-use",
+    "https://www.iaps.ai/research/tag/Sambhav+Maheshwari",
+    "https://www.iaps.ai/research/tag/Theo+Bearman"
   ],
   "Conjecture": [
     "https://www.conjecture.dev/research/build-a-simple-game-with-tactics",
