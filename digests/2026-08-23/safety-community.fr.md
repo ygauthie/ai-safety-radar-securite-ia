@@ -1,0 +1,20 @@
+# Communauté et Outils (2026-08-23)
+
+## Discussions clés
+
+**Le régulateur néerlandais inflige à Uber une amende de 825 millions d'euros pour des désactivations de comptes de chauffeurs basées sur l'IA**
+[Les autorités néerlandaises ont infligé à Uber une amende de 825 millions d'euros](https://nltimes.nl/2026/08/21/dutch-regulator-fines-uber-eu825-mil-letting-algorithm-deactivate-drivers-accounts) pour avoir permis à des algorithmes de désactiver automatiquement des comptes de chauffeurs sans supervision humaine adéquate. La [discussion sur Hacker News](https://news.ycombinator.com/item?id=49398609) (21 points) met en évidence les préoccupations concernant la responsabilité algorithmique et la nécessité d'un examen humain dans les systèmes de prise de décision automatisés qui affectent les moyens de subsistance. Cette affaire établit un précédent important pour la gouvernance de l'IA, montrant que les régulateurs sont prêts à imposer des sanctions substantielles pour les systèmes algorithmiques qui manquent de supervision humaine suffisante et de protections procédurales équitables.
+
+## Sorties GitHub et outils notables
+
+**TransformerLens v3.8.0**
+[TransformerLens a publié la version 3.8.0](https://github.com/TransformerLensOrg/TransformerLens/releases/tag/v3.8.0) avec un benchmark de génération Phase 4 restructuré pour une meilleure évaluation de la qualité de sortie des modèles, plus des corrections importées depuis dev-4.x qui affectaient la qualité de sortie des modèles. La version inclut l'analyse d'occupation jacobian_lens et de fraction de variance, des corrections de compatibilité OLMo3, et des améliorations du scoring des benchmarks pour les modèles multilingues, encodeur-décodeur, de code et de chat. Cette mise à jour renforce TransformerLens en tant que plateforme d'interprétabilité mécaniste en améliorant sa capacité à évaluer et comparer les capacités des modèles à travers différentes architectures.
+
+**AgentCheck 0.1.1 - Tests comportementaux d'agents IA**
+[AgentCheck a publié la version 0.1.1](https://github.com/WaseemGhanem98/AgentCheck/releases/tag/v0.1.1), améliorant l'expérience développeur pour les tests comportementaux d'agents IA sans changer le comportement d'évaluation ou la sémantique de sécurité. La version ajoute des mises à jour de progrès claires, des rapports de statut par scénario (PASS/FAIL/INCONCLUSIVE/INFRA_ERROR), et de meilleurs retours CLI tout en supportant OpenAI Agents SDK, PydanticAI, des agents Python personnalisés, l'évaluation d'outils simulés, et des vérifications de sécurité comportementale. Cet outil répond à un besoin critique de tests systématiques du comportement des agents IA au-delà des simples métriques de qualité de sortie.
+
+**ProofMesh v0.4.0 - Infrastructure de vérification**
+[ProofMesh v0.4.0](https://github.com/ateeqdesktop-dot/proofmesh/releases/tag/v0.4.0) a été publié, bien que les détails soient limités dans les données fournies. D'après l'activité liée, cela semble faire partie de l'écosystème d'outils de vérification et de méthodes formelles. La version représente le développement continu d'une infrastructure de vérification formelle qui pourrait être pertinente pour les applications de sécurité IA nécessitant des preuves mathématiques et des capacités de vérification.
+
+**CCS Proxy v1.3.0 - Sécurité MCP**
+[CCS Proxy v1.3.0](https://github.com/DSHCorrectover/ccs-proxy/releases/tag/v1.3.0) fournit un proxy de sécurité MCP (Model Context Protocol) en ligne avec une attestation cryptographique à trois couches incluant la vérification d'admission, l'attestation de protocole, et la liaison d'exécution. Cet outil répond aux préoccupations de sécurité autour des implémentations MCP en fournissant une analyse de chaîne d'attaque sémantique, des références de manifeste en amont, et des contrôles d'accès aux ressources liés à l'attestation, ce qui est crucial alors que l'adoption MCP croît dans les architectures d'agents IA.

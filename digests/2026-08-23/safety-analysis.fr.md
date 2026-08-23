@@ -1,0 +1,9 @@
+# Blogs & Actualités (2026-08-23)
+
+## Principales actualités
+
+**[Selection for Selectability: Inductive Biases in Evolution and Neural Networks](https://www.lesswrong.com/posts/JNp5FkYyDGBcfiY5B/selection-for-selectability-inductive-biases-in-evolution)** - Un projet de recherche MATS explore comment l'évolution sélectionne non seulement les bons traits mais aussi une « bonne architecture génomique » qui permet l'adaptation future, établissant des parallèles avec la façon dont les réseaux de neurones pourraient développer des capacités de méta-apprentissage. Ceci importe car cela suggère que les systèmes d'IA pourraient évoluer vers des architectures qui les rendent de plus en plus capables d'auto-modification rapide, accélérant potentiellement les gains de capacités de manières inattendues.
+
+**[When is Unlimited Optimization Catastrophic?](https://www.lesswrong.com/posts/4JCne6evQjtjxXKED/when-is-unlimited-optimization-catastrophic)** - Des chercheurs de Dovetail Research, financés par ARIA, étudient les conditions dans lesquelles l'optimisation extrême mène à des résultats catastrophiques, remettant en question les hypothèses sur la fragilité des valeurs dans l'alignment de l'IA. Cette recherche est cruciale pour comprendre si nous devons résoudre l'alignment parfait des valeurs ou si des solutions « suffisamment bonnes » pourraient être adéquates pour la sécurité de l'IA.
+
+**[AI Text Watermarking Is Free And Good](https://thezvi.substack.com/p/ai-text-watermarking-is-free-and)** - Zvi Mowshowitz discute de la solution de filigrane de texte IA développée par Scott Aaronson chez OpenAI, qui peut identifier de manière fiable le texte généré par IA sans impacter significativement les performances du modèle. Ceci importe car un filigrane fiable pourrait être un outil de gouvernance clé pour gérer le contenu généré par IA et réduire les risques d'utilisation trompeuse des systèmes d'IA.

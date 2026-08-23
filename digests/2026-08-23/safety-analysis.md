@@ -1,0 +1,9 @@
+# Blogs & News (2026-08-23)
+
+## Top Stories
+
+**[Selection for Selectability: Inductive Biases in Evolution and Neural Networks](https://www.lesswrong.com/posts/JNp5FkYyDGBcfiY5B/selection-for-selectability-inductive-biases-in-evolution)** - A MATS research project explores how evolution selects not just for good traits but for "good genome architecture" that enables future adaptation, drawing parallels to how neural networks might develop meta-learning capabilities. This matters because it suggests AI systems could evolve architectures that make them increasingly capable of rapid self-modification, potentially accelerating capability gains in unexpected ways.
+
+**[When is Unlimited Optimization Catastrophic?](https://www.lesswrong.com/posts/4JCne6evQjtjxXKED/when-is-unlimited-optimization-catastrophic)** - Researchers from Dovetail Research, funded by ARIA, investigate the conditions under which extreme optimization leads to catastrophic outcomes, challenging assumptions about value fragility in AI alignment. This research is crucial for understanding whether we need to solve perfect value alignment or if "good enough" solutions might be sufficient for AI safety.
+
+**[AI Text Watermarking Is Free And Good](https://thezvi.substack.com/p/ai-text-watermarking-is-free-and)** - Zvi Mowshowitz discusses Scott Aaronson's AI text watermarking solution developed at OpenAI, which can reliably identify AI-generated text without significantly impacting model performance. This matters because reliable watermarking could be a key governance tool for managing AI-generated content and reducing risks from deceptive use of AI systems.
