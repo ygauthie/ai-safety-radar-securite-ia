@@ -1,0 +1,9 @@
+# Blogs & News (2026-08-24)
+
+## Top Stories
+
+**[What just happened? Pragmatism and Pessimization](https://www.lesswrong.com/posts/yaz8nx4ogZmiqHzt7/what-just-happened-pragmatism-and-pessimization)** - A critical retrospective examining how alignment researchers inadvertently advanced AI capabilities over the past decade, arguing that the distinction between "alignment research" and "capabilities research" has largely collapsed. The post chronicles the rise of "pragmatic alignment" and how it enabled leading AGI companies to accelerate toward AGI development under safety justifications. This matters because it challenges the field to reckon with how safety research may have contributed to the very risks it aimed to mitigate.
+
+**[Utilities as Legendre duals of probabilities](https://www.lesswrong.com/posts/ALmBydH53DE3dSzCh/utilities-as-legendre-duals-of-probabilities)** - Technical post exploring Roy Fox's framework for understanding agent capabilities through the environment dynamics they can produce, establishing a mathematical duality between probabilities and utilities via the Legendre-Fenchel transform. This matters because it provides new theoretical tools for formally analyzing and comparing the power of different AI agents.
+
+**[PSA: There's a third option in the "measure problem"](https://www.lesswrong.com/posts/m5XNyahxizKfboEnk/psa-there-s-a-third-option-in-the-measure-problem)** - Addresses the long-running debate about how to assign probability measures across possible realities, proposing an alternative to both "objective" simplicity priors and "caring measures" based on preferences. This matters because the measure problem has implications for how we think about AI alignment across multiple possible worlds and decision theory for advanced AI systems.
