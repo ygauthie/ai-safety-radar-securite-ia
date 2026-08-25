@@ -1,0 +1,11 @@
+# Blogs & News (2026-08-25)
+
+## Top Stories
+
+**[PSA: We can do better](https://www.lesswrong.com/posts/wiFv6LguphSxkzAnb/psa-we-can-do-better)** - A critical reflection on how AI safety researchers choose their work, arguing that the field relies too heavily on "vibesy thought processes" rather than rigorous analysis of which problems matter most. The post calls for deeper understanding and harder thinking about research priorities. This matters because poor prioritization in AI safety could lead to wasted effort on the wrong problems during a critical window.
+
+**[AI Safety Acculturation is Neglected](https://www.lesswrong.com/posts/cr5pyW7Mzm33p4AvN/ai-safety-acculturation-is-neglected)** - An analysis of the cultural divide in AI safety between long-time rationalist community members and newcomers from industry/government, highlighting how acculturation gaps may be hindering effective collaboration and knowledge transfer. This matters because bridging these divides is essential for scaling AI safety work and bringing diverse expertise to bear on alignment challenges.
+
+**[Import AI 470: No rights for machines; automating environment generation with SPADE; and building better GPU kernels with Hawkeye](https://importai.substack.com/p/import-ai-470-no-rights-for-machines)** - Jack Clark's weekly roundup covering differential acceleration of cyber, math, and AI capabilities, along with discussions of machine rights and technical developments in AI infrastructure. This matters because tracking capability developments across different domains helps identify potential dual-use risks and governance challenges.
+
+**[Anthropic Economics Research Team Launch](https://www.anthropic.com/research/team/economics)** - Anthropic has established a dedicated Economics Research team to study AI's impact on work, productivity, and economic opportunity through empirical data collection and analysis. This matters because understanding AI's economic effects is crucial for developing policies that mitigate disruption and ensure broad-based benefits from AI progress.
