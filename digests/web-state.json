@@ -410,7 +410,8 @@
     "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
     "https://www.anthropic.com/news/claude-text-watermark",
     "https://www.anthropic.com/research/Claude-accelerates-protein-design",
-    "https://www.anthropic.com/research/team/economics"
+    "https://www.anthropic.com/research/team/economics",
+    "https://www.anthropic.com/news/wellbeing-research-grants"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -1082,6 +1083,7 @@
     "https://palisaderesearch.org/blog/announcing-our-new-youtube-channel",
     "https://palisaderesearch.org/blog/self-replication",
     "https://palisaderesearch.org/blog/four-corners-loss-of-control",
-    "https://palisaderesearch.org/blog/palisade-podcast-tim-hua"
+    "https://palisaderesearch.org/blog/palisade-podcast-tim-hua",
+    "https://palisaderesearch.org/blog/palisade-podcast-daniel-kokotajlo"
   ]
 }

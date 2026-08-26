@@ -1,0 +1,15 @@
+# Blogs & News (2026-08-26)
+
+## Principales actualités
+
+**Anthropic lance un programme de subventions de recherche sur le bien-être de 5 millions de dollars** : [Anthropic a annoncé](https://www.anthropic.com/news/wellbeing-research-grants) un nouveau programme de subventions pour financer la recherche indépendante sur l'impact des systèmes d'IA sur le bien-être des utilisateurs, fournissant du financement, un accès aux modèles et un support technique pour le développement d'évaluations open-source. Ceci représente un investissement significatif dans la compréhension des effets sociétaux plus larges de l'IA au-delà des métriques de sécurité traditionnelles.
+
+**Daniel Kokotajlo discute des scénarios IA 2040** : L'ancien chercheur en gouvernance d'OpenAI et actuel directeur de l'AI Futures Project est apparu sur le [podcast Palisade Research](https://palisaderesearch.org/blog/palisade-podcast-daniel-kokotajlo) pour discuter de ses prévisions de développement de l'IA et de la planification stratégique pour les chronologies d'IA transformatrice. Ses perspectives ont un poids particulier compte tenu de son expérience d'initié dans un laboratoire d'IA de premier plan et de son travail sur des scénarios concrets de développement de l'IA.
+
+**La communauté de la sécurité de l'IA critique la priorisation de la recherche** : Un [post LessWrong](https://www.lesswrong.com/posts/wiFv6LguphSxkzAnb/psa-we-can-do-better) soutient que les chercheurs en sécurité de l'IA s'appuient souvent sur des "heuristiques préoccupantes" et des "processus de pensée basés sur les impressions" lorsqu'ils choisissent sur quoi travailler, plutôt que de comprendre profondément les problèmes qu'ils visent à résoudre. Ceci reflète les débats méthodologiques en cours sur la façon de diriger le plus efficacement les ressources limitées de la sécurité de l'IA.
+
+**Import AI couvre les droits des machines et les outils d'IA** : La dernière [newsletter Import AI](https://importai.substack.com/p/import-ai-470-no-rights-for-machines) de Jack Clark discute de l'intersection entre les capacités d'IA et les cadres de droits, aux côtés des développements techniques en génération automatisée d'environnements et outils d'optimisation GPU. Ces développements soulignent la portée croissante des considérations de politique d'IA à mesure que les capacités progressent.
+
+## Politique & Gouvernance
+
+**L'opposition aux centres de données crée des défis d'infrastructure IA** : L'analyse de Zvi Mowshowitz sur [l'opposition américaine aux centres de données](https://thezvi.substack.com/p/the-american-people-really-hate-data) examine comment la résistance locale à l'infrastructure IA pourrait contraindre la disponibilité de calcul et affecter les chronologies de développement de l'IA. Cette dynamique politique de base pourrait devenir un facteur significatif dans la gouvernance de l'IA alors que les exigences de calcul pour les systèmes avancés continuent de croître.
