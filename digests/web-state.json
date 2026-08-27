@@ -411,7 +411,8 @@
     "https://www.anthropic.com/news/claude-text-watermark",
     "https://www.anthropic.com/research/Claude-accelerates-protein-design",
     "https://www.anthropic.com/research/team/economics",
-    "https://www.anthropic.com/news/wellbeing-research-grants"
+    "https://www.anthropic.com/news/wellbeing-research-grants",
+    "https://www.anthropic.com/research/enabling-independent-research"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -874,7 +875,8 @@
     "https://deepmind.google/research/publications/139779/",
     "https://deepmind.google/research/publications/225819/",
     "https://deepmind.google/research/publications/264392/",
-    "https://deepmind.google/research/publications/118955/"
+    "https://deepmind.google/research/publications/118955/",
+    "https://deepmind.google/research/publications/270149/"
   ],
   "IAPS (Institute for AI Policy & Strategy)": [
     "https://www.iaps.ai/research/ai-decision-support-systems",

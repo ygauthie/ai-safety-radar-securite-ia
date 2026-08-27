@@ -70,7 +70,10 @@
     "https://www.aisi.gov.uk/blog/how-our-new-control-red-team-is-stress-testing-frontier-monitors",
     "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
     "https://www.aisi.gov.uk/research/item-response-theory-for-ai-safety",
-    "https://www.aisi.gov.uk/research/multi-agent-ai-control-distributed-attacks-hamper-per-instance-monitors"
+    "https://www.aisi.gov.uk/research/multi-agent-ai-control-distributed-attacks-hamper-per-instance-monitors",
+    "https://www.aisi.gov.uk/research/when-do-llm-preferences-predict-downstream-behavior",
+    "https://www.aisi.gov.uk/research/knowing-when-to-stop-bayesian-optimal-stopping-for-llm-evaluations",
+    "https://www.aisi.gov.uk/blog/optimal-stopping-spending-evaluation-compute-where-it-counts"
   ],
   "Canada AI Safety Institute (CAISI)": [],
   "Japan AI Safety Institute (J-AISI)": [],
@@ -212,7 +215,8 @@
     "https://digital-strategy.ec.europa.eu/en/news/japan-sharing-design-deploy-open-radio-access-network-building-system-shared-5g-and-4g-coverage",
     "https://digital-strategy.ec.europa.eu/en/news/italy-regulator-proposes-renew-mobile-spectrum-rights-until-2037-support-5g-standalone-investment",
     "https://digital-strategy.ec.europa.eu/en/news/commission-accelerates-iris2-deployment-enhanced-security-and-expanded-satellites-network",
-    "https://digital-strategy.ec.europa.eu/en/news/projects-data-funded-under-digital-europe-programme"
+    "https://digital-strategy.ec.europa.eu/en/news/projects-data-funded-under-digital-europe-programme",
+    "https://digital-strategy.ec.europa.eu/en/news/executive-vice-president-virkkunen-attends-gamescom-cologne-underline-value-video-games-industry"
   ],
   "Korea AI Safety Institute": [
     "https://www.msit.go.kr/eng/newsLetter/list.do?sCode=eng&mPid=2&mId=8"
