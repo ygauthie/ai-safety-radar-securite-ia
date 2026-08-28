@@ -1,0 +1,26 @@
+# Communauté & Outils (2026-08-28)
+
+## Discussions clés
+
+### Terminal-Bench-Science : Évaluation de la recherche scientifique par agents IA
+[Terminal-Bench-Science](https://www.terminal-bench-science.ai/announcement) introduit un nouveau benchmark pour évaluer les agents IA sur des flux de travail de recherche scientifique réalistes. La plateforme teste les agents sur des tâches de recherche multi-étapes incluant la revue de littérature, la génération d'hypothèses, la conception d'expériences et l'analyse de résultats. Ceci est important car cela représente un changement vers l'évaluation des systèmes IA sur des raisonnements scientifiques complexes du monde réel plutôt que sur des benchmarks académiques étroits.
+
+### Experiential : Alternative open-source à OpenRouter avec amélioration de modèle basée sur l'usage
+Le [projet Experiential](https://github.com/experientiallabs/experiential) présente une alternative open-source à OpenRouter qui convertit les patterns d'usage en améliorations de modèle grâce à l'apprentissage continu. Le système suit la performance des modèles à travers différents cas d'usage et ajuste automatiquement le routage et le fine-tuning basé sur les retours d'usage réel. Ceci est important car cela démocratise l'accès à une infrastructure de routage IA adaptatif qui nécessite traditionnellement un investissement significatif de plateforme.
+
+### Corrections de bugs critiques dans EleutherAI Evaluation Harness
+Plusieurs corrections critiques ont été intégrées dans le [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness), incluant des [bugs de normalisation](https://github.com/EleutherAI/lm-evaluation-harness/pull/4037) qui corrompaient les expressions mathématiques et des [problèmes de notation](https://github.com/EleutherAI/lm-evaluation-harness/pull/4034) où des réponses identiques étaient marquées incorrectes quand l'analyse symbolique échouait. Ces corrections affectent des milliers de résultats d'évaluation publiés et soulignent la fragilité de l'infrastructure d'évaluation dont dépend la communauté de sécurité IA pour les comparaisons de modèles.
+
+## Versions GitHub & Outils notables
+
+### AgentFootprint v9.76.0 : Runbook-as-Tool pour des décisions d'agent basées sur des preuves
+[AgentFootprint v9.76.0](https://github.com/footprintjs/agentfootprint/releases/tag/v9.76.0) introduit `runbookAsTool`, qui convertit les procédures écrites en outils structurés où chaque décision devient une preuve auditable. Ceci permet des flux de travail de triage systématique où les agents suivent des procédures prédéfinies tout en maintenant une traçabilité complète de leur raisonnement. Ceci est important car cela fait le pont entre les processus créés par l'humain et l'exécution automatisée d'agent tout en préservant la responsabilité.
+
+### Fieldtest v0.3.0 : Contrôle de température de juge et intervalles de confiance de taux d'échec
+[Fieldtest](https://github.com/gmitt98/fieldtest) a publié des améliorations majeures incluant une température de juge configurable, des intervalles de confiance statistiques pour les taux d'échec, et des systèmes de calibration multi-exécutions. L'outil fournit maintenant des intervalles de score Wilson pour les résultats binaires et supporte l'analyse comparative à travers différentes configurations de modèle. Ceci est important car cela apporte une rigueur statistique aux pratiques d'évaluation LLM qui s'appuient souvent sur des estimations ponctuelles sans quantification d'incertitude.
+
+### NVIDIA NeMo Guardrails : Disjoncteur et protection DoS regex
+[NVIDIA NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) a livré des corrections de sécurité critiques incluant une [protection DoS regex](https://github.com/NVIDIA-NeMo/Guardrails/pull/2325) qui prévient les attaques de backtracking catastrophique et des [améliorations de disjoncteur](https://github.com/NVIDIA-NeMo/Guardrails/pull/2334) pour la gestion de surcharge. Les mises à jour ajoutent des limites de timeout pour la correspondance de motifs et des réponses HTTP 503 appropriées pour les conditions de débordement de file d'attente. Ceci est important car ce sont des mécanismes de sécurité critiques en production qui préviennent les attaques par déni de service contre les applications LLM déployées.
+
+### Aider v0.86.2 : Corrections de sécurité et de gestion d'environnement
+[Aider](https://github.com/Aider-AI/aider) a publié des corrections pour la [précédence de variables d'environnement](https://github.com/Aider-AI/aider/pull/5640) et les [avertissements de contournement de hooks pre-commit](https://github.com/Aider-AI/aider/issues/5376). L'outil respecte maintenant correctement les variables d'environnement shell par rapport aux fichiers `.env` et avertit les utilisateurs quand les hooks de sécurité sont contournés pendant les commits automatisés. Ceci est important car cela adresse des vulnérabilités de sécurité potentielles où des fichiers de projet malveillants pourraient remplacer les identifiants utilisateur ou contourner les vérifications de sécurité du code.
