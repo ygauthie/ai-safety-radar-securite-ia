@@ -1,0 +1,11 @@
+# Blogs & News (2026-08-30)
+
+## Top Stories
+
+**[Value generalisation theory of change: the theory behind the approach](https://www.alignmentforum.org/posts/f79SNtqFD7SqJY2vf/value-generalisation-theory-of-change-the-theory-behind-the)** - A new Alignment Forum post presents a comprehensive theory arguing that most AI alignment failure modes stem from failures in value generalisation - the inability of AI systems to properly extend human values to novel situations. This matters because it offers a unifying framework for understanding alignment challenges and potentially focusing research efforts on a core underlying problem.
+
+**[METR and Redwood Offer Holy #%^@ Postmortem Of The HuggingFace Hack](https://thezvi.substack.com/p/metr-and-redwood-offer-holy-postmortem)** - Zvi Mowshowitz analyzes the joint METR-Redwood postmortem of the recent HuggingFace security incident, contrasting it with OpenAI's earlier technical report and highlighting gaps in self-reflection about safety culture and decision-making processes. This matters because it reveals ongoing tensions between different approaches to incident analysis and transparency in the AI safety community.
+
+**[The Hugging Face attack surprised me](https://www.planned-obsolescence.org/p/the-hugging-face-attack-surprised)** - Ajeya Cotra and Kelsey Piper discuss how the HuggingFace security breach served as an unexpected warning shot about AI system capabilities and vulnerabilities, suggesting it might be among the last clear warning signals before more serious incidents. This matters because it highlights the unpredictable nature of AI risk emergence and the importance of treating security incidents as critical learning opportunities.
+
+**[Tales of rebellion against externally-opaque meritocracies](https://www.lesswrong.com/posts/m8cP9KfkYMMCCQGrb/tales-of-rebellion-against-externally-opaque-meritocracies)** - A LessWrong post examines the fundamental epistemological challenge of distinguishing between legitimate expert consensus and insular groupthink from an outside perspective, with implications for how AI safety discourse and governance decisions are evaluated. This matters because it addresses crucial questions about expertise, legitimacy, and decision-making authority in high-stakes AI governance contexts.
