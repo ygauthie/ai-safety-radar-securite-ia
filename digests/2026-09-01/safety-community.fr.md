@@ -1,0 +1,17 @@
+# Communauté et Outils (2026-09-01)
+
+## Discussions Clés
+
+**Réglementation Renforcée de l'UE pour ChatGPT** - [L'article de The Verge](https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa) a suscité 16 commentaires sur [Hacker News](https://news.ycombinator.com/item?id=49510517) concernant la pression réglementaire accrue de l'UE sur les systèmes d'IA. La discussion se concentre sur les coûts de conformité, les impacts potentiels sur l'innovation, et l'équilibre entre sécurité et progrès technologique. Cela est important car cela signale le paysage réglementaire que les entreprises d'IA doivent naviguer lors du développement de mesures de sécurité.
+
+**Lancement des Pipelines de Données Hebbian Robotics** - [La société YC S26](https://github.com/Hebbian-Robotics/hflow) a généré 44 points et 12 commentaires dans leur publication Show HN sur l'infrastructure de données robotiques évolutive. La discussion communautaire se concentre sur les défis techniques de la collecte et du traitement de données d'entraînement robotique à grande échelle. Cela est significatif pour la sécurité de l'IA car des pipelines de données robustes sont essentiels pour entraîner des systèmes robotiques fiables.
+
+**Synchronisation Code-Diapositive SlideOps** - [La publication Show HN](https://github.com/glukicov/slideops) (21 points) a présenté un outil qui signale quand les diapositives de présentation dérivent par rapport au code source sous-jacent, abordant la cohérence de la documentation. Bien que cela semble banal, cela touche à la sécurité de l'IA grâce à l'amélioration des pratiques de documentation et la réduction de l'erreur humaine dans la communication technique.
+
+## Sorties GitHub et Outils Notables
+
+**EleutherAI LM Evaluation Harness v0.4.13** - Cette [version majeure](https://github.com/EleutherAI/lm-evaluation-harness/releases/tag/v0.4.13) traite des problèmes critiques d'infrastructure d'évaluation incluant les bugs de fuite few-shot, les problèmes de filtres à choix multiples, et les calculs d'erreur standard de groupe. La version ajoute des backends ONNX et huit nouvelles suites de benchmarks tout en mettant à jour les configurations pour les jeux de données modernes. Cela importe car une infrastructure d'évaluation fiable est fondamentale pour mesurer les capacités des systèmes d'IA et leurs propriétés de sécurité.
+
+**Verification Crisis v1.1.0** - [Cette version](https://github.com/aloth/verification-crisis/releases/tag/v1.1.0) corrige les descriptions des jeux de données et met à jour les références pour la recherche sur les défis de vérification dans les systèmes d'IA. Elle permet une analyse reproductible des méthodologies de vérification à travers différents domaines. Cela est significatif pour la sécurité de l'IA car la recherche sur la crise de vérification aborde directement comment nous pouvons évaluer de manière fiable si les systèmes d'IA répondent à leurs spécifications.
+
+**Agent Airlock v0.8.83** - [La version](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.83) rapporte des taux de succès d'attaques par injection bornés (0/36 pour les deux harnais, avec un intervalle de confiance Wilson à 95% [0,0%, 9,6%]) et documente la première activation réussie de contrôle bénin. Cela fournit des preuves empiriques de l'efficacité du confinement d'agents, ce qui est crucial pour déployer des agents d'IA en toute sécurité dans des environnements de production.
