@@ -1,0 +1,17 @@
+# Blogs & Actualités (2026-09-04)
+
+## Principales nouvelles
+
+L'écosystème de recherche en sécurité de l'IA a continué de se concentrer sur les défis fondamentaux d'alignment cette semaine, avec plusieurs développements notables dans la recherche sur la corrigibilité et la méthodologie de sécurité.
+
+**[How I'm Evaluating Corrigibility Grant Applications](https://www.lesswrong.com/posts/q2YL7qKigC9QEEdsX/how-i-m-evaluating-corrigibility-grant-applications)** détaille la méthodologie derrière le nouveau Fonds de recherche sur la corrigibilité, offrant un aperçu de la façon dont les chercheurs en alignment priorisent différentes approches pour s'assurer que les systèmes d'IA restent arrêtables et modifiables. Ceci importe car la corrigibilité demeure l'un des aspects les plus techniquement difficiles de l'alignment de l'IA, et comprendre les priorités de financement révèle où le domaine voit les directions de recherche les plus prometteuses.
+
+**[Cat-Belling Problems](https://www.lesswrong.com/posts/SwYBLQvo8MddDcCwz/cat-belling-problems)** examine pourquoi de nombreuses solutions de sécurité de l'IA proposées font face à des défis d'implémentation fondamentaux, utilisant la fable classique sur qui va mettre la cloche au chat pour illustrer les problèmes de coordination dans la recherche en sécurité. Cet article importe car il met en lumière un écart persistant entre les propositions de sécurité théoriques et les contraintes pratiques de déploiement qui continue de défier le domaine.
+
+**[Anthropic Has Some Alignment Problems](https://thezvi.substack.com/p/anthropic-has-some-alignment-problems)** fournit l'analyse de Zvi Mowshowitz des récents défis d'alignment chez Anthropic, bien que le bref extrait limite l'évaluation détaillée des problèmes spécifiques discutés. Ceci importe car Anthropic s'est positionnée comme un laboratoire d'IA axé sur la sécurité, rendant toute difficulté d'alignment particulièrement significative pour les pratiques de sécurité de l'industrie.
+
+**[Designing Proactive Thought Partners for Writing](https://deepmind.google/research/publications/265605/)** présente la recherche de Google DeepMind sur les agents d'IA qui fournissent un soutien cognitif contextuel aux rédacteurs, allant au-delà de la simple autocomplétion vers une assistance plus sophistiquée. Ceci importe car cela représente un changement vers des systèmes d'IA qui s'engagent proactivement avec la cognition humaine, soulevant de nouvelles questions sur la collaboration humain-IA et les risques potentiels de dépendance.
+
+## Politique et gouvernance
+
+**[U.S. backs OpenAI against New York Times](https://www.heise.de/news/US-Regierung-unterstuetzt-OpenAI-im-Urheberrechtsstreit-mit-New-York-Times-11438988.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** rapporte que le gouvernement américain a déposé une déclaration d'intérêt soutenant la position d'OpenAI selon laquelle l'utilisation de matériel protégé par le droit d'auteur pour l'entraînement d'IA ne constitue pas une violation, présentant l'accès aux données comme critique pour la compétitivité nationale. Ceci importe car cela signale la volonté du gouvernement américain de prioriser le développement de l'IA par rapport aux droits des éditeurs, établissant potentiellement un précédent juridique qui pourrait accélérer le développement des capacités d'IA tout en sapant les revenus des créateurs de contenu.
