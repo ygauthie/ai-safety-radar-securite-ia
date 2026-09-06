@@ -1,0 +1,21 @@
+# Communauté & Outils (2026-09-06)
+
+## Discussions clés
+
+**Plugin Gate Claude Code UserPromptSubmit** : [Hermes Labs a publié](https://github.com/hermes-labs-ai/little-canary/pull/67) un plugin Claude Code qui envoie les invites utilisateur à un point de terminaison Little Canary local pour un filtrage de sécurité avant le début des tours, bloquant les entrées dangereuses tout en restant ouvert en cas d'erreurs de transport. Cela démontre une validation pratique des entrées pour les environnements de codage, s'attaquant à un vecteur d'attaque clé où des invites malveillantes pourraient exploiter les capacités de génération de code.
+
+**Précision des Benchmarks sous surveillance** : [Plusieurs](https://github.com/hyeonsangjeon/gdpval-realworks/pull/429) [problèmes](https://github.com/hyeonsangjeon/gdpval-realworks/pull/430) [d'évaluation](https://github.com/hyeonsangjeon/gdpval-realworks/pull/435) de benchmarks ont émergé, montrant que les affirmations de précision des juges audio étaient gonflées par des erreurs de méthodologie de notation, avec une « précision de 47,1 % » en fait calculée à partir de dénominateurs biaisés plutôt que de verdicts réels. Cela met en évidence les défis persistants dans l'établissement de métriques d'évaluation fiables pour les systèmes d'IA multimodaux.
+
+**Échecs de confinement d'agents** : [Des découvertes de sécurité critiques](https://github.com/QWED-AI/qwed-verification/issues/340) ont révélé que les systèmes de vérification exécutent des charges de travail IA synchrones directement sur des boucles d'événements, créant des vulnérabilités de déni de service inter-locataires et un épuisement permanent des pools de travailleurs. Ces failles architecturales démontrent comment une gestion asynchrone inappropriée peut compromettre l'isolation de sécurité dans les environnements d'exécution d'agents.
+
+**Validation des limites d'outils** : [Le dépôt evals d'OpenAI](https://github.com/openai/evals/issues/1827) reçoit des propositions pour l'évaluation déterministe des violations de limites d'action d'agents, avec des suggestions de signaler les écritures en dehors des racines de bac à sable autorisées tout en acceptant les opérations dans les limites. Cela représente un intérêt croissant pour empêcher les agents d'échapper à leur périmètre opérationnel désigné.
+
+## Versions GitHub et outils notables
+
+**Unveil v0.1.2** : [Publié](https://github.com/henio828/unveil/releases/tag/v0.1.2) avec le drapeau `--agent-safe` qui retient le texte correspondant des rapports retournant vers les contextes d'agents, fournissant à la place des condensés SHA-256 et des métadonnées pour empêcher la transmission de charges utiles tout en préservant les capacités de détection. Cela répond au problème fondamental où les scanners de sécurité pourraient involontairement porter les mêmes menaces qu'ils sont conçus pour détecter.
+
+**Accuracy Tracing v0.3.0** : [Nouvelle version](https://github.com/superwesleyhys-ux/accuracy-tracing/releases/tag/v0.3.0) introduisant des boucles de vérification auditables avec sept étapes de validation sémantique, une validation Python déterministe, et une sérialisation JSON pour des mesures de précision reproductibles. Cela fournit une infrastructure pour établir des méthodologies de benchmarking fiables au milieu des préoccupations croissantes sur la fiabilité de l'évaluation.
+
+**Intégration LintLang MegaLinter** : [Ajouté](https://github.com/hermes-labs-ai/lintlang/pull/66) comme plugin externe `AI_LINTLANG` ciblant les fichiers d'instructions d'agents, avec détection de nom de fichier délimitée pour les surfaces d'invite tout en évitant l'analyse large du dépôt. Cela permet la détection systématique de motifs problématiques dans les instructions d'agents pendant les flux de travail CI/CD.
+
+**Sysknife v0.13.1** : [Publié](https://github.com/lacs-project/sysknife/releases/tag/v0.13.1) avec des gardes de validation CI améliorées qui empêchent les affirmations de documentation périmée et assurent l'alignement de la couverture de tests, démontrant comment les systèmes critiques pour la sécurité peuvent maintenir l'exactitude grâce à la vérification automatisée de leur propre documentation. Cela compte parce que les outils d'automatisation d'infrastructure nécessitent des standards de fiabilité exceptionnellement élevés.
